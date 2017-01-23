@@ -1,5 +1,5 @@
 testsetup:
-	sudo rm -r /var/lib/tomcat7/webapps/cs390vr/*
-	sudo cp -r ./* /var/lib/tomcat7/webapps/cs390vr
+	sudo rm -r /homes/cs390vr/www/*
+	sudo cp -r ./* /homes/cs390vr/www
 
 all: testsetup
