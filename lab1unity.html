@@ -986,11 +986,25 @@ void Update () {
 }
 </code>
 </pre>
-                                <p>This moves awfully fast, so try slowing it down a little.</p>
-                                <p>{Maybe try spawning a particle effect}</p>
-                                <p>{Fire missle from Tank}</p>
+                                <div class="text-center image-container"><video autoplay muted loop="loop" src="core_2_files/BalloonRunAway.mp4" /></div>
+                                <p>This moves awfully fast, so try slowing it down a little. Our pop effect is still kind of boring, we need something to spice it up a little bit. Let's try spawning a Particle effect whenver the balloon pops. There's a couple of ways to do this, but we're going to use that <b>GameObject.Instantiate()</b> function that we learned about earlier. In order to do this, create a new <b>public GameObject</b> variable in our BalloonPop script called burstEffect. In the Inspector, assign a particle effect to burstEffect. We've included some particles in the Assets > Particles folder, but feel free to look through the Asset Store or even import Unity's Standard Asset package for particles.</p>
+                                <p>So now we've got our particle effect picked out, let's modify our <b>pop()</b> function to spawn the effect. Recall that <i>GameObject.Instantiate()</i> takes a position as a parameter (as well as the object we're instantiating) and returns the new GameObject. So we need to spawn the particle effect where the balloon is and then store the result in case we need later. This can be done like so.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+public void pop() {
+    //GameObject.Instantiate asks for a Rotation of the object, since we don't care what it's rotation is
+    //we just use Quaternion.identity
+    <span class="hljs-keyword">GameObject</span> burstEffectObject = <span class="hljs-keyword">GameObject</span>.Instantiate(burstEffect, this.transform.position, <span class="hljs-keyword">Quaternion</span>.identity);
+    <span class="hljs-keyword">GameObject</span>.Destroy(this.gameObject);
+}
+</code>
+</pre>
+                                <div class="text-center image-container"><video autoplay loop="loop" src="core_2_files/BalloonBurst.mp4" /></div>
+                                <!--<h3>Firing from tank</h3>
+                                <p>Let's look at another example of spawning simple objects, this time we want to make something cool. Let's fire a missle from a tank. Here's our approach, spawn a missle GameObject with a script that controls its flying. Let's start with the missle first, drag the missle into the scene and add a new script to it. Call the script missleController. Open missleController and use the <b>Update()</b> to change the position of the missle over a period of time. You can modify our balloon script from above. Now we don't want our </p>
+                                -->
                             </div>
-                            <div id="2-communication" class="scrollspy-section">
+                            <div id="2-script-communication" class="scrollspy-section">
                                 <h2 id="communication">Script Communication</h2>
                                 <p>Great, so we can make basic scripts and populate our scenes with them but what if we need them to talk to each other? Unity actually gives us a couple of ways of doing this. We can do this statically (known at compile-time) or dynamically. We use static base communication wheever we know beforehand what object we'll need to call, such as updating the main camera or adding points to a scoreboard. We do this dynamically whenever we don't know the exact object we'll be calling, such as hitting a target. </p>
                                 <p>The way to do this is by having a reference to the object you're calling, and getting a component from that object using <i>GameObject.GetComponent(Type)</i>. Once, you get the Object reference you can call any public method in that component. You can use <a href="https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html" target="_blank">GameObject.SendMethod</a> as well, but it can be expensive to run.</p>
@@ -1018,8 +1032,9 @@ void Start () {
 private <span class="hljs-keyword">KeyCode</span> popKey = <span class="hljs-keyword">KeyCode</span>.P;
 // Update is called once per frame
 void Update () {
-	if (<span class="hljs-keyword">Input</span>.GetKeyDown(popKey)) {
-    <span class="hljs-keyword">BalloonPop</span>.pop();
+    if (<span class="hljs-keyword">Input</span>.GetKeyDown(popKey)) {
+        <span class="hljs-keyword">Debug</span>.Log("Clicked the Popkey!");
+        <span class="hljs-keyword">BalloonPop</span>.pop();
     }
 }
 </code>
