@@ -1,0 +1,1090 @@
+﻿<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+
+    <!-- Syntax highlighting by HighlightJs.org -->
+    <link rel="stylesheet" href="./highlightJS/styles/foundation.css">
+    <script src="./highlightJS/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script>
+    <script async="" src="core_1_files/analytics_002.js"></script>
+    <script type="text/javascript" async="" src="core_1_files/analytics.js"></script>
+    <script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script>
+    <meta class="foundation-data-attribute-namespace">
+    <meta class="foundation-mq-xxlarge">
+    <meta class="foundation-mq-xlarge-only">
+    <meta class="foundation-mq-xlarge">
+    <meta class="foundation-mq-large-only">
+    <meta class="foundation-mq-large">
+    <meta class="foundation-mq-medium-only">
+    <meta class="foundation-mq-medium">
+    <meta class="foundation-mq-small-only">
+    <meta class="foundation-mq-small">
+    <style></style>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+    <meta class="foundation-mq-topbar">
+    <style type="text/css">
+        .MathJax_Hover_Frame {
+            border-radius: .25em;
+            -webkit-border-radius: .25em;
+            -moz-border-radius: .25em;
+            -khtml-border-radius: .25em;
+            box-shadow: 0px 0px 15px #83A;
+            -webkit-box-shadow: 0px 0px 15px #83A;
+            -moz-box-shadow: 0px 0px 15px #83A;
+            -khtml-box-shadow: 0px 0px 15px #83A;
+            border: 1px solid #A6D !important;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            font-family: 'Courier New',Courier;
+            font-size: 9px;
+            color: #F0F0F0;
+        }
+
+            .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+                display: block;
+                background-color: #AAA;
+                border: 1px solid;
+                border-radius: 3px;
+                line-height: 0;
+                padding: 4px;
+            }
+
+        .MathJax_Hover_Arrow:hover {
+            color: white !important;
+            border: 2px solid #CCC !important;
+        }
+
+            .MathJax_Hover_Arrow:hover span {
+                background-color: #CCC !important;
+            }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #DDDDDD;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+        }
+
+            #MathJax_About.MathJax_MousePost {
+                outline: none;
+            }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 2px;
+            border: 1px solid #CCCCCC;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+        }
+
+        .MathJax_MenuItem {
+            padding: 2px 2em;
+            background: transparent;
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: .5em;
+            padding-top: .25em;
+            color: #666666;
+            font-size: .75em;
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white;
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: .5em;
+            right: auto;
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: .7em;
+        }
+
+            .MathJax_MenuCheck.RTL {
+                right: .7em;
+                left: auto;
+            }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: 1em;
+        }
+
+            .MathJax_MenuRadioCheck.RTL {
+                right: 1em;
+                left: auto;
+            }
+
+        .MathJax_MenuLabel {
+            padding: 2px 2em 4px 1.33em;
+            font-style: italic;
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #CCCCCC;
+            margin: 4px 1px 0px;
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText;
+        }
+
+        .MathJax_MenuActive {
+            background-color: Highlight;
+            color: HighlightText;
+        }
+
+        .MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {
+            background-color: #E8E8E8;
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none;
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none;
+        }
+
+        #MathJax_AboutClose {
+            top: .2em;
+            right: .2em;
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px;
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: 'Courier New',Courier;
+            font-size: 24px;
+            color: #F0F0F0;
+        }
+
+            .MathJax_MenuClose span {
+                display: block;
+                background-color: #AAA;
+                border: 1.5px solid;
+                border-radius: 18px;
+                -webkit-border-radius: 18px;
+                -moz-border-radius: 18px;
+                -khtml-border-radius: 18px;
+                line-height: 0;
+                padding: 8px 0 6px;
+            }
+
+            .MathJax_MenuClose:hover {
+                color: white !important;
+                border: 2px solid #CCC !important;
+            }
+
+                .MathJax_MenuClose:hover span {
+                    background-color: #CCC !important;
+                }
+
+                .MathJax_MenuClose:hover:focus {
+                    outline: none;
+                }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview .MJXf-math {
+            color: inherit !important;
+        }
+    </style>
+    <style type="text/css">
+        .MJX_Assistive_MathML {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 1px 0 0 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden !important;
+            display: block !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+            .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+                width: 100% !important;
+            }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #F0F0F0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: .5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #AAAAAA;
+            -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+            -moz-box-shadow: 5px 5px 15px #AAAAAA;
+            -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888;
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1px;
+            bottom: 2px;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap;
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .MathJax_Error {
+            color: #CC0000;
+            font-style: italic;
+        }
+    </style>
+    <style type="text/css">
+        .MJXp-script {
+            font-size: .8em;
+        }
+
+        .MJXp-right {
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right;
+        }
+
+        .MJXp-bold {
+            font-weight: bold;
+        }
+
+        .MJXp-italic {
+            font-style: italic;
+        }
+
+        .MJXp-scr {
+            font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif;
+        }
+
+        .MJXp-frak {
+            font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif;
+        }
+
+        .MJXp-sf {
+            font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif;
+        }
+
+        .MJXp-cal {
+            font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif;
+        }
+
+        .MJXp-mono {
+            font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif;
+        }
+
+        .MJXp-largeop {
+            font-size: 150%;
+        }
+
+            .MJXp-largeop.MJXp-int {
+                vertical-align: -.2em;
+            }
+
+        .MJXp-math {
+            display: inline-block;
+            line-height: 1.2;
+            text-indent: 0;
+            font-family: 'Times New Roman',Times,STIXGeneral,serif;
+            white-space: nowrap;
+            border-collapse: collapse;
+        }
+
+        .MJXp-display {
+            display: block;
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        .MJXp-math span {
+            display: inline-block;
+        }
+
+        .MJXp-box {
+            display: block !important;
+            text-align: center;
+        }
+
+            .MJXp-box:after {
+                content: " ";
+            }
+
+        .MJXp-rule {
+            display: block !important;
+            margin-top: .1em;
+        }
+
+        .MJXp-char {
+            display: block !important;
+        }
+
+        .MJXp-mo {
+            margin: 0 .15em;
+        }
+
+        .MJXp-mfrac {
+            margin: 0 .125em;
+            vertical-align: .25em;
+        }
+
+        .MJXp-denom {
+            display: inline-table !important;
+            width: 100%;
+        }
+
+            .MJXp-denom > * {
+                display: table-row !important;
+            }
+
+        .MJXp-surd {
+            vertical-align: top;
+        }
+
+            .MJXp-surd > * {
+                display: block !important;
+            }
+
+        .MJXp-script-box > * {
+            display: table !important;
+            height: 50%;
+        }
+
+            .MJXp-script-box > * > * {
+                display: table-cell !important;
+                vertical-align: top;
+            }
+
+            .MJXp-script-box > *:last-child > * {
+                vertical-align: bottom;
+            }
+
+            .MJXp-script-box > * > * > * {
+                display: block !important;
+            }
+
+        .MJXp-mphantom {
+            visibility: hidden;
+        }
+
+        .MJXp-munderover {
+            display: inline-table !important;
+        }
+
+        .MJXp-over {
+            display: inline-block !important;
+            text-align: center;
+        }
+
+            .MJXp-over > * {
+                display: block !important;
+            }
+
+        .MJXp-munderover > * {
+            display: table-row !important;
+        }
+
+        .MJXp-mtable {
+            vertical-align: .25em;
+            margin: 0 .125em;
+        }
+
+            .MJXp-mtable > * {
+                display: inline-table !important;
+                vertical-align: middle;
+            }
+
+        .MJXp-mtr {
+            display: table-row !important;
+        }
+
+        .MJXp-mtd {
+            display: table-cell !important;
+            text-align: center;
+            padding: .5em 0 0 .5em;
+        }
+
+        .MJXp-mtr > .MJXp-mtd:first-child {
+            padding-left: 0;
+        }
+
+        .MJXp-mtr:first-child > .MJXp-mtd {
+            padding-top: 0;
+        }
+
+        .MJXp-mlabeledtr {
+            display: table-row !important;
+        }
+
+            .MJXp-mlabeledtr > .MJXp-mtd:first-child {
+                padding-left: 0;
+            }
+
+            .MJXp-mlabeledtr:first-child > .MJXp-mtd {
+                padding-top: 0;
+            }
+
+        .MJXp-merror {
+            background-color: #FFFF88;
+            color: #CC0000;
+            border: 1px solid #CC0000;
+            padding: 1px 3px;
+            font-style: normal;
+            font-size: 90%;
+        }
+
+        .MJXp-scale0 {
+            -webkit-transform: scaleX(.0);
+            -moz-transform: scaleX(.0);
+            -ms-transform: scaleX(.0);
+            -o-transform: scaleX(.0);
+            transform: scaleX(.0);
+        }
+
+        .MJXp-scale1 {
+            -webkit-transform: scaleX(.1);
+            -moz-transform: scaleX(.1);
+            -ms-transform: scaleX(.1);
+            -o-transform: scaleX(.1);
+            transform: scaleX(.1);
+        }
+
+        .MJXp-scale2 {
+            -webkit-transform: scaleX(.2);
+            -moz-transform: scaleX(.2);
+            -ms-transform: scaleX(.2);
+            -o-transform: scaleX(.2);
+            transform: scaleX(.2);
+        }
+
+        .MJXp-scale3 {
+            -webkit-transform: scaleX(.3);
+            -moz-transform: scaleX(.3);
+            -ms-transform: scaleX(.3);
+            -o-transform: scaleX(.3);
+            transform: scaleX(.3);
+        }
+
+        .MJXp-scale4 {
+            -webkit-transform: scaleX(.4);
+            -moz-transform: scaleX(.4);
+            -ms-transform: scaleX(.4);
+            -o-transform: scaleX(.4);
+            transform: scaleX(.4);
+        }
+
+        .MJXp-scale5 {
+            -webkit-transform: scaleX(.5);
+            -moz-transform: scaleX(.5);
+            -ms-transform: scaleX(.5);
+            -o-transform: scaleX(.5);
+            transform: scaleX(.5);
+        }
+
+        .MJXp-scale6 {
+            -webkit-transform: scaleX(.6);
+            -moz-transform: scaleX(.6);
+            -ms-transform: scaleX(.6);
+            -o-transform: scaleX(.6);
+            transform: scaleX(.6);
+        }
+
+        .MJXp-scale7 {
+            -webkit-transform: scaleX(.7);
+            -moz-transform: scaleX(.7);
+            -ms-transform: scaleX(.7);
+            -o-transform: scaleX(.7);
+            transform: scaleX(.7);
+        }
+
+        .MJXp-scale8 {
+            -webkit-transform: scaleX(.8);
+            -moz-transform: scaleX(.8);
+            -ms-transform: scaleX(.8);
+            -o-transform: scaleX(.8);
+            transform: scaleX(.8);
+        }
+
+        .MJXp-scale9 {
+            -webkit-transform: scaleX(.9);
+            -moz-transform: scaleX(.9);
+            -ms-transform: scaleX(.9);
+            -o-transform: scaleX(.9);
+            transform: scaleX(.9);
+        }
+
+        .MathJax_PHTML .noError {
+            vertical-align:;
+            font-size: 90%;
+            text-align: left;
+            color: black;
+            padding: 1px 3px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="MathJax_Message" style="display: none;"></div>
+    <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+    <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+    <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+    <div class="row row-padding-top" data-equalizer="">
+        <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+            <div class="sidebar-content" style="">
+                <div class="open active">
+                    <div class="spacer"></div>
+                    <h4>
+                        Lab 1: Unity Tutorial
+                        <a href="./home.html" class="right hidden-at-top detail">Back to course page</a>
+                    </h4>
+                    <hr>
+                    <ul>
+                        <li class="active">
+                            <div class="section-progress-container">
+                                <div class="section-progress"></div>
+                            </div>
+                            <a href="#2-refresh">Refresh</a>
+                        </li>
+                        <li>
+                            <div class="section-progress-container">
+                                <div class="section-progress" style="height: 0%;"></div>
+                            </div>
+                            <a href="#2-into-to-scripting">Intro to Scripting</a>
+                        </li>
+                        <li>
+                            <div class="section-progress-container">
+                                <div class="section-progress" style="height: 0%;"></div>
+                            </div>
+                            <a href="#2-examples1">Examples</a>
+                        </li>
+                        <li>
+                            <div class="section-progress-container">
+                                <div class="section-progress" style="height: 0%;"></div>
+                            </div>
+                            <a href="#2-script-communication">Script Communication</a>
+                        </li>
+                        <li>
+                            <div class="section-progress-container">
+                                <div class="section-progress" style="height: 0%;"></div>
+                            </div>
+                            <a href="#2-examples2">More Examples</a>
+                        </li>
+                        <li>
+                            <div class="section-progress-container">
+                                <div class="section-progress" style="height: 0%;"></div>
+                            </div>
+                            <a href="#2-conclusion">Conclusion</a>
+                        </li>
+                        <li>
+                            <div class="section-progress-container">
+                                <div class="section-progress" style="height: 0%;"></div>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+            <div class="row collapse">
+                <div class="small-12 small-centered columns">
+                    <div class="default-panel margin-bottom shadow">
+                        <div class="header shadow-down more-padding">
+                            <h4>Lab 1: Scripts and More Scripts</h4>
+                        </div>
+                        <div class="content more-padding light-background reader">
+                            <div id="1-unity-in-cs390vr" class="scrollspy-section">
+                                <h1 class="hide" id="intro-to-ue4">Unity in CS390VR</h1>
+                                <blockquote class="important">
+                                    <h3 id="getting-started">Getting Started</h3>
+                                    <p>Download the lab1 <a target="_blank" href="">asset package</a> and import it into a new project in order to get started.</p>
+                                </blockquote>
+                                <p>In lab0, we first introduced the Unity game engine and asked you to begin exploring it. In this lab, we’re going to begin introducing some of the fundamental ideas that make Unity unique. This includes one its’ most prominent feature; full C# scripting. Unlike Unreal engine, where you use visual scripting to create your games, Unity requires the creator to create custom scripts. This has the advantage of allowing the creator to tweak the engine as much as possible without having to dive into swaths of complex C++ code.</p>
+                                <p>This approach to scripting comes with unparalleled flexibility. Don’t like Unity’s input manager? Don't use it! Need a custom physics solution? Add it to your game! With Unity, these things are much easier to achieve and with less headaches.</p>
+
+                                <!--<pre><code class="csharp">
+                                using System.Collections;
+                                using System;
+
+                                public static void Main(String[] args) {
+                                  //Prints 'Hello World' to the Console
+                                  Console.WriteLine("Hello World!");
+                                }
+                                </code></pre>-->
+                                <hr>
+                            </div>
+                            <div id="2-refresh" class="scrollspy-section">
+                                <h2 id="refresh">Refresh</h2>
+                                <h3>Asset Packages</h3>
+                                <p>For each lab, we ask you to import our asset packages. Well, what is an asset package and why do we use them? Asset packages are a quick and easy way to export assets, and their dependencies, out of the editor. That way you don’t have to deal with zipping up files or worrying about whether all the files are there. Asset packages are the official way of distributing Unity content. Every thing downloaded from the Asset store is an asset package. Unity even includes extra goodies in the form of these asset packages. These goodies are known as the Standard Assets, which ship with the engine. In order to import a Standard Asset, goto Assets > Import Package and select the package you want. More info on asset packages can be found <a target="_blank" href="https://docs.unity3d.com/Manual/AssetPackages.html">here</a>.</p>
+                                <h3>The Inspector</h3>
+                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/inspector.jpg" data-zoom-image="core_2_files/inspector.jpg"></div>
+                                <p class="text-center image-caption">Removing a Component from the Inspector</p>
+                                <p>The Inspector is a great way of easily examining all the components attached to a GameObject. These components range anywhere from Transforms (GameObject position, scale, and rotation) to custom scripts. These components are the basis of the Inspector’s power.</p>
+                                <p>Components can be added and removed at whim. In order to add a component, simply hit the add component button at the very bottom of the Inspector. To remove a component, simply click the down arrow on the component and click delete. However, some components can’t be deleted and Unity will let you know of them.</p>
+                                <p>The Inspector also allows you to change a GameObject’s name, tag, and layer. Tags are solely used for describing a group of objects. A building GameObject can share the tag “Building” with several other GameObjects. This allows for easy categorizing. Layers, on the other hand, are a bit more complicated. Layers are primarily used to ignore GameObjects. Perhaps you have some lighting effect that you don’t want to affect background objects, simply ignore any objects that belong to that layer. Layers can also be used in ignoring objections in a collision detection.</p>
+                                <h3>Hierarchy</h3>
+                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/hierarchy_1.jpg" data-zoom-image="core_2_files/hierarchy_1.jpg"></div>
+                                <p class="text-center image-caption">Counter is the parent of Toilet and Storage</p>
+                                <p>The Hierarchy tab is fairly straight forward when it comes to things, but there’s something that needs to be pointed out.That is, the Hierarchy implements a family-based object structure. Objects can be children of other objects. This means that certain properties are inherited by the children. Namely, transform values and optionally layers. In the above image, we have a basic scene with two GameObjects that are children to another GameObject. If you were to move or scale or rotate the Counter object, both the Storage object and the Toilet object would also be affected. This is useful when needing to manipulate multiple objects at once.</p>
+                            </div>
+                            <div id="2-into-to-scripting" class="scrollspy-section">
+                                <h2 id="into-to-scripting">Introduction to C# Scripting</h2>
+                                <p>As stated before, Unity uses the C# language in order to create games. C# is very similar to Java syntax wise. A few notable exceptions are noted.</p>
+                                <ul>
+                                    <li>A <strong>Boolean</strong> is simply <strong>bool</strong> in C#.</li>
+                                    <li><strong>String</strong> becomes <strong>string</strong> (lowercase)</li>
+                                    <li>A class does not have to declare that it can throw an exception</li>
+                                    <li>Packages are imported via the <strong>using</strong> command (EX: <i>using System.IO</i>)</li>
+                                    <li>Mutators and Accessors methods can be defined in the field itself</li>
+                                </ul>
+                                <p>Like Java, C# utilizes a specific runtime in order to run: the .NET Runtime. Unfortunately, Unity implements an older version of this runtime.</p>
+                                <h3>Monobehaviours</h3>
+                                <p>The vast majority of the time, you’ll be implementing a Monobehaviour. A Monobehaviour is the base class for all Unity scripts. The most basic script contains two methods <b>Start()</b> and <b>Update()</b>.</p>
+<pre style="line-height:18px;">
+<code class="csharp">
+    using UnityEngine;
+    using System.Collections;
+    using System;
+
+    public class Introduction : Monobehaviour {
+        void Start() {
+            //Used for initializing the script, sort of like what a constructor does for most objects. 
+            //A Monobehaviour never has a constructor.                
+        }
+        void Update() {
+            //where a lot of the magic happens. 
+            //Called every frame and is used for everything from grabbing Input to modifying the UI. 
+            //If implemented poorly, can easily hamper performance of your game.
+        }
+    }
+</code>
+</pre>
+                                <p>Monobehaviours can implement tons of other functions but we’re going to focus on these two for now.</p>
+                                <h3>Types</h3>
+                                <p>There’s a large amount of different object types in Unity, but we’re going to focus on a couple of important ones here. <p>
+                                <h4>GameObject (<a target="_blank" href="https://docs.unity3d.com/ScriptReference/GameObject.html">Manual</a>)</h4>
+                                <p>A GameObject is the base class for everything in the Hierarchy. Everything placed in a scene is a GameObject. The class contains all the components and definitions of each object. It can be used to retrieve other GameObjects and all the definitions currently applied to the object. We’ve highlighted a few functions and variables worth noting.</p>
+<pre style="line-height:18px;">
+<code class="csharp">
+<span class="hljs-meta">static</span> <span class="hljs-keyword">GameObject</span> <span class="hljs-keyword">GameObject</span>.Find(string name)
+	//Very expensive, avoid using too frequently.
+	//Retrieves a GameObject of the requested name if it's in the scene
+<span class="hljs-meta">Type</span> <span class="hljs-keyword">GameObject</span>.GetComponent(Type)
+	//Gets the Component attached to the GameObject of the same time
+void <span class="hljs-keyword">GameObject</span>.Destroy()
+	//Destroys the current GameObject from the scene
+	//It cannot be recovered
+<span class="hljs-keyword">GameObject</span> <span class="hljs-keyword">GameObject</span>.Instantiate(Vector3 position)
+	//Creates a new GameObject at the position specified
+<span class="hljs-keyword">Transform</span> <span class="hljs-keyword">GameObject</span>.tranform
+	//The attached transform of the GameObject
+</code>
+</pre>
+                                <h4>Transform (<a href="https://docs.unity3d.com/ScriptReference/Transform.html" target="_blank">Manual</a>)</h4>
+                                <p>A Transform object describes the position, scale, and rotation of an Object. It also gives family attributes such as the parent of the object and it’s children. There’s a couple of useful methods and fields to highlight.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+<span class="hljs-keyword">Transform</span>.Translate(<span class="hljs-keyword">Vector3</span> position)
+	//Moves the GameObject, and its' children to the new position
+<span class="hljs-keyword">Transform</span>.Rotate(<span class="hljs-keyword">Vector3</span> rotation)
+	//Rotates the GameObject around the axes provided
+	//EX: Rotate(new <span class="hljs-keyword">Vector3</span>(0,0,90) rotates the object 90&deg;
+<span class="hljs-keyword">Transform</span> <span class="hljs-keyword">Transform</span>.parent
+	//Gets the parent of the GameObject
+<span class="hljs-keyword">Vector3</span> Transform.position
+	//Gets the current position as a Vector3
+<span class="hljs-keyword">Quaternion</span> <span class="hljs-keyword">Transform</span>.rotation
+	//Gets the current rotation value as a Quaternion
+	//We've included a helper function to create a Quaternion from a Vector3 -> CS390VR.fromEuler()
+<span class="hljs-keyword">GameObject</span> <span class="hljs-keyword">Transform</span>.gameobject
+	//Gets the parent GameObject this transform is connected to
+</code>
+</pre>
+                                <h4>Vector3 (<a href="https://docs.unity3d.com/ScriptReference/Vector3.html" target="_blank">Manual</a>)</h4>
+                                <p>Vector3s are an important way of representing points and vectors within Unity. But they can also be used to represent general 3-property objects. They come up frequently, so we should cover them quickly.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+new <span class="hljs-keyword">Vector3</span>(float x, float y, float z)
+	//Creates a new Vector3 with given properties
+<span class="hljs-keyword">Vector3</span>.Lerp(<span class="hljs-keyword">Vector3</span> a, <span class="hljs-keyword">Vector3</span> b, float t)
+	//Linearly interpolates between two vectors.
+	//When t = 0 returns a. When t = 1 returns b. When t = 0.5 returns the point midway between a and b.
+	//See also: <a target="_blank" href="https://docs.unity3d.com/ScriptReference/Vector3.html">https://docs.unity3d.com/ScriptReference/Vector3.html</a>
+<span class="hljs-keyword">Vector3</span>.Forward <span class="hljs-keyword">Vector3</span>.Right <span class="hljs-keyword">Vector3</span>.Up
+	//Forward: (0,0,1)
+	//Right: (1,0,0)
+	//Up: (0,1,0)
+	//These vectors can change when an object is rotated
+</code>
+</pre>
+                                <h3>Debug Class (<a href="https://docs.unity3d.com/ScriptReference/Debug.html" target="_blank">Manual</a>)</h3>
+                                <p>The Debug class is a very useful debugging tool. It allows for writing messages to the Console tab.</p>
+                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/debug_1.jpg" data-zoom-image="core_2_files/debug_1.jpg"></div>                            
+                                <p class="text-center image-caption">This script is available in the Scripts > Lab1 folder</p>
+<pre style="line-height:18px">
+<code class="csharp">
+<span class="hljs-meta">static</span> <span class="hljs-keyword">Debug</span>.LogWarning(string message)
+<span class="hljs-meta">static</span> <span class="hljs-keyword">Debug</span>.LogError(string message)
+<span class="hljs-meta">static</span> <span class="hljs-keyword">Debug</span>.Log(string message)
+</code>
+</pre>
+                                <h3>Public Variables and the Inspector</h3>
+                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/select_gameObject.jpg" data-zoom-image="core_2_files/select_gameObject.jpg"></div>
+                                <p class="text-center image-caption">This script is available in the Scripts > Lab1 folder</p>
+                                <p>Another cool thing about Unity is how the Inspector treats public variables. Recall from <a href="#2-refresh">above</a> that the Inspector shows a GameObject’s components and values from that Component. Since MonoBehaviours are treated like components, certain fields will also be shown in the Inspector.</p>
+                                <p>The following code produces the above image. Public fields are shown in the Inspector by default, but this can be silenced by prepending the <b>NonSerialized</b> property. Private fields are not shown at all, regardless of serialization. The Inspector also prettifys some of the types. Specifying a GameObject type produces the GameObject picker, whereas a bool value produces a checkbox.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+class PublicVariablesExample : MonoBehaviour {
+    public string ShowsInInspector;
+    private string NoShowInInspector;
+    [<span class="hljs-meta">NonSerialized</span>]
+    public string MoreNoShowInSpector;      //NonSerialized property prevents Unity from showing the field
+    [<span class="hljs-meta">NonSerialized</span>]
+    private string NeverShowInInspector;    //For our uses, NonSerialized does not have that much affect on private fields
+    public <span class="hljs-keyword">GameObject</span> GameObjectPicker;
+    public float RangeValues;
+    public bool IsChecked;
+}
+</code>
+</pre>
+                                <h3>Retrieving Input (<a href="https://docs.unity3d.com/ScriptReference/Input.html" target="_blank">Manual</a>)</h3>
+                                <div class="text-center image-container"><video autoplay loop="loop" src="core_2_files/InputStates.mp4" /></div>
+                                    <p>A game isn't worth anything if you can't interact with this. Fortunately, Unity provides a decent Input Manager for achieving this. For most basic things, and ever we cover in this course, the default Input Manager will work just fine.</p>
+                                    <p>There are three basic event types that we're going to worry about; Key, Button, Mouse. Each input event (excluding mouse) has three states; Down, Up, and Held. These events are retrieved via <b>GetKey()</b>, <b>GetKeyDown()</b>, and <b>GetKeyUp()</b> for Keys. The functions are the same naming convention for buttons and mousebuttons.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+//Available in Scripts > Lab1
+class InputExample : MonoBehaviour {
+    <span class="hljs-meta">KeyCode</span> pushedKey = <span class="hljs-meta">KeyCode</span>.A;      //The Key we'll be looking for a press
+    //Use for initialization
+    void Start() { }
+    //Main event loop
+    void Update() {
+        if (<span class="hljs-keyword">Input</span>.GetKeyDown(pushedKey)) {
+            <span class="hljs-keyword">Debug</span>.Log("Pushed key!");
+        }
+    }
+}
+</code>
+</pre>
+                                </div>
+                            <div id="2-examples1" class="scrollspy-section">
+                                <h2 id="examples1">Examples</h2>
+                                <p>So now that we have a general idea of how to write some scripts, let's try some examples.</p>
+                                <h3>Popping a balloon</h3>
+                                <p>In order to get started, put the Balloon model from the Models folder into your scene. The Balloon has no material, so go ahead and drop a material on it too. Now we need to add our script. Right-click in the Assets tab and click Create > C# Script. Name your script BalloonPop and then drag it onto your Balloon GameObject.</p>
+                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/create_script_1.jpg" data-zoom-image="core_2_files/create_script_1.jpg"></div>
+                                <p>Now double-click on the Script asset and open it in Visual Studio. The created script should contain the <b>Start()</b> and <b>Update()</b> functions that was mentioned early. We're going to use those to implement our code.</p>
+                                <h5>The goal: pop the balloon after a certain amount of time.</h5>
+                                <p>In order to do this, we have to implement a timer. In order to do this we need a reference to the current time, a start time, and a waitTime. Forunately, Unity already has a way to get the current time through <b>Time.time</b>. So create a <i>private float</i> variable called startTime and a <i>public float</i> variable called waitTime. We want waitTime to public so you can easily change its' value from the Inspector. Within the <b>Start()</b> function, set the startTime value equal to the current Time retrieved by <i>Time.time</i>.</p>
+                                <p>Now we need to check if the allotted time has passed, and we do that with the <b>Update()</b> function. This can really be thought of as taking the change of the startTime to the current time and seeing if it's greater than our waitTime. Effectively a conditional. Writing this would look something like <i>if (currentTime - startTime > waitTime)</i>. Throwing it all together should yield the bottom result.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+public float waitTime;
+private float startTime;
+// Use this for initialization
+void Start () {
+    this.startTime = Time.time;
+}
+	
+// Update is called once per frame
+void Update () {
+    if (<span class="hljs-keyword">Time</span>.time - startTime >= waitTime) {
+        //pop the balloon
+    }
+}
+</code>
+</pre>
+                                <p>So how do we pop the balloon? Recall earlier that each GameObject can be Destroyed via the Destroy() method. This is effectively the same thing as a pop. Create a new <i>void</i> function <i>pop()</i> and call it from our timer conditional. Within <i>pop()</i>, we're going to make a single call to <i>GameObject.Destroy()</i>. But <i>Destroy()</i> is a static method and has no knowledge of our current object, so we have to give it a reference to the GameObject we want to Destroy. If we pass <b>this</b> as an argument, we only destroy the script calling the <b>Destroy</b> function. But if we pass <b>this.gameObject</b>, we get the reference to the parent GameObject we need to destroy. So our <i>pop()</i> function should look like this.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+void pop() {
+    <span class="hljs-keyword">GameObject</span>.Destroy(this.gameObject); 
+}
+</code>
+</pre>
+                                <blockquote class="challenge">
+                                  <h4 id="challenge-3">Challenge: Wait longer to pop the balloon.</h4>
+                                  <p>How could we change our code so that we wait a longer interval to pop the balloon, maybe say 30 seconds?</p>
+                                </blockquote>
+                                <p>Currently, our script is pretty boring. We wait X seconds, and then destroy the Object. What if we want to add some motion to our Balloon? Maybe our Balloon flies for a couple of seconds and then pops? This can be achieved along the same lines by just adding to our <i>Update()</i> function. Recall from above that <i>Transform.position</i> gives us the current position of the object. So what if we incrementally added onto the position of our balloon every frame?In the <b>Update()</b> function, add a new Vector3 to our current position and store it as the current position. This should look something like this.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+// Update is called once per frame
+void Update () {
+    if (<span class="hljs-keyword">Time</span>.time - startTime >= waitTime) {
+        this.transform.position = this.transform.position + new <span class="hljs-keyword">Vector3</span>(0,0,1);
+        pop();
+    }
+}
+</code>
+</pre>
+                                <p>This moves awfully fast, so try slowing it down a little.</p>
+                                <p>{Maybe try spawning a particle effect}</p>
+                                <p>{Fire missle from Tank}</p>
+                            </div>
+                            <div id="2-communication" class="scrollspy-section">
+                                <h2 id="communication">Script Communication</h2>
+                                <p>Great, so we can make basic scripts and populate our scenes with them but what if we need them to talk to each other? Unity actually gives us a couple of ways of doing this. We can do this statically (known at compile-time) or dynamically. We use static base communication wheever we know beforehand what object we'll need to call, such as updating the main camera or adding points to a scoreboard. We do this dynamically whenever we don't know the exact object we'll be calling, such as hitting a target. </p>
+                                <p>The way to do this is by having a reference to the object you're calling, and getting a component from that object using <i>GameObject.GetComponent(Type)</i>. Once, you get the Object reference you can call any public method in that component. You can use <a href="https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html" target="_blank">GameObject.SendMethod</a> as well, but it can be expensive to run.</p>
+                                <hr>
+                            </div>
+                            <div id="2-examples2" class="scrollspy-section">
+                                <h2 id="examples2">More Examples</h2>
+                                <p>Revisiting our balloon example, what if we wanted to make the balloon pop after some arbitrary input. We could have a InputManager GameObject that handles all of our input and then calls objects to do our biding. So let's do just that. Create a new Empty GameObject called InputManager and add it to our scene. Next create a new script for the GameObject called Manager. The Manager script will handle all of our input, and call external methods. Open the Manager Script for editing. Now we need a way to grab the reference to the Balloon. Remember from above that public variables are shown in the Inspector, and that a GameObject field has a GameObject picker associated with it. So create a <b>public GameObject</b> variable named BalloonRef, and use the picker to grab our Balloon object.</p>
+                                <p>If you recall, our BalloonPop script has no public methods, we need to change that. Simply add <b>public</b> to <b>void pop()</b> and now the method is public. In our script, we have a reference to the GameObject, but we don't have a reference to the BalloonPop Script Component. We need to use <b>GameObject.GetComponent()</b> and then store the reference for later use. This can be done as follows.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+public <span class="hljs-keyword">GameObject</span> BalloonRef;
+private <span class="hljs-keyword">BalloonPop</span> popScript;
+// Use this for initialization
+void Start () {
+    popScript = BalloonRef.GetComponent("BalloonPop") as <span class="hljs-keyword">BalloonPop</span>;
+    //popScript = BalloonRef.GetComponent<<span class="hljs-keyword">BalloonPop</span>>();
+    //Same method as above, just faster
+}
+</code>
+</pre>
+                                <p>Just like that, we've taken care of all the hard bits. Now we just have to modify our Input Script from before, and call the <b>pop()</b> function. This can be done like so.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+private <span class="hljs-keyword">KeyCode</span> popKey = <span class="hljs-keyword">KeyCode</span>.P;
+// Update is called once per frame
+void Update () {
+	if (<span class="hljs-keyword">Input</span>.GetKeyDown(popKey)) {
+    <span class="hljs-keyword">BalloonPop</span>.pop();
+    }
+}
+</code>
+</pre>
+                                <blockquote class="challenge">
+                                    <h4 id="challenge-3">Challenge: Change the wait time remotely</h4>
+                                    <p>We have a reference to the BalloonPop script, so what would we have to do change the waitTime variable in it from another script?</p>
+                                </blockquote>
+                                    <p>There's a bug with the above script, can you guess what it is? Specifically, there's a problem with the initilization in the <b>Start()</b> function. What happens if we forget to set the GameObject reference in the Inspector or it somehow becomes unassigned? The script doesn't check for that and quickly fails. In order to prevent this, public variables assigned in the Inspector should always be checked before using.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+public <span class="hljs-keyword">GameObject</span> BalloonRef;
+private <span class="hljs-keyword">BalloonPop</span> popScript;
+// Use this for initialization
+void Start () {
+    if (BalloonRef == null) {
+        <span class="hljs-keyword">Debug</span>.LogError("Balloon object hasn't been set!");
+    }
+}
+</code>
+</pre>
+                                    <p>You should also check the variable before using it in the <i>Update()</i> function as well. </p>
+                                    <p>As mentioned before, there is another way of getting an object reference. You can use <b>GameObject.Find()</b> to get any GameObject within the Scene. Why don't we adapt our Balloon example to use this method? The only thing we have to change is in our Manager script. First, we need to make BalloonRef private so the Inspector doesn't attempt to assign values to it. Next we need to assign the variable with our retrieved object. This can be easily done with the following.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+private GameObject BalloonRef;
+private BalloonPop popScript;
+private KeyCode popKey = KeyCode.P;
+// Use this for initialization
+void Start () {
+    BalloonRef = GameObject.Find("Balloon");
+    if (BalloonRef == null) {
+        Debug.LogError("Balloon object hasn't been set!");
+    }
+    else {
+        popScript = BalloonRef.GetComponent("BalloonPop") as BalloonPop;
+    }
+    //popScript = BalloonRef.GetComponent<BalloonPop>();
+    //Same method as above, just faster
+}
+</code>
+</pre>
+                                <p>Notice how we still check the returned value for null? This happens because <i>Find()</i> doesn't indicate any errors. It simply returns null if it can't find the GameObject. There's also another problem with <i>Find</i>; it's expensive. The <i>Find()</i> function works by searching the entire scene until it finds the name of the GameObject you requested. This is okay if you only ever do it once and you don't have a large scene. If you don't follow this advice, you could see some serious FPS issues with your game.</p>
+                            </div>
+                            <div id="2-conclusion" class="scrollspy-section">
+                                <h2 id="conclusion">Conclusion</h2>
+                                <p>So now you're ready to begin your own scripts in Unity!</p>
+                                <ul>
+                                    <li>We learned important Object Types that Unity uses.</li>
+                                    <li>We learned how to use the Inspector to work with these Objects.</li>
+                                    <li>We learned how to create basic scripts.</li>
+                                    <li>We learned how to communicate between two scripts.</li>
+                                </ul>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="bottom-spacer"></div>
+
+</body>
+</html>
