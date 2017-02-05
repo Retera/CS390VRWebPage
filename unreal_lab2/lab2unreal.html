@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 2.1: Unreal Tutorial
+    <a href="../home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#0-progress0">Locomotion and Perspective</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress1">First Person</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress2">Point and Click</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress3">2.5D Gameplay</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress4">Stationary Cameras</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress5">Switching Levels</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-conclusion">Conclusion</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+  <div id="0-progress0" class="scrollspy-section">
+  </div>
+   <div class="header shadow-down more-padding">
+      <h4>Lab 2.1: Locomotion and Perspective</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+      <div id="1-unity-in-cs390vr" class="scrollspy-section">
+  <h1 class="hide" id="intro-to-ue4">Ureal in CS390VR</h1>
+
+  <p>This lesson will introduce characters that move. At long last, you can navigate your levels!</p>
+  
+  <p>Before we begin, it’s important to remember that movement in virtual reality can cause sickness if not done carefully. Comfort depends on the relationship between <strong>character locomotion</strong> and <strong>camera perspective</strong>. A good character-camera relationship can only come from diligent testing. Wear your headset!</p>
+  
+  <p>Virtual reality requires us to think differently about movement and perspective. We believe our mechanics adequately mitigate simulation sickness, but there’s a great opportunity to innovate here. Don’t hesitate to create whatever characters that work best in your experiences.</p>
+ 
+  <blockquote class="optional">
+    <p><a href="https://www.youtube.com/watch?v=6DgfiDEqfaY" class="blue" target="_blank">This talk</a> by Oculus’ Richard Yao is a great introduction to the perceptual system and HMDs.</p>
+  </blockquote>
+  
+  <p>The locomotion and perspective mechanics we’re going to work with in this lesson are:</p>
+
+  <ul>
+    <li>First Person</li>
+    <li>2.5D</li>
+    <li>Point and Click</li>
+    <li>Stationary Cameras</li>
+  </ul>
+  <hr>
+
+</div>
+<div id="1-progress1" class="scrollspy-section">
+  <h2 id="progress1">First Person</h2>
+
+  <p>Let’s begin with simple first-person movement. This character will move and rotate in the world freely. The camera will be attached in the position of the character’s “head”.</p>
+
+  <p>We generally don’t recommend this kind of character movement because it invariably leads to some sickness. We do, however, appreciate that players find this kind of movement intuitive, so we’ll cover some best practices below.</p>
+
+  <blockquote class="optional">
+    <p>Simulation sickness is often the result of conflict between the visual perception of movement and the non-visual perception of movement.</p>
+  </blockquote>
+  <hr>
+  
+</div>
+<div id="4-ue4-character" class="scrollspy-section sub-section">
+  <h3 id="ue4-character">UE4 Character</h3>
+
+  <p>We can create a new character with UE4’s <b class="blueprint">Character</b> class.</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Lesson4 &gt; FirstPerson &gt; FirstPerson</strong> level</li>
+    <li>Create a new <strong>Character</strong> blueprint named <b class="blueprint">BP_FirstPerson</b></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/create_character_blueprint.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Now we can set our new character as the default player class:</p>
+
+  <ul>
+    <li>Open <strong>FirstPersonGameMode</strong></li>
+    <li>Set <strong>DefaultPawnClass</strong> to <strong>BP_FirstPerson</strong></li>
+  </ul>
+
+  <p><img alt="Set DefaultPawnClass in GameMode" class="not-zoomable small" src="../assets/learn_resources/core_5/5.1.png" /></p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_FirstPerson</b></li>
+  </ul>
+
+  <p>Since we chose <strong>Character</strong> as our parent class, this blueprint comes with a few <strong>inherited</strong> components:</p>
+
+  <p><img alt="Inherited Components" class="not-zoomable small" src="../assets/learn_resources/core_5/fp_inherited_components.png" /></p>
+
+  <ul>
+    <li>The inherited <strong>CharacterMovement</strong> component allows us to easily move our character after adding some inputs and basic movement code.</li>
+    <li>The root <strong>CapsuleComponent</strong> acts as our player’s collision box. It’s already set to the <a href="https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html#vrcharactersettings" class="blue" target="_blank">recommended</a> height of <strong>176cm</strong> and width of <strong>68cm</strong>.</li>
+    <li>We can add a skeletal mesh to the <strong>Mesh</strong> component to define the character’s appearance and animations.</li>
+  </ul>
+
+  <p>Let’s add a camera to the character via a scene component.</p>
+
+  <ul>
+    <li>Add a <strong>Scene</strong> component
+      <ul>
+        <li>Name it <strong>CameraRoot</strong></li>
+        <li>Set location to <strong>[0, 0, 72]</strong></li>
+      </ul>
+    </li>
+    <li>Add a <strong>Camera</strong> component
+      <ul>
+        <li>Check the <strong>Use Pawn Control Rotation</strong> option
+          <ul>
+            <li>This option turns the character to face the direction your HMD is facing.</li>
+          </ul>
+        </li>
+        <li>Uncheck the <strong>Lock to Hmd</strong> option
+          <ul>
+            <li>This was introduced in <strong>4.11</strong> and does not play well with the <strong>Use Pawn Control Rotation</strong> option. We will use it later in the lesson.</li>
+          </ul>
+        </li>
+        <li>Attach it to <strong>CameraRoot</strong> by dragging the camera component on top of the camera root component.</li>
+        <li>Set location to <strong>[0, 0, 0]</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/fp_add_camera.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>The <a href="https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html" class="blue" target="_blank">UE4 VR Best Practices Guide</a> recommends setting the eye height of a first person character to <strong>160cm</strong>.</p>
+
+  <blockquote class="important">
+    <p>The <a href="https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html#vrcharactersettings" target="_blank">first person character guidelines</a> are written to replicate reality. UE4 recommends the player have an average human height, width, and camera (eye) location.</p>
+  </blockquote>
+
+  <p>When the level is played, a <b class="blueprint">BP_FirstPerson</b> character will spawn.</p>
+
+</div>
+<div id="4-character-movement" class="scrollspy-section sub-section">
+  <h3 id="character-movement">Character Movement</h3>
+
+  <p>We can capture user input for movement behavior with <strong>Axis</strong> and <strong>Action Mappings</strong>.</p>
+
+  <blockquote class="important">
+    <p><strong>Action Mappings</strong> capture binary input, like key presses.</p>
+
+    <p><strong>Axis Mappings</strong> capture continuous input, like mouse movement.</p>
+  </blockquote>
+
+  <ul>
+    <li>Open <strong>Settings &gt; Project Settings &gt; Input</strong></li>
+  </ul>
+
+  <p>Our starter project includes some <strong>Axis Mappings</strong> for simple movement input:</p>
+
+  <p><img alt="Player Movement Input Actions" class="zoomable" src="../assets/learn_resources/core_5/5.4.png" /></p>
+
+  <p>Notice that <strong>Scale</strong> is set to <strong>-1.0</strong> for inputs that move the character in the “opposite” direction (in this case backward or left).</p>
+
+  <p>There is an important difference between <strong>TurnRate/LookUpRate</strong> and <strong>Turn/LookUp</strong>. Gamepad and keyboard input is represented with axis values between <strong>-1 and 1</strong>. <strong>Mouse</strong> input is represented with values between <strong>∞ and -∞</strong>. We’ll handle both types of input in our movement script.</p>
+
+  <ul>
+    <li>Open the <b class="blueprint">BP_FirstPerson</b> Event Graph</li>
+    <li>Place an <b class="node event">InputAxis MoveForward</b> event</li>
+    <li>Connect an <b class="node ">Add Movement Input</b> node</li>
+    <li><b class="variable"><i class="detail">MoveForward &gt; </i>Axis Value<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Movement Input &gt; </i>Scale Value</b></li>
+    <li>Place a <b class="node green">Get Actor Forward Vector</b> node</li>
+    <li><b class="variable"><i class="detail">Get Actor Forward Vector &gt; </i>Return Value<i class="pin out connected vector"></i></b><span class="connector vector"></span><b class="variable"><i class="pin in connected vector"></i><i class="detail">Add Movement Input &gt; </i>World Direction</b></li>
+  </ul>
+
+  <p><img alt="MoveForward" class="zoomable" src="../assets/learn_resources/core_5/5.5.png" /></p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAxis MoveRight</b> event</li>
+    <li>Connect an <b class="node ">Add Movement Input</b> node</li>
+    <li><b class="variable"><i class="detail">MoveRight &gt; </i>Axis Value<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Movement Input &gt; </i>Scale Value</b></li>
+    <li>Place a <b class="node green">Get Actor Right Vector</b> node</li>
+    <li><b class="variable"><i class="detail">Get Actor Right Vector &gt; </i>Return Value<i class="pin out connected vector"></i></b><span class="connector vector"></span><b class="variable"><i class="pin in connected vector"></i><i class="detail">Add Movement Input &gt; </i>World Direction</b></li>
+  </ul>
+
+  <p><img alt="MoveRight" class="zoomable" src="../assets/learn_resources/core_5/5.6.png" /></p>
+
+  <p>The character can now move forward, backward, left, and right using the <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys, arrow keys, or gamepad left joystick.</p>
+
+  <p>UE4 <a href="https://docs.unrealengine.com/latest/INT/Platforms/VR/ContentSetup/index.html" class="blue" target="_blank">recommends</a> slow movement speed in VR. We can set a lower speed in the <strong>CharacterMovement</strong> component details panel.</p>
+
+  <ul>
+    <li>Set <strong>CharacterMovement &gt; Max Walk Speed</strong> to <strong>240</strong></li>
+  </ul>
+
+  <blockquote class="optional">
+    <p>We can set other character movement options in the <strong>CharacterMovement</strong> details panel. We can also set these variables in code.</p>
+  </blockquote>
+
+  <p>Let’s add code to allow the player to look up outside of VR.</p>
+
+  <p>We’ll start with mouse turning:</p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAxis Turn</b> event</li>
+    <li>Connect an <b class="node ">Add Controller Yaw Input</b> node</li>
+    <li><b class="variable"><i class="detail">Turn &gt; </i>Axis Value<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Controller Yaw Input &gt; </i>Val</b></li>
+  </ul>
+
+  <p><img alt="Turn" class="zoomable" src="../assets/learn_resources/core_5/5.7.png" /></p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAxis LookUp</b> event</li>
+    <li>Connect an <b class="node ">Add Controller Pitch Input</b> node</li>
+    <li><b class="variable"><i class="detail">LookUp &gt; </i>Axis Value<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Controller Pitch Input &gt; </i>Val</b></li>
+  </ul>
+
+  <p><img alt="LookUp" class="zoomable" src="../assets/learn_resources/core_5/5.8.png" /></p>
+
+  <blockquote class="important">
+    <p>Notice that pitching up and down is automatically disabled for VR comfort.</p>
+  </blockquote>
+
+  <p>Let’s enable rotation for the gamepad and keyboard:</p>
+
+  <ul>
+    <li>Create two new <b class="variable"><i class="pin bar float"></i>Float</b> variables named <strong>BaseTurnRate</strong> and <strong>BaseLookUpRate</strong></li>
+    <li>Set both their default values to <strong>45</strong> (You have to compile before you can set their default values)</li>
+  </ul>
+
+  <p>These variables will be used to set how quickly the gamepad and keyboard change the player’s view.</p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAxis TurnRate</b> event</li>
+    <li>Connect an <b class="node ">Add Controller Yaw Input</b> node</li>
+  </ul>
+
+  <p>Now we use <b class="variable">Axis Value<i class="pin out float"></i></b> to calculate the amount to turn the player.</p>
+
+  <ul>
+    <li>Place a <b class="node green">Float * Float</b> node</li>
+    <li>Click <strong>Add Pin</strong></li>
+    <li>Connect <b class="variable"><i class="detail">TurnRate &gt; </i>Axis Value<i class="pin out float"></i></b> into one of the multiplication inputs.</li>
+    <li>Connect our variable <b class="variable">Base Turn Rate <i class="pin out float"></i></b> into one of the other multiplication inputs.</li>
+    <li>Place a <b class="node green">Get World Delta Seconds</b> and connect it to the last multiplication input.</li>
+    <li><b class="variable">Float * Float<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Controller Yaw Input &gt; </i>Val</b></li>
+  </ul>
+
+  <p>We multiply rotation by <b class="node green">Get World Delta Seconds</b> so that speed does not change with frame rate.</p>
+
+  <p><img alt="TurnRate" class="zoomable" src="../assets/learn_resources/core_5/5.9.png" /></p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAxis LookUpRate</b> event</li>
+    <li>Connect an <b class="node ">Add Controller Pitch Input</b> node</li>
+    <li>Place a <b class="node green">Float * Float</b> node</li>
+    <li>Click <strong>Add Pin</strong></li>
+    <li>Connect <b class="variable"><i class="detail">LookUpRate &gt; </i>Axis Value<i class="pin out float"></i></b> into one of the multiplication inputs.</li>
+    <li>Connect our variable <b class="variable">Base Look Up Rate <i class="pin out float"></i></b> into one of the other multiplication inputs.</li>
+    <li>Place a <b class="node green">Get World Delta Seconds</b> and connect it to the last multiplication input.</li>
+    <li><b class="variable">Float * Float<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Controller Pitch Input &gt; </i>Val</b></li>
+  </ul>
+
+  <p><img alt="LookUpRate" class="zoomable" src="../assets/learn_resources/core_5/5.10.png" /></p>
+
+  <p>We now have full control of the character’s movement in and out of VR.</p>
+
+  <p>Watch out! You might experience some discomfort when rotating with the mouse or joystick. Some viewers find that mouse rotation is more comfortable than joystick rotation. Research suggests that the mouse provides a grounded reference that the joystick cannot provide. It’s believed that this reference helps the viewer better anticipate and conceptualize orientation. Neat!</p>
+
+</div>
+<div id="4-vr-friendly-turning" class="scrollspy-section sub-section">
+  <h3 id="vr-friendly-turning">VR Friendly Turning</h3>
+  <p>If the visual perception of rotation causes pain, we can simply skip rotation with a <strong>jump turn</strong>. Sometimes called a skip, the jump turn allows the player to rotate in discrete radial increments.</p>
+
+  <ul>
+    <li>Open <strong>Settings &gt; Project Settings &gt; Input</strong></li>
+    <li>Review the <strong>Action Mappings</strong>:</li>
+  </ul>
+
+  <p><img alt="JumpTurn Action Mappings" class="zoomable" src="../assets/learn_resources/core_5/5.11.png" /></p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_FirstPerson</b></li>
+    <li>Place an <b class="node event">InputAction JumpTurnRight</b> event</li>
+    <li>Connect Layout’s <b class="node ">Turn VR Player</b> node</li>
+    <li>Set <b class="variable"><i class="pin in float"></i> Delta Yaw Degrees</b> to <strong>20</strong></li>
+  </ul>
+
+  <p><img alt="JumpTurnRight" class="zoomable" src="../assets/learn_resources/core_5/5.12.png" /></p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAction JumpTurnLeft</b> event</li>
+    <li>Connect Layout’s <b class="node ">Turn VR Player</b> node</li>
+    <li>Set <b class="variable"><i class="pin in float"></i> Delta Yaw Degrees</b> to <strong>-20</strong></li>
+  </ul>
+
+  <p><img alt="JumpTurnLeft" class="zoomable" src="../assets/learn_resources/core_5/5.13.png" /></p>
+
+  <p>Use <kbd>Q</kbd> and <kbd>E</kbd> or a gamepad’s shoulder buttons to jump left and right. It can take some getting used to, but many find the jump helps reduce <strong>simulation sickness</strong>.</p>
+
+  <p>Feel free to change the <b class="variable"><i class="pin in float"></i><i class="detail">Turn VR Player &gt; </i> Delta Yaw Degrees</b> amount to find a rotation that feels best.</p>
+
+</div>
+<div id="4-jumping" class="scrollspy-section sub-section">
+  <h3 id="jumping">Jumping</h3>
+
+  <p>Jumping is generally not advisable for VR, but some experiences call for jumps. We’ve provided a jump action mapping with two inputs: <strong>Gamepad Face Button Bottom</strong> and <strong>Space Bar</strong>.</p>
+
+  <p><img alt="Jump input" class="zoomable" src="../assets/learn_resources/core_5/5.14.png" /></p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_FirstPerson</b></li>
+    <li>Place an <b class="node event">InputAction Jump</b> event</li>
+    <li>Place a <b class="node ">Jump</b> node</li>
+    <li>Connect <b class="node event"><i class="detail">Jump &gt; </i>Pressed<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Jump</b></li>
+    <li>Place a <b class="node ">Stop Jumping</b> node</li>
+    <li>Connect <b class="node event"><i class="detail">Jump &gt; </i>Released<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Stop Jumping</b></li>
+  </ul>
+
+  <p><img alt="Jump" class="zoomable" src="../assets/learn_resources/core_5/5.15.png" /></p>
+
+  <p>The <b class="node ">Jump</b> and <b class="node ">Stop Jumping</b> nodes come with the <b class="blueprint">Character</b> class and provide everything we need to make the player jump. Test it out! You can modify how your player jumps in the <strong>CharacterMovement</strong> component details panel.</p>
+
+  <p>Congratulations! You now have a fully functional First Person character that is able to walk and jump in first person.</p>
+
+  <hr />
+
+</div>
+<div id="1-progress2" class="scrollspy-section">
+  <h2 id="progress2">Point and Click</h2>
+
+  <p>As with rotation, locomotion can lead to simulation sickness. We can skip this movement with <strong>teleportation</strong>. Let’s create a mouse cursor that we can target as a teleport destination.</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Lesson4 &gt; PointAndClick &gt; PointAndClick</strong> level</li>
+    <li>Create a new <strong>Character</strong> blueprint named <strong>BP_PointAndClick</strong></li>
+    <li>Open the new <b class="blueprint">BP_PointAndClick</b> blueprint</li>
+    <li>Add a <strong>Scene</strong> component
+      <ul>
+        <li>Name it <strong>CameraRoot</strong></li>
+        <li>Set location to <strong>[0, 0, 72]</strong></li>
+      </ul>
+    </li>
+    <li>Add a <strong>Camera</strong> component
+      <ul>
+        <li>Check the <strong>Use Pawn Control Rotation</strong> option</li>
+        <li>Uncheck the <strong>Lock to Hmd</strong> option</li>
+        <li>Attach it to <strong>CameraRoot</strong> by dragging the camera component on top of the camera root component.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><img alt="Camera Details" class="not-zoomable small" src="../assets/learn_resources/core_5/5.3.png" /></p>
+
+  <ul>
+    <li>Open <b class="blueprint">PointAndClickGameMode</b>
+      <ul>
+        <li>Set the <strong>Default Pawn Class</strong> to <strong>BP_PointAndClick</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+<div id="4-adding-a-mouse-cursor" class="scrollspy-section sub-section">
+  <h3 id="adding-a-mouse-cursor">Adding a Mouse Cursor</h3>
+
+  <ul>
+    <li>Open the new <b class="blueprint">BP_PointAndClick</b> blueprint</li>
+    <li>Add Layout’s <strong>BPC Mouse Cursor</strong> component</li>
+  </ul>
+
+  <p>The <strong>BPC_MouseCursor</strong> requires you to call its <b class="node ">Update</b> function whenever you want to move the mouse. Let’s hook up our mouse movements to this node.</p>
+
+  <blockquote class="optional">
+    <p>The <strong>BPC_MouseCursor</strong> is a component that acts as a wrapper for Layout’s <b class="blueprint">BP_MouseCursor</b>. The <b class="blueprint">BP_MouseCursor</b> projects a 2D mouse position into 3D space and places a reticle at that location. If you’re curious how it is implemented, check out the <b class="blueprint">BP_MouseCursor</b> in <strong>Blueprints &gt; Utility</strong>.</p>
+  </blockquote>
+
+  <ul>
+    <li>Open the Event Graph</li>
+    <li>Drag in a reference to the <strong>BPC_MouseCursor</strong></li>
+    <li>Pull a wire from the <strong>BPC_MouseCursor</strong> and place the <b class="node ">Update</b> node</li>
+    <li><b class="node event">Tick<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Update</b></li>
+  </ul>
+
+  <p>The <b class="node ">Update</b> node has two inputs for the cursor’s <b class="variable"><i class="pin in float"></i>Delta X</b> and <b class="variable"><i class="pin in float"></i>Delta Y</b>. We’re going to use the mouse movement for these inputs, but they could easily be gamepad or key inputs as well.</p>
+
+  <ul>
+    <li>Place a <b class="node green">Get Player Controller</b> node</li>
+    <li>Pull a wire and place a <b class="node green">Get Input Mouse Delta</b></li>
+    <li><b class="variable"><i class="detail">Input Mouse Delta &gt; </i>Delta X<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Update &gt; </i>Delta X</b></li>
+    <li><b class="variable"><i class="detail">Input Mouse Delta &gt; </i>Delta Y<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Update &gt; </i>Delta Y</b></li>
+  </ul>
+
+  <p><img alt="Update BPC_MouseCursor" class="zoomable" src="../assets/learn_resources/core_5/5.16.png" /></p>
+
+  <p>Try it out! When you move your mouse, you’ll see a cursor in the world in 3D space. The cursor’s default behavior is to remain in its location until the mouse moves. At that point, if the cursor is off screen it will recenter itself.</p>
+
+  <p>You may decide that the cursor moves too quickly:</p>
+
+  <blockquote class="challenge" id="challenge-5-01-00">
+    <h4 id="challenge">Challenge:</h4>
+    <p>Change the <b class="variable"><i class="pin in float"></i><i class="detail">Update &gt; </i>Delta X</b> and <b class="variable"><i class="pin in float"></i><i class="detail">Update &gt; </i>Delta Y</b> inputs so that the cursor moves at 1/3 its current speed.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.17.png" /></p>
+  </blockquote>
+
+  <p>The <b class="node ">Update</b> function outputs a <b class="variable">Trace Hit<i class="pin out struct"></i></b> and a <b class="variable">Trace Result<i class="pin out bool"></i></b> as well. We will use these a bit later to decide if we can teleport to that location. Let’s first get teleporting to work!</p>
+
+</div>
+<div id="4-teleporting-to-the-cursor" class="scrollspy-section sub-section">
+  <h3 id="teleporting-to-the-cursor">Teleporting To The Cursor</h3>
+
+  <p>A teleport action mapping is already set in the <strong>Action Mappings</strong> of your project with an input of <strong>Left Mouse Button</strong>.</p>
+
+  <p><img alt="Teleport inputs" class="zoomable" src="../assets/learn_resources/core_5/5.18.png" /></p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_PointAndClick</b>’s Event Graph</li>
+    <li>Place our new <b class="node event">ActionInput Teleport</b> event</li>
+  </ul>
+
+  <p>We need the cursor’s location.</p>
+
+  <ul>
+    <li>Drag down a reference to our <strong>BPC_MouseCursor</strong> component</li>
+    <li>Pull a wire and place a <b class="node ">Get Cursor Location</b></li>
+    <li>Place a <b class="node ">Set Actor Location</b></li>
+    <li><b class="node event">Teleport<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set Actor Location</b></li>
+  </ul>
+
+  <p>To avoid clipping through the ground, we need to set the character’s new location slightly above the location of the cursor. We can do this with some simple math.</p>
+
+  <ul>
+    <li>Place a <b class="node ">Vector + Vector</b> node</li>
+    <li>Connect the <strong>Cursor’s Location</strong> to the first input</li>
+    <li>Right click on the second input on <b class="node ">Vector + Vector</b> and select <strong>Split Struct Pin</strong></li>
+  </ul>
+
+  <p>By splitting the struct pin, we can add just to the <b class="variable"><i class="pin in float"></i>Z</b> without creating a new vector.</p>
+
+  <p>Let’s add the exact amount we need in the <b class="variable"><i class="pin in float"></i>Z</b> direction. That amount would be half the root <strong>CapsuleCompoent</strong>’s height.</p>
+
+  <ul>
+    <li>Place a <b class="node green">Get Scaled Capsue Half Height (CapsuleComponent)</b> node</li>
+    <li>Connect this to the <b class="variable"><i class="pin in float"></i><i class="detail">Vector + Vector &gt; </i>Z</b></li>
+    <li>Connect <b class="variable">Vector + Vector<i class="pin out connected vector"></i></b><span class="connector vector"></span><b class="variable"><i class="pin in connected vector"></i><i class="detail">Set Actor Location &gt; </i>New Location</b></li>
+  </ul>
+
+  <p><img alt="Teleport Player" class="zoomable" src="../assets/learn_resources/core_5/5.19.png" /></p>
+
+  <p>Test it out! You should be able to teleport wherever you click. This isn’t always a good thing. We should only teleport where the player can stand.</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar bool"></i>Boolean</b> variable named <strong>Can Teleport</strong></li>
+  </ul>
+
+  <p>We’re going to set this variable depending on whether or not the cursor is in a location that we can teleport to. Go back to your <b class="node"><i class="detail">BPC Mouse Cursor &gt; </i>Update</b> node.</p>
+
+  <ul>
+    <li>Pull a wire from <b class="variable"><i class="detail">Update &gt; </i>Trace Hit<i class="pin out struct"></i></b> and place an <b class="node green">Is Walkable (CharacterMovement)</b> node.</li>
+    <li>Set <b class="variable"><i class="pin bar bool">Can Teleport</i></b> equal to the output of <b class="node green">Is Walkable (CharacterMovement)</b></li>
+  </ul>
+
+  <p><img alt="Set Can Teleport" class="zoomable" src="../assets/learn_resources/core_5/5.20.png" /></p>
+
+  <blockquote class="challenge" id="challenge-5-02-00">
+    <h4 id="challenge-1">Challenge:</h4>
+    <p>Use the new <b class="variable"><i class="pin bar bool"></i>Can Teleport</b> variable and a <b class="node gray">Branch</b> to only teleport when able.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.21.png" /></p>
+  </blockquote>
+
+  <p>As a player, it is hard to know when you can and can’t teleport. Let’s change the cursor’s color depending on whether or not we can teleport to that location:</p>
+
+  <blockquote class="challenge" id="challenge-5-03-00">
+    <h4 id="challenge-2">Challenge:</h4>
+    <p>To set the cursor’s color:</p>
+
+    <ul>
+      <li>Drag down a reference to the <strong>BPC_MouseCursor</strong></li>
+      <li>Pull a wire and place a <b class="node ">Set Cursor Color</b> node</li>
+    </ul>
+
+    <p>Use this knowledge to set the cursor’s color to indicate whether or not the player can teleport.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.22.png" /></p>
+  </blockquote>
+
+  <p>Sweet! This is a cool way to get around.</p>
+
+</div>
+<div id="4-mouse-jump-turns" class="scrollspy-section sub-section">
+  <h3 id="mouse-jump-turns">Mouse Jump Turns</h3>
+
+  <p>Our character can’t turn without a VR headset. Let’s add a new mechanism for turning your player.</p>
+
+  <p>The <strong>mouse jump turn</strong> is the <strong>jump turn</strong> with mouse input.</p>
+
+  <p>To execute a mouse jump turn, the player will press <strong>Right Mouse Button</strong> and move the mouse left or right. After moving the mouse some set amount, the character will do a jump turn.</p>
+
+  <ul>
+    <li>Place a <b class="node event">Right Mouse Button</b> event</li>
+    <li>Create a new <b class="variable"><i class="pin bar bool"></i>Boolean</b> variable named <strong>Can Turn</strong></li>
+    <li>Set <b class="variable"><i class="pin bar bool"></i>Can Turn</b> to true when <b class="node "><i class="detail">Right Mouse Button &gt; </i>Pressed</b></li>
+    <li>Set <b class="variable"><i class="pin bar bool"></i>Can Turn</b> to false when <b class="node "><i class="detail">Right Mouse Button &gt; </i>Released</b></li>
+  </ul>
+
+  <p><img alt="Can Turn" class="zoomable" src="../assets/learn_resources/core_5/5.23.png" /></p>
+
+  <ul>
+    <li>Place a <b class="node event">InputAxis Turn</b> event</li>
+    <li>Connect a <b class="node gray">Branch</b> conditioned on <b class="variable"><i class="pin bar bool"></i>Can Turn</b></li>
+  </ul>
+
+  <p>Here we need to think about how this will work. The idea is that once we move the mouse enough, we will make a <strong>Jump Turn</strong>. In order to keep track how much our mouse has moved since we pressed the <strong>Right Mouse Button</strong>, we need to create a new variable.</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar float"></i>Float</b> variable named <strong>Turn Mouse Delta</strong></li>
+    <li>Add <b class="variable"><i class="detail">Turn &gt; </i>Axis Value<i class="pin out float"></i></b> to <b class="variable"><i class="pin bar float"></i>Turn Mouse Delta</b> if the player <b class="variable"><i class="pin bool bar"></i>Can Turn</b></li>
+  </ul>
+
+  <p><img alt="Add to turn mouse delta" class="zoomable" src="../assets/learn_resources/core_5/5.24.png" /></p>
+
+  <blockquote class="challenge" id="challenge-5-04-00">
+    <h4 id="challenge-3">Challenge:</h4>
+    <p>If <b class="variable"><i class="pin bar float"></i>Turn Mouse Delta</b> becomes greater than <strong>5</strong>, use <b class="node ">Turn VR Player</b> to turn the player right. Similarly, if <b class="variable"><i class="pin bar float"></i>Turn Mouse Delta</b> becomes less than <strong>-5</strong>, use <b class="node ">Turn VR Player</b> to turn the player left.</p>
+
+    <p>Don’t forget to set <b class="variable"><i class="pin bar float"></i>Turn Mouse Delta</b> back to <strong>0</strong> after turning the player.</p>
+
+    <p>Test it to see that it works!</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.25.png" /></p>
+  </blockquote>
+
+  <p>Great! One thing you may notice when you test is that the cursor acts strangely when we turn with the mouse. Let’s only <b class="node ">Update</b> the cursor when we’re not turning.</p>
+
+  <ul>
+    <li>Insert a <b class="node gray">Branch</b> between <b class="node event">Tick<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Update</b></li>
+    <li>Condition the <b class="node gray">Branch</b> on <b class="variable"><i class="pin bool bar"></i>Can Turn</b></li>
+    <li><b class="node "><i class="detail">Branch &gt; </i>False<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Update</b></li>
+  </ul>
+
+  <p><img alt="Update when not turning" class="zoomable" src="../assets/learn_resources/core_5/5.26.png" /></p>
+
+  <p>Perfect! Now we can turn and teleport with the mouse. Play around in the world to get a feel for this movement scheme.</p>
+
+  <hr />
+
+</div>
+<div id="1-progress3" class="scrollspy-section">
+  <h2 id="progress3">2.5D Gameplay</h2>
+
+  <p>We’ve created two characters in the first person perspective, but this isn’t the only character-camera relationship that works well in VR. Let’s create a new character from the third person perspective. The character will move in what’s called a <strong>2.5D environment</strong>.</p>
+
+  <p>This video demonstrates 2.5D in action:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_follow_player_done.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>The camera is constrained to a plane as the character moves. We’ve designed a level to take advantage of this constraint.</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Lesson4 &gt; 25D &gt; 25D</strong> level</li>
+    <li>Create a new <strong>Character</strong> blueprint named <strong>BP_25DPlayer</strong></li>
+    <li>Open <b class="blueprint">25DGameMode</b>
+      <ul>
+        <li>Set the <strong>Default Pawn Class</strong> to <strong>BP_25DPlayer</strong></li>
+      </ul>
+    </li>
+    <li>Open the new <b class="blueprint">BP_25DPlayer</b> blueprint</li>
+  </ul>
+
+  <p>Since we’ll be in Third Person, we can’t use an invisible character.</p>
+
+  <ul>
+    <li>Select the <strong>Mesh (Inherited)</strong> component
+      <ul>
+        <li>Set <strong>Skeletal Mesh</strong> to <strong>SK_Mannequin</strong></li>
+        <li>Set <strong>Anim Blueprint Generated Class</strong> to <strong>ThirdPerson_AnimBP</strong></li>
+        <li>Set <strong>Location</strong> to <strong>[0, 0, -88]</strong></li>
+        <li>Set <strong>Rotation</strong> to <strong>[0, 0, -90]</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><img alt="Skeletal Mesh" class="not-zoomable small" src="../assets/learn_resources/core_5/5.2.png" /></p>
+
+  <p>With <strong>Skeletal Mesh</strong> and associated <strong>Animation Blueprint</strong>, our player has become a running humanoid.</p>
+
+
+</div>
+<div id="4-possess-an-external-camera" class="scrollspy-section sub-section">
+  <h3 id="possess-an-external-camera">Possess An External Camera</h3>
+
+  <p>How a camera behaves in the third person perspective is critical to comfortable VR. Let’s create a new camera actor that follows the character:</p>
+
+  <ul>
+    <li>Create a new actor blueprint named <strong>BP_25DCamera</strong></li>
+    <li>Open the blueprint and add a <strong>Camera</strong> component</li>
+  </ul>
+
+  <p><img alt="Camera BP" class="zoomable" src="../assets/learn_resources/core_5/25d_create_camera.png" /></p>
+
+  <blockquote class="important">
+    <p>Until now, we haven’t needed to enable the <strong>Lock to Hmd</strong> setting of the camera component. Because the player does not “own” the camera, <strong>Lock to Hmd</strong> should be enabled to ensure that <b class="blueprint">BP_25DCamera</b> tracks head movement.</p>
+  </blockquote>
+
+  <p>In order to possess the external camera, we have to spawn it in the world, then explicitly make it our main camera.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_25DPlayer</b></li>
+  </ul>
+
+  <p>First, lets designate a place to spawn our camera.</p>
+
+  <ul>
+    <li>Add a <strong>Scene Component</strong>
+      <ul>
+        <li>Name it <strong>CameraSpawnPoint</strong></li>
+        <li>Set <strong>Location</strong> to <strong>[0, 600, 150]</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>We need to make sure our Camera spawn facing the right direction. A great way to do this is with an <strong>Arrow Component</strong>.</p>
+
+  <ul>
+    <li>Add an <strong>Arrow Component</strong>
+      <ul>
+        <li>Attach it the the <strong>CameraSpawnPoint</strong> by dragging and dropping it on top</li>
+        <li>Set <strong>Location</strong> to <strong>[0, 0, 0]</strong></li>
+        <li>Set <strong>Arrow Color</strong> to white (this is to prevent it from blending in with the red translation handle)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Now we have an arrow that shows the forward direction of the component it is attached to.</p>
+
+  <p><img alt="Arrow pointing forward" class="zoomable" src="../assets/learn_resources/core_5/25d_arrow_forward.png" /></p>
+
+  <blockquote class="important">
+    <p>The <strong>arrow</strong> component is usually only used for development so it will not show up in the game unless you explicitly tell it to.</p>
+  </blockquote>
+
+  <p>It looks like we have to rotate our <strong>CameraSpawnPoint</strong> to point towards our character.</p>
+
+  <ul>
+    <li>Set <strong>CameraSpawnPoint</strong> rotation to <strong>[0, 0, -90]</strong></li>
+  </ul>
+
+  <p><img alt="Arrow pointing towards player" class="zoomable" src="../assets/learn_resources/core_5/25d_arrow_towards_character.png" /></p>
+
+  <p>Now that our <strong>CameraSpawnPoint</strong> is set up, let’s use its transform to properly spawn our <b class="blueprint">BP_25DCamera</b>.</p>
+
+  <ul>
+    <li>Open the <b class="blueprint">BP_25DPlayer</b> Event Graph</li>
+  </ul>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-4">Challenge:</h4>
+    <p>When the game begins, spawn the <b class="blueprint">BP_25DCamera</b> using the <strong>CameraSpawnPoint</strong>’s world transform.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/25d_spawn_camera_challenge.png" /></p>
+  </blockquote>
+
+  <p>We’ve spawned the camera with the correct transform, now let’s possess the camera! This can be done using the <b class="node ">Set View Target With Blend</b> node:</p>
+
+  <ul>
+    <li>Place a <b class="node green">Get Player Controller</b> node</li>
+    <li>Pull out a wire and place a <b class="node ">Set View Target With Blend</b></li>
+    <li><b class="node ">SpawnActor BP_25DCamera<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set View Target With Blend</b></li>
+    <li><b class="variable"><i class="detail">SpawnActor BP_25DCamera &gt; </i>Return Value<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i>New View Target</b></li>
+  </ul>
+
+  <p><img alt="Possess Camera" class="zoomable" src="../assets/learn_resources/core_5/25d_possess_camera.png" /></p>
+
+  <p>The <b class="node ">Set View Target with Blend</b> node takes any actor as its <b class="variable"><i class="pin object"></i>New View Target</b> and possesses its camera. We’ve now set our camera to the <b class="blueprint">BP_25DCamera</b> actor that we spawned.</p>
+
+  <ul>
+    <li>Go ahead and press <strong>Play</strong> to test it out. Make sure to test it monoscopically and in VR.</li>
+  </ul>
+
+  <p><img alt="View from new camera" class="not-zoomable" src="../assets/learn_resources/core_5/25d_static_camera_view.png" /></p>
+
+</div>
+<div id="4-moving-in-2-5d" class="scrollspy-section sub-section">
+  <h3 id="moving-in-25d">Moving In 2.5D</h3>
+
+  <p>We’ve got a static 2.5D camera set up. Before we program our camera to follow the player, lets program our player to move!</p>
+
+  <ul>
+    <li>Place an <b class="node event">InputAxis MoveRight</b> event</li>
+    <li>Connect an <b class="node ">Add Movement Input</b> node</li>
+    <li><b class="variable"><i class="detail">MoveRight &gt; </i>Axis Value<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Add Movement Input &gt; </i>Scale Value</b></li>
+  </ul>
+
+  <p>For the First Person perspective we used the character’s right vector as the <b class="variable"><i class="pin in vector"></i>World Direction</b>, but that’s not the case here. Instead, we want to move the character along the <strong>Y axis</strong>.</p>
+
+  <ul>
+    <li>Set <b class="variable"><i class="pin in vector"></i>World Direction</b> to <strong>[0, 1, 0]</strong></li>
+  </ul>
+
+  <p><img alt="Move along th Y axis" class="zoomable" src="../assets/learn_resources/core_5/5.29.png" /></p>
+
+  <p>Great, now we can move left and right!</p>
+
+  <blockquote class="challenge" id="challenge-5-05-00">
+    <h4 id="challenge-5">Challenge:</h4>
+    <p>Set up the <b class="node event">InputAxis MoveForward</b> event to move the character along the <strong>X axis</strong>.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.30.png" /></p>
+  </blockquote>
+
+  <p>Test it out. Everything works, but the character doesn’t run in the direction it moves!</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_move_wrong_demo.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Moonwalking is cool, but we should probably fix this:</p>
+
+  <ul>
+    <li>Select the <strong>CharacterMovement</strong> component
+      <ul>
+        <li>Check the <strong>Orient Rotation to Movement</strong> box</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>In order to get the above setting to not be overridden:</p>
+
+  <ul>
+    <li>Select <strong>Class Defaults</strong> in the toolbar</li>
+    <li>In the details panel, uncheck <strong>Use Controller Rotation Yaw</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_set_move_correct.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Now your player should run around the way you expect.</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_move_correct_demo.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <blockquote class="challenge" id="challenge-5-08-00">
+    <h4 id="challenge-6">Challenge:</h4>
+    <p>For fun, add the ability for your character to <strong>Jump</strong>. You already did this for the <strong>First Person</strong> perspective.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.34.png" /></p>
+  </blockquote>
+
+</div>
+<div id="4-following-the-player" class="scrollspy-section sub-section">
+  <h3 id="following-the-player">Following The Player</h3>
+
+  <p>Now that we can move, it’s time to follow the player with our <b class="blueprint">BP_25DCamera</b>.</p>
+
+  <p>For now, we’re going to script some very basic following behavior. Essentially, we’re going to constrain our camera to the <strong>X Axis</strong> while following the player’s <strong>Y and Z</strong> location. It will look like this when we’re done:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_follow_player_done.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Eventually, we’ll be updating the <b class="blueprint">BP_25DCamera</b>’s location on <b class="node event">Tick</b>. We can’t do this until we know where we should position our camera. The math for our camera position looks like:</p>
+
+  <script type="math/tex; mode=display">\begin{equation}
+  \begin{bmatrix}
+  \text{Camera X Location (Axis Constraint)} \\
+  \text{Player Y Location} \\
+  \text{Player Z Location}
+  \end{bmatrix}
+  +
+  \begin{bmatrix}
+  \text{Camera Offset}
+  \end{bmatrix}
+\end{equation}</script>
+
+  <p>The <b class="variable"><i class="pin float bar"></i>Camera X Location</b> is the camera’s original X location in the world. We need this to constrain our camera to the <strong>X Axis</strong>.</p>
+
+  <p>The <b class="variable"><i class="pin vector bar"></i>Camera Offset</b> is the camera’s relative offset from the player.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-7">Challenge:</h4>
+    <p>Take your time to think about the math, then make it happen! Your challenge is to write the code to get the camera to follow the player in a 2.5D fasion.</p>
+
+    <p><em>Warning: this challenge is not trivial. Give it some time before you decide you can’t do it.</em></p>
+
+    <p>You’ll need to store two variables when the camera is spawned on <b class="node event">BeginPlay</b>: <b class="variable"><i class="pin float bar"></i>Camera X Location</b> and <b class="variable"><i class="pin vector bar"></i>Camera Offset</b></p>
+
+    <p>To calculate the <b class="variable"><i class="pin vector bar"></i>Camera Offset</b>:</p>
+
+    <script type="math/tex; mode=display">\begin{equation}
+  \begin{bmatrix}
+  \text{Camera Offset}
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+  \text{Camera Location}
+  \end{bmatrix}
+  -
+  \begin{bmatrix}
+  \text{Player Location}
+  \end{bmatrix}
+\end{equation}</script>
+
+    <p>On <b class="node event">Tick</b> you’ll have to use the player’s location and your two variables to set the <b class="blueprint">BP_25DCamera</b>’s Location using <b class="node ">SetActorLocation</b></p>
+
+    <p>Hint: You need to use <strong>Split Struct</strong> on your vector pins and/or a <b class="node green">Break Vector</b> node to isolate <strong>X</strong>, <strong>Y</strong>, and <strong>Z</strong> values.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/25d_follow_player_challenge.png" /></p>
+  </blockquote>
+
+  <p>Awesome! Our 2.5D perspective is complete. It should work like this:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_follow_player_done.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+</div>
+<div id="4-using-a-spring-arm" class="scrollspy-section sub-section">
+  <h3 id="using-a-spring-arm">Using A Spring Arm</h3>
+
+  <p>Our camera makes no attempt to smooth movement. With the <strong>Spring Arm</strong> component, we can to dampen sudden changes in location.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_25DCamera</b></li>
+    <li>Add a <strong>Spring Arm</strong> component</li>
+  </ul>
+
+  <p>A <strong>Spring Arm</strong> is like a flexible <a href="https://www.google.com/search?q=camera+boom&amp;espv=2&amp;biw=1193&amp;bih=801&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjp4Yjus_3LAhVO0WMKHYl2Bt4Q_AUIBygC&amp;dpr=1">camera boom</a>. As the boom moves, an attached camera will slowly accelerate to follow.</p>
+
+  <ul>
+    <li>Attach the <strong>Camera</strong> component to the <strong>Spring Arm</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_attach_spring_arm.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>The camera will automatically attach itself to the “end” of the arm.</p>
+
+  <ul>
+    <li>Set the <strong>Spring Arm</strong>’s <strong>Target Arm Length</strong> to <strong>50</strong></li>
+  </ul>
+
+  <p>We set the flexibility of the <strong>Spring Arm</strong> with the <strong>Camera Lag</strong> setting.</p>
+
+  <ul>
+    <li>Check the <strong>Spring Arm</strong>’s <strong>Enable Camera Lag</strong> option</li>
+  </ul>
+
+  <p><img alt="Spring Arm Settings" class="not-zoomable small" src="../assets/learn_resources/core_5/25d_spring_arm_settings.png" /></p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_camera_lag_finished.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>You can adjust the amount of camera lag using the <strong>Camera Lag Speed</strong> option. Tweak your <strong>Spring Arm</strong> settings until you’re comfortable!</p>
+
+</div>
+<div id="4-shrinking-the-world" class="scrollspy-section sub-section">
+  <h3 id="shrinking-the-world">Shrinking The World</h3>
+
+  <p>Many third person VR experiences take place in small environments. When the world is small, players move greater distances with positional tracking. The effect this has on immersion is better experienced than explained.</p>
+
+  <ul>
+    <li>Open the <strong>Settings</strong> menu from the <strong>Level Editor</strong> toolbar</li>
+    <li>Select <strong>World Settings</strong></li>
+    <li>In the <strong>VR</strong> category of the details panel, set <strong>World to Meters</strong> to <strong>500</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/25d_world_to_meters.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>With one setting, we’ve scaled environment elements to 1/5 their normal size. We’ve also effectively increased the virtual <strong>interpupilary distance</strong>. Commonly referred to as IPD, interpupulary distance is the distance between a person’s eyes. As this distance increases, viewed objects appear smaller.</p>
+
+</div>
+<div id="4-resetting-the-hmd" class="scrollspy-section sub-section">
+  <h3 id="resetting-the-hmd">Resetting The HMD</h3>
+
+  <p>It’s useful to reset a player’s orientation and location relative to the virtual environment.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_25DPlayer</b></li>
+  </ul>
+
+  <p>We’ve added an <strong>Axis Mapping</strong> called <strong>ResetHMD</strong> that fires on <kbd>Tab</kbd> and <strong>Gamepad Special Left</strong>.</p>
+
+  <ul>
+    <li>Place a <b class="node event">ResetHMD</b> event</li>
+    <li>Place a <b class="node ">Reset Orientation and Position</b> node</li>
+    <li><b class="node event"><i class="detail">ResetHMD &gt; </i> Pressed<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Reset Orientation and Position</b></li>
+  </ul>
+
+  <p><img alt="reset hmd" class="zoomable" src="../assets/learn_resources/core_5/25d_reset_hmd.png" /></p>
+
+  <p>Beautiful! Now whenever you press <kbd>Tab</kbd> or <strong>Gamepad Special Left</strong>, your HMD’s origin will be reset.</p>
+
+  <hr />
+
+</div>
+<div id="1-progress4" class="scrollspy-section">
+  <h2 id="progress4">Stationary Cameras</h2>
+
+  <p>We can disable player movement entirely with stationary cameras. As a character moves through the level, we can automatically switch the player between perspectives for the best point of view.</p>
+
+  <p>Watch this video to get a better idea of this character-camera relationship:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/stationary_camera_preview.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>We’ve colored the camera trigger boxes pink in this video, but they’ll be invisible in your game.</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Lesson4 &gt; StationaryCameras &gt; StationaryCameras</strong> level</li>
+  </ul>
+
+  <p>This type of gameplay is similar to 2.5D in that we’ll be using external cameras rather than the player’s camera. Instead of using one camera, we’ll place several throughout the level, then switch between them. To start, let’s create a camera actor that we can place in our world:</p>
+
+  <ul>
+    <li>Create a new actor blueprint named <strong>BP_VRCamera</strong></li>
+    <li>Add a <strong>Camera</strong> component</li>
+  </ul>
+
+  <p>That’s it for now!</p>
+
+  <ul>
+    <li>Place a <b class="blueprint">BP_VRCamera</b> somewhere in the world facing the <strong>PlayerStart</strong>. We need it facing player start so we can see our character when we play the game.</li>
+  </ul>
+
+  <blockquote class="important">
+    <p>When you place your <b class="blueprint">BP_VRCamera</b>, make sure to not rotate its pitch. We’ll demo why at the end of this section.</p>
+  </blockquote>
+
+  <p><img alt="BP_VRCamera in world" class="zoomable" src="../assets/learn_resources/core_5/sc_camera_in_world.png" /></p>
+
+  <p>If you press play now, you won’t get good results. The problem is that we haven’t possessed our new camera.</p>
+
+  <ul>
+    <li>Open the <b class="blueprint">BP_SwitchCameraCharacter</b> which has been premade for you with basic movement and jumping mechanics.</li>
+    <li>Place a new custom event named <strong>SwitchCamera</strong>
+      <ul>
+        <li>Add a <b class="blueprint">BP_VRCamera</b> input named <strong>NewCamera</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><img alt="SwitchCamera event" class="zoomable" src="../assets/learn_resources/core_5/5.35.png" /></p>
+
+  <ul>
+    <li>Place a <b class="node green">Get Player Controller</b> node</li>
+    <li>Pull a wire and place a <b class="node ">Set View Target with Blend</b></li>
+    <li><b class="node event">SwitchCamera<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set View Target with Blend</b></li>
+    <li><b class="variable">New Camera<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i>New View Target</b></li>
+  </ul>
+
+  <p><img alt="SwitchCamera with code" class="zoomable" src="../assets/learn_resources/core_5/5.36.png" /></p>
+
+  <p>Remember, the <b class="node ">Set View Target with Blend</b> is what sets our new camera perspective. It takes any actor as its <b class="variable"><i class="pin object in"></i>New View Target</b> and possesses its camera.</p>
+
+  <p>The last thing we need to do is fire our new <b class="node event">SwitchCamera</b> event from the level blueprint.</p>
+
+  <ul>
+    <li>Open the <strong>Level Blueprint</strong></li>
+    <li>Place a <b class="node green">Get Player Character</b> node</li>
+    <li>Connect it to a <b class="node ">Cast to BP_SwitchCameraCharacter</b> node</li>
+    <li><b class="node event">BeginPlay<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Cast to BP_SwitchCameraCharacter</b></li>
+    <li>Pull a wire from <b class="variable">As BP_SwitchCameraCharacter<i class="pin out object"></i></b> and place a <b class="node ">SwitchCamera</b> node</li>
+    <li>Connect <b class="node ">Cast to…<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>SwitchCamera</b></li>
+    <li>Get a reference to the <b class="blueprint">BP_VRCamera</b> you placed earlier. Do this by selecting the <b class="blueprint">BP_VRCamera</b> in the world and then right clicking in the <strong>Level Blueprint</strong> and select <strong>Create a Reference to BP_VRCamera</strong>.</li>
+    <li>Connect <b class="variable">BP_VRCamera<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i><i class="detail">SwitchCamera &gt; </i>NewCamera</b></li>
+  </ul>
+
+  <p><img alt="switch camera on game start" class="zoomable" src="../assets/learn_resources/core_5/5.37.png" /></p>
+
+  <p>We mentioned that you should <strong>never</strong> pitch cameras in VR. Don’t believe us? Go ahead and try it for yourself!</p>
+
+  <ul>
+    <li>Set the pitch rotation of <b class="blueprint">BP_VRCamera</b> to something other than <strong>0</strong> and test in VR.
+      <ul>
+        <li>Try not to get sick</li>
+      </ul>
+    </li>
+    <li>Undo! Undo!</li>
+  </ul>
+
+</div>
+
+<div id="4-monoscopic-camera-movement" class="scrollspy-section sub-section">
+  <h3 id="monoscopic-camera-movement">Monoscopic Camera Movement</h3>
+
+  <p>We need to enable automatic camera movement when the player is not in VR.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_VRCamera</b></li>
+    <li>Place a <b class="node green">Is Head Mounted Display Enabled</b> node</li>
+    <li>Place a <b class="node gray">Branch</b> conditioned on <b class="node green">Is Head Mounted Display Enabled</b></li>
+    <li><b class="node event">Tick<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node gray"><i class="pin execution in"></i>Branch</b></li>
+  </ul>
+
+  <p><img alt="is HMD enabled" class="zoomable" src="../assets/learn_resources/core_5/5.38.png" /></p>
+
+  <p>The strategy is simple: every frame, we update the camera’s rotation to point toward the player.</p>
+
+  <blockquote class="challenge" id="challenge-5-09-00">
+    <h4 id="challenge-8">Challenge:</h4>
+    <p>Rotate <b class="blueprint">BP_VRCamera</b> to follow the player character every frame. Only rotate if the HMD is <em>not</em> enabled.</p>
+
+    <p>To set <b class="blueprint">BP_VRCamera</b>’s rotation, use the <b class="node ">Set Actor Rotation</b> node.</p>
+
+    <p>To calculate the proper rotation for the camera, use the <b class="node green">Find Look at Rotation</b> node. You’ll want the rotation <strong>from</strong> <b class="blueprint">BP_VRCamera</b> <strong>to</strong> the player.</p>
+
+    <p>To get the <b class="blueprint">BP_VRCamera</b>’s location, use the <b class="node ">Get Actor Location</b> node.</p>
+
+    <p>To get the player character’s location, use <b class="node green">Get Player Pawn<i class="pin out connected object"></i></b><span class="connector object"></span><b class="node green"><i class="pin in connected object"></i>Get Actor Location</b></p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.39.png" /></p>
+  </blockquote>
+
+  <p>Test without the HMD. The camera should follow the player character wherever it goes.</p>
+
+  <p>Thanks to <strong>Lock to Hmd</strong>, our camera automatically works in VR. This means we don’t have to execute anything on <strong>false</strong>.</p>
+
+</div>
+<div id="4-player-movement" class="scrollspy-section sub-section">
+  <h3 id="player-movement">Player Movement</h3>
+
+  <p>We now have a possess-able camera actor that works both in and out of VR. One thing you may notice, controlling the character feels strange. Let’s see what we can do to make it feel more natural.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_SwitchCameraCharacter</b></li>
+  </ul>
+
+  <p>Currently, the movement code is using hard coded <b class="variable"><i class="pin in vector"></i>World Direction</b> values. Let’s see how it feels to use the forward and right vectors of our current camera. To start, we have to store our current camera.</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar object"></i>BP_VRCamera</b> variable named <strong>CurrentCamera</strong></li>
+    <li>At the end of the <b class="node event">SwitchCamera</b> event, set <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> equal to <b class="variable"><i class="detail">SwitchCamera &gt; </i>New Camera<i class="pin out object"></i></b></li>
+  </ul>
+
+  <p><img alt="set currentcamera" class="zoomable" src="../assets/learn_resources/core_5/5.42.png" /></p>
+
+  <p>We need to get the camera’s forward and right vectors as input for the <b class="variable"><i class="pin in vector"></i>World Direction</b>s in our movement code.</p>
+
+  <ul>
+    <li>Get a reference to the <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> variable</li>
+    <li>Pull a wire and place a <b class="node ">Get Actor Forward Vector</b></li>
+    <li><b class="variable"><i class="detail">Get Actor Forward Vector</i> &gt; Return Value<i class="pin out connected vector"></i></b><span class="connector vector"></span><b class="variable"><i class="pin in connected vector"></i><i>Add Movement Input</i> &gt; World Direction</b></li>
+    <li>Do the same for the <strong>Right Vector</strong></li>
+  </ul>
+
+  <p><img alt="Camera forward vector" class="zoomable" src="../assets/learn_resources/core_5/5.43.png" /></p>
+
+  <p>Test it out! Moving around should feel better.</p>
+
+  <p>There is one difficult-to-spot bug in this code. If you look down while wearing your HMD, your player will run slower. This is because your camera’s forward vector starts pointing downward, which makes your player character try to run downwards too.</p>
+
+  <p>To fix this, we need to ignore the <strong>Pitch</strong> and <strong>Roll</strong> of the camera’s rotation. We only want the Forward and Right Vectors from the camera’s <strong>Yaw</strong> rotation.</p>
+
+  <ul>
+    <li>Delete <b class="node ">Get Actor Forward Vector</b> and <b class="node ">Get Actor Right Vector</b></li>
+    <li>Pull a wire from <b class="variable">CurrentCamera<i class="pin out object"></i></b> and place a <b class="node ">Get Actor Rotation</b> node.</li>
+    <li>Right click the output and select <strong>Split Struct Pin</strong></li>
+    <li>Place a <b class="node green">Make Rotator</b> node</li>
+    <li>Connect <b class="variable"><i class="detail">Get Actor Rotation &gt; </i>Return Value Z (Yaw)<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Make Rotator &gt; </i>Z (Yaw)</b></li>
+  </ul>
+
+  <p><img alt="Isolate the Yaw" class="zoomable" src="../assets/learn_resources/core_5/5.44.png" /></p>
+
+  <p>We’ve now isolated the <strong>Yaw</strong> rotation of <b class="variable"><i class="pin bar object"></i>CurrentCamera</b>.</p>
+
+  <ul>
+    <li>Pull a wire from <b class="variable"><i class="detail">Make Rotator &gt; </i>Return Value<i class="pin out rotation"></i></b> and place a <b class="node ">Get Forward Vector</b> node.</li>
+    <li>Do the same for a <b class="node ">Get Right Vector</b> node</li>
+    <li>Connect the Forward and Right Vectors into the correct <b class="node ">Add Movement Input</b> nodes.</li>
+  </ul>
+
+  <p><img alt="Proper Forward and Right vectors" class="zoomable" src="../assets/learn_resources/core_5/5.45.png" /></p>
+
+</div>
+<div id="4-switching-cameras" class="scrollspy-section sub-section">
+  <h3 id="switching-cameras">Switching Cameras</h3>
+
+  <p>Let’s add new cameras to the level and switch between them.</p>
+
+  <ul>
+    <li>Create a new actor blueprint named <strong>BP_SwitchCameraTrigger</strong></li>
+    <li>Add a <strong>Box Collision</strong> component</li>
+    <li>Right click the <strong>Box Collision</strong> component and select <strong>Add Event &gt; Add OnComponentBeginOverlap</strong></li>
+  </ul>
+
+  <p><img alt="Box Trigger with event" class="zoomable" src="../assets/learn_resources/core_5/5.46.png" /></p>
+
+  <p>This trigger will work by telling <b class="blueprint">BP_SwitchCameraCharacter</b> to <b class="node event">SwitchCamera</b> when the player overlaps the trigger. This means the trigger needs to store a reference to the new camera actor.</p>
+
+  <ul>
+    <li>Create a new <b>BP_VRCamera &gt; Reference</b> variable named <strong>TargetCamera</strong>
+      <ul>
+        <li>Check the <strong>Editable</strong> box</li>
+      </ul>
+    </li>
+    <li>Compile</li>
+  </ul>
+
+  <p>By making this variable <strong>Editable</strong> (more commonly known as <strong>Public</strong>), we can change its value from within the editor.</p>
+
+  <ul>
+    <li>Place a second <b class="blueprint">BP_VRCamera</b> somewhere in your world.</li>
+    <li>Place a <b class="blueprint">BP_SwitchCameraTrigger</b> where you think appropriate. When your player character runs into it, imagine switching to your new camera view.
+      <ul>
+        <li>Scale the trigger so it’s impossible to miss</li>
+        <li>In the details panel, select the proper <strong>Target Camera</strong> from the drop down. You want to choose the camera that your player’s view will change to when overlapping the trigger box.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Time to add the code to switch cameras in the <b class="blueprint">BP_SwitchCameraTrigger</b>. We’ll do something very similar to what we did in the <strong>Level Blueprint</strong></p>
+
+  <blockquote class="challenge" id="challenge-5-10-00">
+    <h4 id="challenge-9">Challenge:</h4>
+    <p>When the <b class="blueprint">BP_SwitchCameraTrigger</b> is overlapped, we want to check if it was the player that overlapped, then call <b class="node">SwitchCamera</b> if it was. Switch the camera to the trigger’s <b class="variable"><i class="pin bar object"></i>Target Camera</b>.</p>
+
+    <p>Use <b class="node ">Cast to BP_SwitchCameraCharacter</b> to check if <b class="variable"><i class="detail">OnComponentBeginOverlap (Box) &gt; </i>Other Actor<i class="pin out object"></i></b> is actually the player character.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/5.47.png" /></p>
+  </blockquote>
+
+  <p>Switching cameras is now fully functional. It’s up to you to place more <b class="blueprint">BP_VRCamera</b>s and their associated <b class="blueprint">BP_SwitchCameraTrigger</b>s throughout the level.</p>
+
+</div>
+<div id="4-fading-between-cameras" class="scrollspy-section sub-section">
+  <h3 id="fading-between-cameras">Fading Between Cameras</h3>
+
+  <p>Fading between cameras can improve comfort. We’ll use a <strong>timeline</strong> and <b class="node ">Set Manual Camera Fade</b>.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_SwitchCameraCharacter</b></li>
+  </ul>
+
+  <p>We’ll make our fade wrap around the <b class="node event">SwitchCamera</b> event. When the event fires, we’ll fade the scene out, switch cameras, then fade back in.</p>
+
+  <p>This means we have to insert our fade to black code in between <b class="node event">SwitchCamera<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set View Target with Blend</b>:</p>
+
+  <ul>
+    <li>Create a new <strong>Timeline</strong> that curves a float track from 0 to 1 over 1 second
+      <ul>
+        <li>To create the timeline, right-click and search “Add Timeline”</li>
+        <li>Name the timeline <strong>FadeToBlack</strong></li>
+        <li>If you need a refresher on how to edit a timeline, it was discussed in the <a href="core_3.html#3-pop-up-target" target="_blank">Pop-Up Target section of Lesson 3</a></li>
+      </ul>
+    </li>
+    <li><b class="node event">SwitchCamera<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i><i class="detail">FadeToBlack &gt; </i> Play from Start</b></li>
+  </ul>
+
+  <p>Now we need to use our timeline’s output to fade the scene to black.</p>
+
+  <ul>
+    <li>Place a <b class="node green">Get Player Camera Manager</b> node</li>
+    <li>Pull out a wire and place a <b class="node ">Set Manual Camera Fade</b> node</li>
+    <li><b class="node "><i class="detail">FadeToBlack &gt; </i>Update<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set Manual Camera Fade</b></li>
+    <li><b class="variable"><i class="detail">FadeToBlack &gt; </i>Data<i class="pin out connected float"></i></b><span class="connector float"></span><b class="variable"><i class="pin in connected float"></i><i class="detail">Set Manual Camera Fade &gt; </i>In Fade Amount</b></li>
+    <li><b class="node "><i class="detail">FadeToBlack &gt; </i>Finished<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set View Target with Blend</b></li>
+  </ul>
+
+  <p><img alt="Fade to black on camera switch" class="zoomable" src="../assets/learn_resources/core_5/sc_fade_to_black.png" /></p>
+
+  <p>We now fade to black, then switch the camera. All we have to do is fade back in!</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-10">Challenge:</h4>
+    <p>Using the same techniques we used to fade the camera to black, write some code to fade the camera back in after switching to the new view target.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/sc_fade_from_black_challenge.png" /></p>
+  </blockquote>
+
+  <p>Our camera transition is functional, but there’s a bug hidden here.</p>
+
+  <p>First, if <b class="node event">SwitchCamera</b> attempts to switch us to the same camera, we’ll fade in/out for no reason.</p>
+
+  <blockquote class="challenge" id="challenge-5-11-00">
+    <h4 id="challenge-11">Challenge:</h4>
+    <p>Insert a <b class="node gray">Branch</b> in front of everything that checks whether or not <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> is equal to <b class="variable"><i class="detail">SwitchCamera &gt; </i>New Camera<i class="pin out object"></i></b> using <b class="node ">==</b>. If it is, don’t do anything.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/sc_check_camera_equality_challenge.png" /></p>
+  </blockquote>
+
+  <p>Second, when we first start the game, we fade out from some unknown camera (it is in fact the player’s default camera), then fade back in to the one we want to start on. Let’s skip the undesired fade out from unknown camera at the beginning.</p>
+
+  <p>The best way to skip the unwanted behavior is to check if the have a <b class="variable"><i class="pin bar object"></i>CurrentCamera</b>. At the very start of the game, we don’t have a <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> and can thus choose to skip the fade to black and jump straight to switching cameras and fading in.</p>
+
+  <p>We can check if we have a <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> using the <b class="node gray">Is Valid?</b> node.</p>
+
+  <ul>
+    <li>Pull a wire from <b class="node gray"><i class="detail">Branch &gt; </i>False</b> and place a <b class="node gray">Is Valid?</b> node</li>
+    <li>Connect a reference to <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> to <b class="variable"><i class="pin in object"></i><i class="detail">Is Valid &gt; </i>Input Object</b>.</li>
+  </ul>
+
+  <p>If the <b class="variable"><i class="pin bar object"></i>CurrentCamera</b> <strong>Is Valid</strong>, we should continue on as normal. Otherwise, we should skip the fading part and jump right to <b class="node ">Set View Target with Blend</b>.</p>
+
+  <ul>
+    <li><b class="node gray"><i class="detail">Is Valid &gt; </i>Is Valid<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>FadeToBlack</b></li>
+    <li><b class="node gray"><i class="detail">Is Valid &gt; </i>Is Not Valid<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set View Target with Blend</b></li>
+  </ul>
+
+  <p><img alt="Checking Is Valid" class="zoomable" src="../assets/learn_resources/core_5/sc_check_camera_is_valid.png" /></p>
+
+  <p>Go ahead and press that <strong>Play</strong> button! The fading should work perfectly.</p>
+
+  <p>Effective use of this character-camera relationship requires careful level design and good camera/trigger placement. Be thoughtful!</p>
+
+  <blockquote class="important">
+    <h5 id="a-note-on-controls">A Note On Controls</h5>
+
+    <p>You may have noticed that the controls aren’t entirely intuitive, and definitely don’t feel great when you switch cameras. There are a number of ways to improve the control scheme of this perspective, and with some tweaking, you can have it working exactly as you want. We’ll leave the implementation up to you.</p>
+  </blockquote>
+
+  <hr />
+
+</div>
+<div id="1-progress5" class="scrollspy-section">
+  <h2 id="progress5">Switching Levels</h2>
+
+    <p>You now have 4 great locomotion/perspective demos. We’re going to take this as an opportunity to learn about loading new levels. By the end, you’ll be able to demo each map in one playthrough. To do this, we’ll put a “portal” at the end of each map that links each map together.</p>
+
+</div>
+
+<div id="4-bp_portal" class="scrollspy-section sub-section">
+  <h3 id="bpportal">BP_Portal</h3>
+
+  <p>We’ve set up a blueprint in <strong>Lessons &gt; Lesson4</strong> called <b class="blueprint">BP_Portal</b>. It is currently just some static meshes and a public variable. Let’s make this portal load the next level for us when our character gets close.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_Portal</b> in <strong>Lessons &gt; Lesson4</strong></li>
+  </ul>
+
+  <p>We first need to add a collision box that will fire an overlap event when our player gets close.</p>
+
+  <ul>
+    <li>Add a <strong>Box Collision</strong> component
+      <ul>
+        <li>Set <strong>Location</strong> to <strong>[0, 50, 100]</strong></li>
+        <li>Set <strong>Box Extent</strong> to <strong>[100, 100, 100]</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><img alt="box collision" class="zoomable" src="../assets/learn_resources/core_5/portal_box_collision.png" /></p>
+
+  <p>This <strong>Box Collision</strong> can be used to fire an overlap event whenever our player collides with it. This is how we’ll know when to switch levels.</p>
+
+  <p>Let’s add a collision event specific to our <strong>Box Collision</strong> component:</p>
+
+  <ul>
+    <li>Right click the <strong>Box</strong> component</li>
+    <li>Select <strong>Add Event &gt; Add OnComponentBeginOverlap</strong></li>
+  </ul>
+
+  <p>A new event was added to our event graph! This event will only fire when the <strong>Box</strong> component is collided with.</p>
+
+  <p><img alt="box collision event" class="zoomable" src="../assets/learn_resources/core_5/portal_collision_event.png" /></p>
+
+  <blockquote class="important">
+    <p>Using collision components like our <strong>Box Collision</strong> is an extremely powerful scripting pattern in UE4. You’ll find that you use it all the time to trigger events and behaviors.</p>
+  </blockquote>
+
+  <p>When the <strong>Box</strong> is collided with, we want to open the new level. To do that, we use the <b class="node ">Open Level</b> node.</p>
+
+  <ul>
+    <li><b class="node event">OnComponentBeginOverlap (Box)<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Open Level</b></li>
+  </ul>
+
+  <p>The <b class="node ">Open Level</b> node has a <b class="variable"><i class="pin string"></i>Level Name</b> input. Here we’re going to use the <b class="blueprint">BP_Portal</b>’s public variable <b class="variable"><i class="pin bar string"></i>LevelName</b> as its imput. Now we can reuse the <b class="blueprint">BP_Portal</b>, no matter what level we want to load.</p>
+
+  <ul>
+    <li>Get a reference to <b class="variable"><i class="pin string bar"></i>LevelName</b></li>
+    <li><b class="variable">LevelName<i class="pin out connected string"></i></b><span class="connector string"></span><b class="variable"><i class="pin in connected string"></i><i class="detail">Open Level &gt; </i>Level Name</b></li>
+  </ul>
+
+  <p><img alt="open level" class="zoomable" src="../assets/learn_resources/core_5/portal_open_level.png" /></p>
+
+  <p>Now let’s test out our portal:</p>
+
+  <ul>
+    <li>Open the <strong>FirstPerson</strong> map</li>
+    <li>Place the portal at the end of the level</li>
+    <li>Set the portal’s <strong>Level Name</strong> to <strong>PointAndClick</strong> in the <strong>Details</strong> panel</li>
+  </ul>
+
+  <p><img alt="Portal in Level" class="zoomable" src="../assets/learn_resources/core_5/portal_in_level.png" /></p>
+
+  <p>Press <strong>Play</strong> and test it out!</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_5/portal_without_fade.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p><em>Nice!</em> Now you can add the portal to <strong>PointAndClick</strong> and <strong>25D</strong>. Just make sure each portal points to the next level.</p>
+
+  <p>One thing you may notice is that when we switch levels, the engine tends to lag as it loads up the new files. A laggy HMD is a great way to make your player nauseas. To fix this, we should fade out, then back in, just like we did with the <strong>Stationary Cameras</strong>.</p>
+
+</div>
+<div id="4-fading-between-levels" class="scrollspy-section sub-section">
+  <h3 id="fading-between-levels">Fading Between Levels</h3>
+
+  <p>In <strong>Stationary Cameras</strong>, we faded our camera out using a <strong>Timeline</strong> and the <b class="node ">Set Manual Camera Fade</b> node. Rather than using a <strong>Timeline</strong>, let’s use UE4’s built in <b class="node ">Start Camera Fade</b> node.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_Portal</b></li>
+  </ul>
+
+  <p>Let’s add the code to fade out before opening the new level:</p>
+
+  <ul>
+    <li>Place a <b class="node green">Get Player Camera Manager</b> node</li>
+    <li>Pull out a wire and place the <b class="node ">Start Camera Fade</b> node
+      <ul>
+        <li>Set <b class="variable"><i class="pin float"></i>From Alpha</b> to <strong>0</strong></li>
+        <li>Set <b class="variable"><i class="pin float"></i>To Alpha</b> to <strong>1</strong></li>
+        <li>Set <b class="variable"><i class="pin float"></i>Duration</b> to <strong>1</strong></li>
+        <li>Check <b class="variable"><i class="pin bool"></i>Hold When Finished</b></li>
+      </ul>
+    </li>
+    <li><b class="node event">OnComponentBeginOverlap (Box)<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Start Camera Fade</b></li>
+  </ul>
+
+  <p><img alt="start camera fade" class="zoomable" src="../assets/learn_resources/core_5/portal_start_camera_fade.png" /></p>
+
+  <p>The <b class="node ">Start Camera Fade</b> node does not block until it’s finished. For this reason, we have to use a <b class="node ">Delay</b> node to wait until the fade finishes, then switch levels using <b class="node ">Open Level</b></p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-12">Challenge:</h4>
+    <p>Use a <b class="node ">Delay</b> node to wait for the camera fade to finish. Then switch levels using <b class="node ">Open Level</b>.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/portal_delay_challenge.png" /></p>
+  </blockquote>
+
+  <p>Marvelous! Now when we switch levels the current world fades out before switching to the new map. One problem, the new level needs to fade in!</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-13">Challenge:</h4>
+    <p>Using the <strong>Level Blueprint</strong> of each level, fade the camera in on <b class="node event">Begin Play</b>.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_5/portal_fade_in_challenge.png" /></p>
+  </blockquote>
+
+  <p>There it is! All your levels should now link up and seamlessly fade between each other once you reach the portal at the end.</p>
+
+  <hr />
+
+</div>
+<div id="1-conclusion" class="scrollspy-section">
+  <h2 id="conclusion">Conclusion</h2>
+
+  <p>We’ve created four characters with unique character-camera relationships. Some of these characters are more VR-friendly than others, but each has its advantages and disadvantages. VR is a vast and largely unexplored frontier. Our guidelines are only suggestions. This is your opportunity to experiment and innovate.</p>
+
+  <p>To read more on suggested VR practices, check out the <a href="https://developer.oculus.com/documentation/intro-vr/latest/concepts/bp_intro/" class="blue">Oculus Documentation</a>.</p>
+
+  <p>In UE4, you now have the skills to:</p>
+
+  <ul>
+    <li>Create a character that moves using the <strong>CharacterMovement</strong> component</li>
+    <li>Use your mouse in game to interact with a 3D world</li>
+    <li>Possess external cameras for Third Person experiences</li>
+    <li>Experiment with different types of locomotion and perspective</li>
+    <li>Use collision components to define overlap triggers</li>
+    <li>Change levels</li>
+    <li>Fade the camera in and out</li>
+  </ul>
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+  
+
+</body></html>

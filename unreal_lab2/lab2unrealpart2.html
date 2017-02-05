@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 2.2: Unreal Tutorial
+    <a href="../home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#0-progress0">Physics</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress1">Simulate Physics</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress2">Shooting Radial Forces</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress3">SloMo</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress4">Conveyor</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress5">Gravity Gun</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-conclusion">Conclusion</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+<div id="0-progress0" class="scrollspy-section">
+</div>
+   <div class="header shadow-down more-padding">
+      <h4>Lab 2.2: Physics</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+      <div id="1-unity-in-cs390vr" class="scrollspy-section">
+  <h1 class="hide" id="intro-to-ue4">Unity in CS390VR</h1>
+
+  <blockquote class="important">
+    <h3 id="getting-started">Quote</h3>
+	<img src="./einstein.jpg" alt="einstein" style="width:304px;height:300px;">
+    <p>“Nothing happens until something moves.”</p>
+	<p>-Albert Einstein</p>
+	
+  </blockquote>
+
+   <p>In this lesson, we’ll experiment with physically enabled actors in our physics playground. Cannons, rockets, conveyors, balloons, dominoes - they’re all made possible with physics simulation.</p>
+
+  <p>Simulation offers incredible out of the box functionality. We can easily control the behavior of physically enabled actors and components through their public variables. Enabling physics is easy. Getting physics to “feel right” is an art, and effective use requires some care.</p>
+
+  <p>Later, we’ll build the <strong>Gravity Gun</strong>, a tool used to interact with physics objects. The gun is probably the most sophisticated scripting tutorial of the entire series. There are great opportunities to adapt and extend the gun to whatever end best fits your experiences.</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Physics &gt; Phyics</strong> level</li>
+  </ul>
+
+  <p><img alt="Physics playground" class="not-zoomable" src="../assets/learn_resources/core_4/4.18.png" /></p>
+  <p class="text-center image-caption">The new physics level in your starter project will look different</p>
+
+  <p>The <strong>Physics</strong> level includes many physically enabled actors that you can interact with as <b class="blueprint">BP_PhysicsPlayer</b>. Some actors are directly interactable by collision with the player or other actors.</p>
+
+  <p><img alt="physics actors" class="zoomable" src="../assets/learn_resources/core_physics/physics_actors.png" /></p>
+
+  <p>Other actors like <b class="blueprint">BP_Cannon</b> are interactable via the <b class="blueprint">BPI_Physics_Interact</b> interface. <b class="blueprint">BP_Remote</b> and <b class="blueprint">BP_BlastingBox</b> allow the developer to add actors to an <strong>Interact With</strong> list from the details panel. When the player overlaps, the remote/box will attempt to call an interface function on each actor in the list.</p>
+
+  <p><img alt="bp remote" class="zoomable" src="../assets/learn_resources/core_physics/bp_remote.png" /></p>
+
+  <p>Take a minute to press <strong>Play</strong> and explore the level.</p>
+
+  <hr />
+
+</div>
+<div id="1-progress1" class="scrollspy-section">
+  <h2 id="progress1">Simulate Phyics</h2>
+
+<p>In order to activate physics and use physics nodes, we have to tell an actor and/or component to simulate physics.</p>
+
+  <ul>
+    <li>To make an actor simulate physics, check the <strong>Simulate Physics</strong> box in the corresponding details panel.</li>
+  </ul>
+
+  <p>Unless otherwise specified, a force is applied to actors according to their mass. By default, mass is calculated as a function of mesh volume.</p>
+
+  <ul>
+    <li>To adjust an actor’s mass, check the <strong>Mass in Kg</strong> option, then edit the value.</li>
+  </ul>
+
+  <p><img alt="simulate physics" class="not-zoomable small" src="../assets/learn_resources/core_physics/physics_details.png" /></p>
+
+  <hr />
+  <hr>
+  
+</div>
+<div id="1-progress2" class="scrollspy-section">
+  <h2 id="progress2">Shooting Radial Forces</h2>
+
+  <p>Let’s give the player a way to explode actors in the level.</p>
+
+  <p>We can start with a blueprint that fires a radial force impulse and destroys itself. We’ll spawn this actor from the player blueprint.</p>
+
+  <ul>
+    <li>Create a new actor blueprint called <b class="blueprint">BP_RadialImpulse</b></li>
+    <li>Add a <strong>Radial Force</strong> component
+      <ul>
+        <li>Set its <strong>Radius</strong> to <strong>1000</strong></li>
+        <li>Set its <strong>Impulse Strength</strong> to <strong>150,000</strong></li>
+        <li>Set its <strong>Force Strength</strong> to <strong>0</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><img alt="RadialForce component" class="not-zoomable small" src="../assets/learn_resources/core_4/4.19.png" /></p>
+
+  <p>Our <strong>Radial Force</strong> component is rigged to explode. Now we need to fire the impulse and destroy the actor.</p>
+
+  <ul>
+    <li>Open the Event Graph</li>
+    <li>Grab a reference to the <strong>Radial Force</strong> component</li>
+    <li>Pull a wire from <strong>Radial Force</strong> and place a <b class="node ">Fire Impulse</b> node.</li>
+    <li><b class="node event">BeginPlay<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Fire Impulse</b></li>
+    <li>Place a <b class="node ">Destroy Actor</b> node</li>
+    <li><b class="node ">Fire Impulse<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Destroy Actor</b></li>
+  </ul>
+
+  <p><img alt="BP_RadialImpulse" class="zoomable" src="../assets/learn_resources/core_4/4.20.png" /></p>
+
+  <p>Let’s create a new input action mapping for spawning <b class="blueprint">BP_RadialImpulse</b>.</p>
+
+  <ul>
+    <li>Open <strong>Settings &gt; Project Settings</strong></li>
+    <li>Select the <strong>Input</strong> submenu</li>
+    <li>Add a new <strong>Action Mapping</strong></li>
+    <li>Name it <strong>“PrimaryAction”</strong></li>
+    <li>Add <strong>Left Mouse Button</strong></li>
+    <li>Add <strong>Gamepad Right Trigger</strong></li>
+  </ul>
+
+  <p><img alt="BP_RadialImpulse" class="zoomable" src="../assets/learn_resources/core_4/4.200.png" /></p>
+
+  <p>Now we can use the new <b class="node event">InputAction PrimaryAction</b> event in our player blueprint.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_PhysicsPlayer</b></li>
+  </ul>
+
+  <blockquote class="challenge" id="challenge-4-05-00">
+    <h4 id="challenge">Challenge:</h4>
+    <p>Wire the <b class="node event">InputAction PrimaryAction</b> event to a line trace from the camera and spawn <b class="blueprint">BP_RadialImpulse</b> at the location of the trace hit.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_4/4.21.png" /></p>
+  </blockquote>
+
+  <p>Head over to the anvil pit and try your new ability. Can you feel the power?!</p>
+
+  <hr />
+
+</div>
+<div id="1-progress3" class="scrollspy-section">
+  <h2 id="progress3">SloMo</h2>
+
+  <p>Our explosions would look much cooler in slow motion. Let’s create a new action mapping for a slo-mo super power.</p>
+
+  <ul>
+    <li>Open <strong>Settings &gt; Project Settings</strong></li>
+    <li>Select the <strong>Input</strong> submenu</li>
+    <li>Add a new <strong>Action Mapping</strong></li>
+    <li>Name it <strong>SloMo</strong></li>
+    <li>Add <strong>Left Shift</strong></li>
+    <li>Add <strong>Gamepad Left Shoulder</strong></li>
+  </ul>
+
+  <p><img alt="SloMo action input" class="zoomable" src="../assets/learn_resources/core_4/4.22.png" /></p>
+
+  <p>Enabling slow motion is actually quite easy. We just need to use a node called <b class="node ">Set Global Time Dilation</b>.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_PhysicsPlayer</b></li>
+    <li>Place the <b class="node event">InputAction SloMo</b> event</li>
+    <li>Place a <b class="node ">Set Global Time Dilation</b> with a <b class="variable"><i class="pin in float"></i>Time Dilation</b> of <strong>0.2</strong></li>
+    <li>Connect this to the <b class="node event"><i class="detail">SloMo &gt; </i>Pressed <i class="pin out execution"></i></b> execution output</li>
+    <li>Place a <b class="node ">Set Global Time Dilation</b> with a <b class="variable"><i class="pin in float"></i>Time Dilation</b> of <strong>1</strong></li>
+    <li>Connect this to the <b class="node event"><i class="detail">SloMo &gt; </i>Released <i class="pin out execution"></i></b> execution output</li>
+  </ul>
+
+  <p><img alt="SloMo using Global Time Dilation" class="zoomable" src="../assets/learn_resources/core_4/4.23.png" /></p>
+
+  <p>Test it out to feel <strong>THE POWER!</strong></p>
+
+  <hr />
+
+</div>
+<div id="1-progress4" class="scrollspy-section">
+  <h2 id="progress4">Conveyor</h2>
+
+  <p>Let’s take a quick diversion from player super powers.</p>
+
+  <p>You might have noticed that our conveyors don’t actually move objects. We can write a new blueprint script inside of <b class="blueprint">BP_TutorialConveyor</b> to get physically enabled actors moving.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_TutorialConveyor</b>’s event graph.</li>
+  </ul>
+
+  <p>We need some way to determine which objects should be moved by <b class="blueprint">BP_TutorialConveyor</b>. A collision box will tell us when objects are within a reasonable distance of the conveyor belt.</p>
+
+  <ul>
+    <li>Add a new <strong>Box Collision</strong> component</li>
+    <li>Open the viewport</li>
+    <li>Set <strong>Scale</strong> to <strong>1.6, 3.0, 0.25</strong></li>
+    <li>Set <strong>Location</strong> to <strong>0.0, 0.0, 41.0</strong></li>
+  </ul>
+
+  <p><img alt="conveyor collision" class="zoomable" src="../assets/learn_resources/core_physics/conveyor_collision.png" /></p>
+
+  <p>Let’s add <b class="node event">OnComponentBeginOverlap</b> and <b class="node event">OnComponentEndOverlap</b> events for our collision box.</p>
+
+  <ul>
+    <li>Open the event graph.</li>
+    <li>Right-click <strong>Box</strong> in <strong>Components</strong> and select <strong>Add Event &gt; Add OnComponentBeginOverlap</strong></li>
+    <li>Right-click <strong>Box</strong> in <strong>Components</strong> and select <strong>Add Event &gt; Add OnComponentEndOverlap</strong></li>
+  </ul>
+
+  <p>We need to store all components that overlap our box in a new array variable.</p>
+
+  <ul>
+    <li>Add a new variable and name it <strong>“Components”</strong></li>
+    <li>In the details panel, set <strong>Variable Type</strong> to <strong>PrimitiveComponent &gt; Reference</strong></li>
+    <li>Select the array button</li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_physics/components_variable.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <blockquote class="important">
+    <p>You may be wondering why we’re storing components instead of actors. This is because we apply forces to components and not actors.</p>
+  </blockquote>
+
+  <ul>
+    <li>Place a reference to <strong>Components</strong> in the graph</li>
+    <li>Pull a wire from <strong>Components</strong> and place an <b class="node ">Add</b> node</li>
+    <li><b class="node event">OnComponentBeginOverlap<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Add</b></li>
+    <li>
+      <p><b class="variable"><i class="detail">OnComponentBeginOverlap &gt; </i>Other Comp<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i>Add</b></p>
+    </li>
+    <li>Pull a wire from <strong>Components</strong> and add an <b class="node ">Remove</b> node.</li>
+    <li><b class="node event">OnComponentEndOverlap<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Remove</b></li>
+    <li><b class="variable"><i class="detail">OnComponentEndOverlap &gt; </i>Other Comp<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i>Remove</b></li>
+  </ul>
+
+  <p><img alt="add remove components" class="zoomable" src="../assets/learn_resources/core_physics/add_remove_components.png" /></p>
+
+  <p>Great! This is everything we need to add and remove components from the array.</p>
+
+  <p>Now we need to add a force to each component on <b class="node event">Tick</b>.</p>
+
+  <ul>
+    <li>Place <b class="node event">Tick</b> in the graph</li>
+    <li>Place a new reference to <strong>Components</strong> in the graph</li>
+    <li>Pull a wire from <strong>Components</strong> and add a <b class="node ">ForEachLoop</b> node.</li>
+    <li><b class="node event">Tick<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>ForEachLoop</b></li>
+  </ul>
+
+  <p>We need to cast <b class="variable">Array Element<i class="pin out object"></i></b> to a static mech component.</p>
+
+  <ul>
+    <li>Pull a wire from <b class="variable">Array Element<i class="pin out object"></i></b> and add a <b class="node ">Cast To StaticMeshComponent</b> node.</li>
+    <li><b class="node ">ForEachLoop<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Cast To StaticMeshComponent</b></li>
+  </ul>
+
+  <p><img alt="for each cast" class="zoomable" src="../assets/learn_resources/core_physics/for_each_cast.png" /></p>
+
+  <p>When the cast is successful, we should add a force to the component in the direction of conveyor belt movement. We can specify this direction with an <strong>Arrow</strong> component.</p>
+
+  <ul>
+    <li>Add a new <strong>Arrow</strong> component</li>
+    <li>Open the viewport</li>
+    <li>Set <strong>Rotation</strong> to <strong>0.0, 0.0, -90.0</strong></li>
+    <li>Set <strong>Location</strong> to <strong>0.0, 0.0, 70.0</strong></li>
+  </ul>
+
+  <p><img alt="conveyor arrow" class="zoomable" src="../assets/learn_resources/core_physics/conveyor_arrow.png" /></p>
+
+  <blockquote class="optional">
+    <p>The <strong>Arrow</strong> component is a useful tool for development. It will not show up in game unless otherwise specified.</p>
+  </blockquote>
+
+  <p>We’re nearly done! Let’s add our last function now.</p>
+
+  <ul>
+    <li>Pull a wire from <b class="variable"><i class="detail"> Cast To StaticMeshComponent &gt; </i>As Static Mesh Component<i class="pin out object"></i></b> and add an <b class="node ">Add Force</b> node.</li>
+    <li>Set <strong>Accel Change</strong> to <strong>True</strong> by checking the box</li>
+  </ul>
+
+  <p>Targeted components respond according to their mass when <strong>Accel Change</strong> is not set to true. Experiment with this variable later to see what effct this has on different components.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-1">Challenge:</h4>
+    <p>Set <strong>Force</strong> by multiplying <strong>Arrow</strong>’s forward vector with a scalar power value.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_physics/conveyor_challenge.png" /></p>
+  </blockquote>
+
+  <p>When you play the level, physically enabled objects should respond to <b class="blueprint">BP_TutorialConveyor</b>. Choo-choo! All aboard the physics train!</p>
+
+  <hr />
+
+</div>
+<div id="1-progress5" class="scrollspy-section">
+  <h2 id="progress5">Gravity Gun</h2>
+
+  <p>Let’s pick up and launch physically enabled actors with the <strong>Gravity Gun</strong>. When complete, the gun will pick up actors when selected and fire them away from the player.</p>
+
+  <p>First create a new action mapping. This method will handle picking up and launching actors.</p>
+
+  <ul>
+    <li>Open <strong>Settings &gt; Project Settings</strong></li>
+    <li>Select the <strong>Input</strong> submenu</li>
+    <li>Add a new <strong>Action Mapping</strong></li>
+    <li>Name it <strong>“SecondaryAction”</strong></li>
+    <li>Add <strong>Right Mouse Button</strong></li>
+    <li>Add <strong>Gamepad Left Trigger</strong></li>
+  </ul>
+
+  <p><img alt="Gravity gun action input" class="zoomable" src="../assets/learn_resources/core_4/4.24.png" /></p>
+
+</div>
+<div id="physics-picking-up-the-actor" class="scrollspy-section sub-section">
+  <h3 id="picking-up-the-actor">Picking up the actor</h3>
+
+  <p>When we select an actor, we should snap it in front of the player.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_PhysicsPlayer</b></li>
+    <li>Add a new <strong>Scene</strong> component</li>
+    <li>Name it “<strong>SnapPoint</strong>”</li>
+    <li>Attach <strong>SnapPoint</strong> to <strong>Camera</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_4/add_snappoint.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <ul>
+    <li>Position <strong>SnapPoint</strong> at <strong>[240, 0, -35]</strong></li>
+  </ul>
+
+  <p><strong>SnapPoint</strong> is now attached relative to the position of the player’s camera.</p>
+
+  <p>We can pick up physics actors with a <strong>PhysicsHandle</strong> component.</p>
+
+  <ul>
+    <li>Add a <strong>PhysicsHandle</strong> component</li>
+  </ul>
+
+  <p>The actors we pick up will be attahed relative to <strong>PhysicsHandle</strong>. This means that we need to update the location of <strong>PhysicsHandle</strong> everyframe.</p>
+
+  <blockquote class="challenge" id="challenge-4-06-00">
+    <h4 id="challenge-2">Challenge:</h4>
+    <p>On <b class="node event">Tick</b>, update the <strong>PhysicsHandle</strong> component’s location using <b class="node ">Set Target Location</b>. Set the location to <strong>SnapPoint</strong>’s world location.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_4/4.25.png" /></p>
+  </blockquote>
+
+  <p>With that done, we’re ready to attach selected physics actors to <strong>PhysicsHandle</strong>.</p>
+
+  <ul>
+    <li>Add our <b class="node event">InputAction SecondaryAction</b> event</li>
+    <li>Create a new function and call it <strong>“Pick Up Object”</strong></li>
+    <li><b class="node event">SecondaryAction<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Pick Up Object</b></li>
+  </ul>
+
+  <p><img alt="Pick Up Object on secondary action" class="zoomable" src="../assets/learn_resources/core_4/4.26.png" /></p>
+
+  <p>Like we’ve done so many times before, we need to trace from the player. In this case we only want to trace for physically enabled actors. We can do this with the <b class="node ">Line Trace For Objects</b> node.</p>
+
+  <ul>
+    <li>Open the <strong>Pick Up Object</strong> function</li>
+    <li>Add <b class="node ">Line Trace For Objects</b> and set up the usual math</li>
+    <li>Pull a wire from <b class="variable"><i class="pin in enum array"></i><i class="detail">LineTraceForObjects &gt; </i>ObjectTypes</b> and select <strong>Make Array</strong></li>
+    <li>Select <strong>PhysicsBody</strong> from the <b class="node green">Make Array</b> dropdown</li>
+  </ul>
+
+  <p><img alt="Line trace for physics bodies" class="zoomable" src="../assets/learn_resources/core_4/4.27.png" /></p>
+
+  <ul>
+    <li>Place a <b class="node gray">Branch</b> using the <b class="variable"><i class="detail">LineTraceForObjects &gt; </i>Return Value<i class="pin out bool"></i></b></li>
+    <li>Place a <b class="node green">Break Hit Result</b> connected to <b class="variable"><i class="detail">LineTraceForObjects &gt; </i>Out Hit<i class="pin out struct"></i></b></li>
+  </ul>
+
+  <p>We need to store the hit component in a new variable that we can reference later.</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin in object"></i>Primitive Component</b> variable named <strong>HeldPhysicsObject</strong></li>
+    <li>Place a <b class="node ">Set Held Physics Object</b> node</li>
+    <li><b class="node "><i class="detail">Branch &gt; </i>True<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set Held Physics Object</b></li>
+    <li><b class="variable"><i class="detail">Break Hit Result &gt; </i>Hit Component<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i>Held Physics Object</b></li>
+  </ul>
+
+  <p><img alt="Set Held Physics Object" class="zoomable" src="../assets/learn_resources/core_4/4.28.png" /></p>
+
+  <ul>
+    <li>Place a <b class="node ">Grab Component (Physics Handle)</b> node</li>
+    <li><b class="variable">Held Physics Object<i class="pin out connected object"></i></b><span class="connector object"></span><b class="variable"><i class="pin in connected object"></i><i class="detail">Grab Component &gt; </i>Component</b></li>
+    <li>Set <b class="variable"><i class="pin in vector"></i><i class="detail">Grab Component &gt; </i>Grab Location</b> equal to the <b class="variable">Held Physics Object<i class="pin out object"></i></b>’s world location.</li>
+  </ul>
+
+  <p><img alt="Grab component" class="zoomable" src="../assets/learn_resources/core_4/4.29.png" /></p>
+
+  <p>Fantastic! Your gun can now pick up targeted actors.</p>
+
+</div>
+<div id="physics-launching-the-actor" class="scrollspy-section sub-section">
+  <h3 id="launching-the-actor">Launching the actor</h3>
+
+  <p>Let’s launch picked up physics actors. We can determine whether or not an actor is currently picked up with a boolean variable.</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar bool"></i>Boolean</b> variable called <strong>IsGunEngaged</strong></li>
+    <li>Add a <strong class="node">Set IsGunEngaged</strong> node at the end of the <strong>Pick Up Object</strong> function.</li>
+    <li>Set it to <strong>True</strong> by checking the box</li>
+  </ul>
+
+  <p><img alt="Set is gun engaged" class="zoomable" src="../assets/learn_resources/core_4/4.30.png" /></p>
+
+  <p>When we fire <b class="node event">SecondaryAction</b>, <b class="variable">IsGunEngaged<i class="pin out bool"></i></b> will tell us if we should <b class="node ">Pick Up Object</b> or launch an existing actor.</p>
+
+  <ul>
+    <li>Open the Event Graph</li>
+    <li>Insert a <b class="node gray">Branch</b> between <b class="node event">SecondaryAction</b> and <b class="node ">Pick Up Object</b></li>
+    <li><b class="variable">Is Gun Engaged<i class="pin out connected bool"></i></b><span class="connector bool"></span><b class="variable"><i class="pin in connected bool"></i><i class="detail">Branch &gt; </i>Condition</b></li>
+    <li><b class="node "><i class="detail">Branch &gt; </i>False<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Pick Up Object</b></li>
+  </ul>
+
+  <p><img alt="branch on is gun engaged" class="zoomable" src="../assets/learn_resources/core_4/4.31.png" /></p>
+
+  <ul>
+    <li>Create a new function and call it <strong>“Launch Object”</strong></li>
+    <li><b class="node "><i class="detail">Branch &gt; </i>True<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Launch Object</b></li>
+  </ul>
+
+  <p><img alt="launch when is gun engaged is true" class="zoomable" src="../assets/learn_resources/core_4/4.32.png" /></p>
+
+  <ul>
+    <li>Open the <b class="node ">Launch Object</b> function</li>
+  </ul>
+
+  <p>To launch an object, we must first release it, then add a physics impulse.</p>
+
+  <ul>
+    <li>Place a <b class="node ">Release Component (PhysicsHandle)</b> node</li>
+    <li>Place a <b class="node ">Get Held Physics Object</b></li>
+    <li>Pull a wire from <b class="variable">Held Physics Object<i class="pin out object"></i></b> and place an <b class="node ">Add Impulse</b> node.</li>
+  </ul>
+
+  <blockquote class="challenge" id="challenge-4-07-00">
+    <h4 id="challenge-3">Challenge:</h4>
+    <p>Our impulse should be in the direction of the camera’s forward vector and have a sufficiently large magnitude.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_4/4.33.png" /></p>
+  </blockquote>
+
+  <p>We need to reset our variables after releasing the held actor.</p>
+
+  <ul>
+    <li>Place a <strong>Set Held Physics Object</strong> with no input (this sets it to <strong>NULL</strong>)</li>
+    <li>Place a <strong>Set Is Gun Engaged</strong> with an empty check box (setting it to <strong>false</strong>)</li>
+  </ul>
+
+  <p><img alt="reset gravity gun variables" class="zoomable" src="../assets/learn_resources/core_4/4.34.png" /></p>
+
+</div>
+
+<div id="1-conclusion" class="scrollspy-section">
+  <h2 id="conclusion">Conclusion</h2>
+
+  <p>Whew - that was a lot of scripting! You now have a fully functional gravity gun that picks up and launches physics objects. You also have a generalizable workflow for selecting and manipulating actors in a scene.</p>
+
+  <p>There are many other useful physics nodes we didn’t cover in this tutorial. Explore all that UE4 has to offer <a href="https://docs.unrealengine.com/latest/INT/BlueprintAPI/Physics/index.html" class="blue" target="_target">here</a>. Just remember that these functions only effect objects that <strong>simulate physics</strong>.</p>
+
+  <p>Have fun and make your world come to life!</p>
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+  
+
+</body></html>
