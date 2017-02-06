@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+
+	<!-- Syntax highlighting by HighlightJs.org -->
+	<link rel="stylesheet" href="./highlightJS/styles/foundation.css">
+<script src="./highlightJS/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 2: Unity Tutorial
+    <a href="./home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#3-preparation">Preparation</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-first-person-perspective">First Person Perspective</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-gaze-input">Gaze Input</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-teleportation">Teleportation</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-third-person-perspective">Third Person Perspective</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-conclusion">Conclusion</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+
+   <div class="header shadow-down more-padding">
+      <h4>Lab 2 (Part 1): Locomotion and Perspective</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+        <!--I don't know why this is here-->
+      <div id="" class="scrollspy-section">
+  <h1 class="hide" id="">=</h1>
+
+  <blockquote class="important">
+    <h3 id="getting-started">Getting Started</h3>
+    <p>Download the lab1 <a href="https://github.com/Changer098/CS390VR-Unity/releases/download/v2.0/lab2.unitypackage" target="_blank">asset package</a> and lab2 <a href="https://github.com/Changer098/CS390VR-Unity/releases/download/0.2/390VR_v02.unitypackage" target="_blank">asset package</a> and import it into a new project in order to get started</p>
+  </blockquote>
+
+  <p>In lab1, we introduced to you some basics about scripting with Unity engine.You learnt how to use inspector and how to set up communication between scripts. In this lab, we are continuing the journey with more exciting content: Locomotion and Physics, and more specifically how to properly apply them onto your VR games and apps in order to produce comfortable and fun VR experience.</p>
+  <p>This tutorial was built upon a Unity official tutorial series called <a href="unity3d.com/learn/tutorials/projects/roll-ball-tutorial" target="_blank">Roll-a-ball</a>. It’s one of the most classic Unity beginner tutorials, however we expanded and modified the project to fit our need, in this case, to make it VR-oriented.</p>
+  <p>It involves more in-depth scripting techniques compared to lab1 and after this lab you will have a general sense of how exactly Unity works for VR. You will be able to compose your own demo and get ready for our midterm project.</p>
+  <p>Good luck and have fun!</p>
+
+  <!--<pre><code class="csharp">
+  using System.Collections;
+  using System;
+
+  public static void Main(String[] args) {
+	//Prints 'Hello World' to the Console
+	Console.WriteLine("Hello World!");
+  }
+  </code></pre>-->
+
+  <hr>
+
+</div>
+<div id="3-preparation" class="scrollspy-section">
+  <h2 id="preparation">Preparation</h2>
+    <ul>
+        <li>Make you have your Rift set up.</li>
+        <li>Import the package and Open up the level named “Roll-a-ball”. Make sure your Unity VR supported setting is checked(Go to <b>Edit</b>&rarr;<b>Project Settings</b>&rarr;<b>Player</b>, check <i>Virtual Reality Supported)</i></li>
+    </ul>
+
+  <hr>
+
+</div>
+<div id="3-first-person-perspective" class="scrollspy-section">
+  <h2 id="first-person-perspective">First Person Perspective</h2>
+  <p>After you open up the level, take a look at the hierarchy, hit play to try the game. It’s a simple first person game. Yellow rotating boxes are pick-ups. Simply walk them over to collect. You will see your currently score(count) on top of your head. When you exhaust all the pick-ups, “You Win!” shows.</p>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_3_files/1.mp4" /></div>
+    <p>Now let’s see how it’s built.</p>
+    <p>Notice you are able to use not only  your head motion to turn the VR camera but also your mouse. This is called Mouse Look in first person perspective games. </p>
+    <p>In the <b>Scripts</b> Folder, open up the script <i>FPSController</i>. This script is attached as a component on the FPSController gameObject under FirstPersonTutorial.</p>
+    <p>Examine the variables and take a look at the Update function:</p>
+<pre style="line-height:18px">
+<code class="csharp">
+void Update() {
+    moveFB = Input.GetAxis("Vertical") * speed;
+    moveLR = Input.GetAxis("Horizontal") * speed;
+    rotX = Input.GetAxis("Mouse X") * sensitivity;
+    rotY -= Input.GetAxis("Mouse Y") * sensitivity;
+    rotY = Mathf.Clamp(rotY, -60f, 60f);
+    <span class="hljs-keyword">Vector3</span> movement = new <span class="hljs-keyword">Vector3</span>(moveLR, 0, moveFB);
+    transform.Rotate(0, rotX, 0);
+    //The following will enable the mouse look for y axis 
+    //camera.transform.localRotation = <span class="hljs-keyword">Quaternion</span>.Euler(rotY, 0, 0);
+    movement = transform.rotation * movement;
+    player.Move(movement * Time.deltaTime);
+}
+</code>
+</pre>
+    <p>It reads the mouse and WASD inputs from the player. The mouse input is interpreted as rotation and sent to tranform and the WASD movement input is sent to the ChacterController, which is another component attached to the same game object. (The character controller is default component provided by Unity Standard Assets).</p>
+    <p>Notice that the mouse look for y axis rotation is commented out. Mouse look mechanic isn’t really meant for VR experience. It’s just one of the most used and cheapest first person camera control method.   When the player is immersed in VR, he/she tends to believe the only way to change view while standing still is to turn head to the left/right. The existence of another controlling method like mouse look will not only sabotage the immersiveness but also result discomfort. While sometimes it might be impossible to fully get rid of mouse look for first person view, especially when without room scale tracking, simply restricting mouse look to only one axis will largely reduce discomfort.
+    Ignore other functions in this script since they will be addressed in the next tutorials.</p>
+    <p>Ignore other functions in this script since they will be addressed in the next tutorials.</p>
+    <p>They are actually two FPS controller scripts attached to the FPSController gameObject. The one you seeing above is really a vanilla version made by us. It only has the core functions for a first person controller to work. The other script attached called “First Person Controller” is actually Unity’s default FPS controller. It contains a large amount of variables and functionalities. You can try disabling our script and turning on this default one. Hit play and you will find out that essentially the two scripts serve the same purpose here.</p>
+    <p>Do note that there are two things in the default script that we don’t like: Head Bob and Jump. You don’t want to have these two things currently in your first person VR projects unless you plan to give your users nauseas. We already disabled these two properties for you so that you won’t be having any health issue trying this default script. However, turn them on if you like(Component Property: Check Use Head Bob; set Jump Speed to be non-zero.), maybe just to give yourself a bit of warning, a bit of pain to remember that you should never do them in the future :).</p>
+    <p>So much for this level, lets go to the next demo level. Open level GazeInput and hit play.</p>
+  <hr>
+
+</div>
+<div id="3-gaze-input" class="scrollspy-section">
+  <h2 id="gaze-input">Gaze Input</h2>
+  <div class="text-center image-container"><video autoplay muted loop="loop" src="core_3_files/2.mp4" /></div>
+  <p>The first you will notice is that we have a reticle crosshair!</p>
+  <p>Yes, having a reticle, a reference point of the center of view,is really important for VR platforms like Google Cardboard and DK2 where hand controllers are not used. It creates the opportunity of having gaze input, another widely accepted VR interaction input method.</p>
+  <p>That is, whatever is in the center of your view/ the center of your camera, is the thing that you are looking at, the thing you are focusing on, and thus the thing you want to interact with!</p>
+  <p>In our case, the gaze input script is called EyeRaycaster. It is attached with game object FirstPersonCharacter under FPSController in the hierarchy.</p>
+  <p>The EyeRaycaster script is well commented. Take a look and see how much you can understand. The core content is by all means in the EyeRaycast function:</p>
+<pre style="line-height: 18px">
+<code class="csharp">
+private void EyeRaycast() {
+    // Create a ray that points forwards from the camera.
+    <span class="hljs-keyword">Ray</span> ray = new <span class="hljs-keyword">Ray</span>(camera.position, camera.forward);
+    RaycastHit hit;
+    if (<span class="hljs-keyword">Physics</span>.Raycast(ray, out hit, m_RayLength, ~m_ExclusionLayers)) {
+        <span class="hljs-keyword">Lab2VRInteractive</span> interactible = hit.collider.GetComponent&lt;<span class="hljs-keyword">Lab2VRInteractive</span>&gt;(); //attempt to get the VRInteractiveItem on the hit object
+        m_CurrentInteractible = interactible;
+        hitInfo = hit;
+        // If we hit an interactive item and it's not the same as the last interactive item, then call Over
+        if (interactible && interactible != m_LastInteractible)
+            interactible.Over();
+        // Deactive the last interactive item 
+        if (interactible != m_LastInteractible)
+            DeactiveLastInteractible();
+        m_LastInteractible = interactible;
+        // Something was hit, set at the hit position.
+        if (reticle)
+            reticle.SetPosition(hit);
+    }
+    else {
+        // Nothing was hit, deactive the last interactive item.
+        DeactiveLastInteractible();
+        m_CurrentInteractible = null;
+        // Position the reticle at default distance.
+        if (reticle)
+            reticle.SetPosition();
+    }
+}
+</code>
+</pre>
+    <p>Basically, at each frame, it calls Physics.Raycast to creates a laser(ray) pointed from the player camera to its forward direction and it detects whatever object the laser first hits at. The information of that hit is stored into the global variable “hitinfo”. Every intractable game object in the scene is attached with another script called Lab2VRInteractive. Lab2VRInteractive has a bunch of delegates which will be invoked only by the EyeRaycast function in EyeRaycaster.</p>
+    <p>One example is the color changing cube in front of you. When you look at the cube, the raycast hits and notices that it is a <b>Lab2VRInteractive</b> object. The function stores necessary information and then make calls to <i>Over()</i> on that <b>Lab2VRInteractive</b> object. <i>Over()</i> will invoked whatever functions that are subscribed to the delegate <i>OnOver</i>. In this case, it is the function named <i>ChangedAColor()</i> in the script changeColor, which is attached with the cube along with script <b>Lab2VRInteractive</b>.</p>
+    <p>Physics.Raycast is a crucial call in the Physics class. You can find more documentation about it <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html" target="_blank">here</a>. However you don’t really have to worry about it since we will revisit it eventually in the part 2 of this lab.</p>
+    <p>Gaze input is powerful and straightforward. It can be implemented totally differently using other approaches. It can also be used on UI components like Text or Button. Check out the GazeUI For Canvas Folder for the implementation on UI. If you want to dig deep, we also suggest you to take a look at <a href="https://unity3d.com/learn/tutorials/topics/virtual-reality/interaction-vr" target="_blank">this</a>.</p>
+    <p>One final script to note is called Reticle(under <b>Canvas</b>&rarr;<b>reticle</b>). It communicates with the EyeRaycaster to set the position of reticle image in front of the player. If UseNormal is checked, the reticle will project itself on top of the hit surface using the normal of the hit. This provides the opportunity to step into our next section: Teleportation.</p>
+    <blockquote class="challenge">
+        <h4 id="challenge-1">Challenge</h4>
+        <p>You might notice the reticle keeps flashing every time when it’s on top of an object, why do you think it’s happening and can you fix this problem? Maybe try adjust the SetPosition(RaycastHit hit) a little bit? </p>
+    </blockquote>
+    <hr>
+
+</div>
+<div id="3-teleportation" class="scrollspy-section">
+  <h2 id="teleportation">Teleportation</h2>
+    <p>Same level, when you look at the floor, click your left mouse button to see what happens from there!</p>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_3_files/3.mp4" /></div>
+  <p>Boom! You just did a teleport on where you were just looking at. Wonder how it’s done? We have a simple implementation for you. :) Open up the Teleportation script attached on FirstPersonCharacter object.</p>
+<pre style="line-height: 18px">
+<code class="csharp">
+void Update() {
+    if (eyeRaycaster.GetCurrentInteractable() != null && <span class="hljs-keyword">Input</span>.GetMouseButtonDown(0)) {
+        if (eyeRaycaster.GetCurrentInteractable().gameObject.layer == LayerMask.NameToLayer("Ground")) {
+            TeleportationToPosition(eyeRaycaster.GetHitInfo());
+        }
+    }
+}
+void TeleportationToPosition(RaycastHit hit) {
+    character.gameObject.transform.position = new <span class="hljs-keyword">Vector3</span>(hit.point.x, character.gameObject.transform.position.y, hit.point.z);
+}
+</code>
+</pre>
+    <p>It takes the advantage of the hitInfo from EyeRaycaster class. First, in the <b>Update()</b>, it checks to see if the ray is on a Lab2VRinteractable object and if the player is pressing the left click button at the same time, then it checks if the layer of that object is marked as “Ground”(if you haven't heard of layers or tags , please refer to <a href="https://docs.unity3d.com/Manual/class-TagManager.html" target="_blank">here</a>.  If the conditions are all true, it calls the TeleportationToPosition(RaycastHit hit), changing player’s position according to the hit point.</p>
+    <blockquote class="challenge">
+        <h4 id="challenge-2">Challenge:</h4>
+        <p>This is really a straightforward implementation of teleport with gaze input. Again, it might not be one of the greatest ways to do it, however it presents the basic concept behind VR teleportation to replace traditional movement controller.  Free feel to add fancy stuff to it, like line renderer, auto adjustment, edge detection, fading in/out between each leap. There are plenty of materials about this out there waiting for you to uncover and put it on use. It is no doubt one of the most popular VR tricks in the industry right now. </p>
+
+    </blockquote>
+    <p>Now we are done with the first person view. Let’s dive into third person perspective.</p>
+    <hr>
+
+</div>
+<div id="3-third-person-perspective" class="scrollspy-section">
+  <h2 id="third-person-perspective">Third Person Perspective</h2>
+
+  <p>Go back to the level Roll-a-ball.</p>
+    <p>In hierarchy, set “FirstPersonTutorial” gameobject inactive, and on the other hand, set “ThirdPersonTutorial” gameobject active. Hit play and try the game! How do you feel? Much different, right? And a little bit weird.</p>
+    <p>You still have your old sweet pick-ups and a score count. And you still can use WASD to control the motion. However, this time it seems that you are just rolling the ball and the camera, your head, is just following it. That feels just weird, right? Why would my head follow a ball? It doesn’t make any sense.</p>
+    <p>Actually that’s good for you. Feeling weird sometimes is the first step to debug in VR projects. Let's look into the two scripts that are involved here:</p>
+    <p>PlayerController(under gameobject <b>ThirdPersonTutorial</b>&rarr;ball) and <b>CameraController</b>(under gameobject <b>ThirdPersonTutorial</b>&rarr;<b>CameraParent</b>). </p>
+<pre style="line-height: 18px">
+<code class="csharp">
+void FixedUpdate() {
+    // Set some local float variables equal to the value of our Horizontal and Vertical Inputs
+    float moveHorizontal = <span class="hljs-keyword">Input</span>.GetAxis("Horizontal");
+    float moveVertical = <span class="hljs-keyword">Input</span>.GetAxis("Vertical");
+    // Create a Vector3 variable, and assign X and Z to feature our horizontal and vertical float variables above
+    <span class="hljs-keyword">Vector3</span> movement = new <span class="hljs-keyword">Vector3</span>(moveHorizontal, 0.0f, moveVertical);
+    // Add a physical force to our Player rigidbody using our 'movement' Vector3 above, 
+    // multiplying it by 'speed' - our public player speed that appears in the inspector
+    rb.AddForce(movement * speed);
+}
+</code>
+</pre>
+    <p>PlayerController has a similar concept as the FPSController script has. In <b>FixedUpdate()</b>, It reads input from the user, interpret it and then applies it to somewhere. This time, the inputs are applied to the Rigidbody, the physics of that ball, to make it move/turn. Please don’t worry about <b>FixedUpdate()</b> or Rigidbody if you haven't heard of them. They are the members of the physics family in Unity and will be addressed and explained in the 2nd part of this lab.</p>
+    <p>Lets focus on the CameraController script. This is where the locomotion for 3rd person perspective comes in. </p>
+<pre style="line-height:18px">
+<code class="csharp">
+void Start() {
+    // Create an offset by subtracting the Camera's position from the player's position
+    offset1 = transform.position - ball.transform.position;
+}
+// After the standard 'Update()' loop runs, and just before each frame is rendered..
+void LateUpdate() {
+    // Set the position of the Camera (the game object this script is attached to)
+    // to the player's position, plus the offset amount
+    //Options:
+    //1.camera tracks all the axises of the object
+    transform.position = ball.transform.position + offset1;
+    //2.camera only tracks one axis
+    //transform.position = new <span class="hljs-keyword">Vector3</span>(ball.transform.position.x + offset1.x, transform.position.y, transform.position.z);
+    //3. comment out the whole LateUpdate() function to free the camera from tracking the object. This oftentime produces the most comfortable VR experience.
+}
+</code>
+</pre>
+    <p>Offset1 represents the original distance vector between the player camera and the ball. It’s what keeps these two transform positions apart. In <b>LateUpdate()</b>(Think it like a younger brother of <b>Update()</b> function, always run only after <b>LateUpdate()</b>),  we adjust the position of the camera according to the ball’s position and the offset1 value, thus creating the effecting of following the ball at every frame.</p>
+    <p>Look at the three options listed in <b>LateUpdate()</b>, and recall what we did to MouseLook in the <b>FPSController</b> script. To reduce discomfort, we got rid of the Y-axis of MouseLook.  And interestingly enough, we can do the same thing here by using option 2 or 3. Option 2 makes the camera only follow the ball on x-axis. Option 3 frees the camera! Literally nothing is running on this script when option 3 is on!</p>
+    <p>Try each of them and play the game to see the difference.</p>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_3_files/4.mp4" /></div>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_3_files/5.mp4" /></div>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_3_files/6.mp4" /></div>
+    <p>Here, we are not telling you that option 3 > 2 >1. Instead, we want you to know that there is a similar pattern when dealing with solving discomfort in VR: that is, the reduction of player controller, the reduction of camera movement.</p>
+    <p>Sometimes, a static camera can rather bring extraordinary VR experience and fun to the users than any other kinds of camera. Okay, however this is not perfect either. The problem is sometimes we cannot just have one camera standing still in the scene and trying telling everything to the player. </p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-3">Challenge:</h4>
+    <p>Open up the last level “CameraSwitch”,  play the game by keeping pressing the spacebar, and see how is script SwitchCamera implemented on CameraManager game object. Again there are tens of thousand ways to implement a switch between cameras. The simple idea here is to use a data structure and indexing. Not only switching cameras, you can also switch scenes by using SceneManager <a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html" target="_blank">here</a>. </p>
+
+  </blockquote>
+
+  <hr>
+    <h3>Complementary Materials</h3>
+    <ol>
+        <li>Introducing the Oculus Sample Framework for Unity 5 <a href="https://developer3.oculus.com/blog/introducing-the-oculus-sample-framework-for-unity-5/" target="_blank">link</a></li>
+        <li>Interaction In VR <a href="https://unity3d.com/learn/tutorials/topics/virtual-reality/interaction-vr" target="_blank">link</a></li>
+        <li>Let's Try Game Dev: Shooting via Raycasting <a href="https://www.youtube.com/watch?v=AGd16aspnPA" target="_blank">link</a></li>
+        <li>Building a Movement System through Unity Portals <a href="https://www.youtube.com/watch?v=Ppd3GFskp1I" target="_blank">link</a></li>
+    </ol>
+
+</div>
+
+<div id="3-conclusion" class="scrollspy-section">
+  <h2 id="conclusion">Conclusion</h2>
+
+  <p>You learned the basics of vr locomotion </p>
+
+  <ul>
+    <li>We learned FPS controller and gaze input.</li>
+    <li>We learned how to do teleportation with the help of gaze input.</li>
+    <li>We learned how to do a third person view.</li>
+    <li>We learned how to make a static camera switch.</li>
+    <li>We learned the principle of reduction in VR.</li>
+  </ul>
+
+  <hr>
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+
+
+</body></html>
+
+<!--
+    Play Eric's awesome game!
+    http://etheller.com/pacman/    
+-->
