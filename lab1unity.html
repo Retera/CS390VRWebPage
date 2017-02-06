@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    
     <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
 
     <!-- Syntax highlighting by HighlightJs.org -->
@@ -814,12 +815,12 @@
 
     public class Introduction : Monobehaviour {
         void Start() {
-            //Used for initializing the script, sort of like what a constructor does for most objects. 
-            //A Monobehaviour never has a constructor.                
+            //Used for initializing the script, sort of like what a constructor does for most objects.
+            //A Monobehaviour never has a constructor.
         }
         void Update() {
-            //where a lot of the magic happens. 
-            //Called every frame and is used for everything from grabbing Input to modifying the UI. 
+            //where a lot of the magic happens.
+            //Called every frame and is used for everything from grabbing Input to modifying the UI.
             //If implemented poorly, can easily hamper performance of your game.
         }
     }
@@ -885,7 +886,7 @@ new <span class="hljs-keyword">Vector3</span>(float x, float y, float z)
 </pre>
                                 <h3>Debug Class (<a href="https://docs.unity3d.com/ScriptReference/Debug.html" target="_blank">Manual</a>)</h3>
                                 <p>The Debug class is a very useful debugging tool. It allows for writing messages to the Console tab.</p>
-                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/debug_1.jpg" data-zoom-image="core_2_files/debug_1.jpg"></div>                            
+                                <div class="text-center image-container"><img alt="Level Editor" class="zoomable zoomed" src="core_2_files/debug_1.jpg" data-zoom-image="core_2_files/debug_1.jpg"></div>
                                 <p class="text-center image-caption">This script is available in the Scripts > Lab1 folder</p>
 <pre style="line-height:18px">
 <code class="csharp">
@@ -953,7 +954,7 @@ private float startTime;
 void Start () {
     this.startTime = Time.time;
 }
-	
+
 // Update is called once per frame
 void Update () {
     if (<span class="hljs-keyword">Time</span>.time - startTime >= waitTime) {
@@ -966,7 +967,7 @@ void Update () {
 <pre style="line-height:18px">
 <code class="csharp">
 void pop() {
-    <span class="hljs-keyword">GameObject</span>.Destroy(this.gameObject); 
+    <span class="hljs-keyword">GameObject</span>.Destroy(this.gameObject);
 }
 </code>
 </pre>
