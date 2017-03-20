@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 3: Unreal Tutorial
+    <a href="./home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#1-progress1">Materials</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress2">Your First Material</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress3">Textures</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress4">How Materials Work</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress5">Texture Coordinates</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress6">Masking with Textures</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress7">Emissive Colors</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress8">Normal Maps</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress9">Parameters and Material Instances</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress10">Dynamic Materials</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-conclusion">Extended Learning</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+	<div id="1-progress1" class="scrollspy-section">
+    </div>
+   <div class="header shadow-down more-padding">
+      <h4>Lab 3.1: Materials</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+      <div id="1-unity-in-cs390vr" class="scrollspy-section">
+  <h1 class="hide" id="intro-to-ue4">Unreal in CS390VR</h1>
+
+  <p>This lesson covers the basics of materials. By the end, you’ll know:</p>
+
+  <ul>
+    <li>How materials work</li>
+    <li>How to use the material editor</li>
+    <li>How to isolate parts of a mesh using <strong>Masks</strong></li>
+    <li>How to make parts of your mesh glow</li>
+    <li>How to create unique versions of your materials using <strong>Material Instances</strong></li>
+    <li>How to dynamically update your materials in game</li>
+  </ul>
+
+  <p>Let’s get started!</p>
+  <hr>
+
+</div>
+<div id="1-progress2" class="scrollspy-section">
+  <h2 id="progress2">Your First Material</h2>
+
+<p>Materials are how UE4 programmers and artists make things look great. They can get complex quickly, but it’s important to know the basics:</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Materials &gt; LearningMaterials</strong> map</li>
+    <li>In the <strong>Content Browser</strong>, right click and create a new <strong>Material</strong>
+      <ul>
+        <li>Name it <strong>M_MyMaterial</strong></li>
+      </ul>
+    </li>
+    <li>Open the <strong>Material Editor</strong> by double clicking your new material asset</li>
+  </ul>
+
+  <p><img alt="Material Editor" class="zoomable" src="../assets/learn_resources/core_materials/material_editor.png" /></p>
+
+  <p>Welcome to the Material Editor!</p>
+
+  <p>There are many options and new nodes to play with in here. If you are familiar with programming <strong>shaders</strong>, you’ll be right at home once you get comfortable using UE4’s visual nodes.</p>
+
+  <p>We’re going to start by creating a simple, solid color material.</p>
+
+  <blockquote class="important">
+    <p>This lesson assumes you understand how color is represented in computers using RGB values. If this idea is new to you, this Wikipedia article goes into depth about the <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank">RGB Color Model</a></p>
+  </blockquote>
+
+  <ul>
+    <li>Right click and place a <strong>Constant3Vector</strong>. You can also hold the <kbd>3</kbd> key and left click.</li>
+  </ul>
+
+  <p>A <strong>3Vector</strong> is often used to represent color, each number corresponding to the Red, Green, and Blue channels.</p>
+
+  <ul>
+    <li>Double click on the node to open the color picker
+      <ul>
+        <li>Choose your desired color</li>
+      </ul>
+    </li>
+    <li>Connect the <strong>3Vector</strong>’s output to M_MyMaterial’s <strong>Base Color</strong> input</li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_basic_color.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>You can see that the preview in the upper left has updated. That’s what your material will look like on a mesh in your game.</p>
+
+  <p>Woot! You just made your first material. Let’s step it up a notch and learn how to use textures in our material.</p>
+
+  <hr>
+  
+</div>
+<div id="1-progress3" class="scrollspy-section">
+  <h2 id="progress3">Textures</h2>
+
+<p>Textures are images (think .jpg and .png) that we can use to add detail to our materials. A lot can be done with just math, but textures give us a ton of freedom and control.</p>
+
+  <p>The preview defaults to show your material on a sphere. As we learn about materials that utilize textures, it makes more sense to preview on a square plane:</p>
+
+  <ul>
+    <li>In the preview window, select the button in the bottom that looks like a plane</li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_plane_preview.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Much better! Let’s add a texture.</p>
+
+  <ul>
+    <li>Right click the graph and place a <strong>Texture Sample</strong> node.
+      <ul>
+        <li>In the <strong>Details</strong> panel, change its <strong>Texture</strong> to <strong>T_Lesson5RGB_M</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_add_texture.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <ul>
+    <li>Replace the <strong>Base Color</strong> input with the <strong>Texture Sample</strong>’s top output</li>
+  </ul>
+
+  <p><img alt="Texture in BaseColor" class="zoomable" src="../assets/learn_resources/core_materials/material_texture_basecolor.png" /></p>
+
+  <p>Now you can see our material use the texture’s colors as its <strong>Base Color</strong>.</p>
+
+  <p>Okay. It’s time to talk about what is really going on here.</p>
+  <hr>
+
+</div>
+<div id="1-progress4" class="scrollspy-section">
+  <h2 id="progress4">How Materials Work</h2>
+
+  <p>A Material is a series of math equations that are run once per pixel. In graphics, these are referred to as <strong>fragment shaders</strong>. GPUs have been designed to run these equations extremely fast, allowing us to program complex behavior in our graphics.</p>
+
+  <blockquote class="important">
+    <p>Some inputs of the Material Node are only run once per vertex (<strong>vertex shader</strong>), namely the <strong>World Position Offset</strong> which is used to offset the mesh vertex location.</p>
+  </blockquote>
+
+  <p>Once you understand that this material equation will run for every pixel it is rendered on, a whole world of opportunity opens. Let’s take a quick detour to demo this:</p>
+
+  <p>Every pixel has data that we can access in our material. For example, we can get the pixel’s <strong>WorldPosition</strong>, <strong>ScreenPosition</strong>, <strong>Normal</strong>, and much more. Let’s use the pixel’s <strong>ScreenPosition</strong> to demonstrate the power of fragment shaders.</p>
+
+  <ul>
+    <li>Create a new material named <strong>M_ScreenPosition</strong></li>
+    <li>In material’s graph, right click and place a <strong>ScreenPosition</strong> node</li>
+    <li>Connect it to the <strong>Base Color</strong> material input</li>
+    <li>Save the material</li>
+  </ul>
+
+  <p><img alt="screen position" class="zoomable" src="../assets/learn_resources/core_materials/material_screen_position.png" /></p>
+
+  <p>The <strong>ScreenPosition</strong> node holds a <strong>2Vector</strong> of the pixel’s location on the screen. The position is stored relative to screen size with values between <strong>0</strong> and <strong>1</strong>. A pixel in the upper-left corner is at <strong>[0, 0]</strong>, a pixel in the center is at <strong>[0.5, 0.5]</strong>, and a pixel in the lower right is at <strong>[1, 1]</strong>.</p>
+
+  <p>Our material is using these X/Y values as Red/Green values and creating a color based on them. Let’s see what it looks like in the world.</p>
+
+  <ul>
+    <li>In the <strong>Level Editor</strong>, change the cube’s material to <strong>M_ScreenPosition</strong></li>
+  </ul>
+
+  <p>Now test it out in the <strong>Level Editor</strong>! Each of the cube’s pixels are colored based on where they are on the screen.</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_cube_with_screen_position.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Great! Now we see that each pixel has unique data that we can use to change its color.</p>
+
+  <blockquote class="optional">
+    <p>If you want to play with this more, try using the <strong>WorldPosition</strong> or <strong>PixelNormal</strong> data in the material.</p>
+  </blockquote>
+  <hr>
+
+</div>
+<div id="1-progress5" class="scrollspy-section">
+  <h2 id="progress5">Texture Coordinates</h2>
+
+<p>Let’s get back to Textures and <strong>M_MyMaterial</strong>.</p>
+
+  <ul>
+    <li>Open <strong>M_MyMaterial</strong></li>
+  </ul>
+
+  <p>Another great piece of data that comes with each pixel is its <strong>Texture Coordinate</strong>. This works similar to the <strong>ScreenPosition</strong>, but instead it’s like <strong>MeshPosition</strong>. Let’s demo this:</p>
+
+  <ul>
+    <li>Our material preview should still be using a plane as its preview mesh. Go ahead and change it to a plane if it isn’t already.</li>
+    <li>Right click and place a <strong>TextureCoordinate</strong></li>
+    <li>Plug the <strong>TexCoord</strong> into the material’s <strong>BaseColor</strong></li>
+  </ul>
+
+  <p><img alt="texcoord" class="zoomable" src="../assets/learn_resources/core_materials/material_texcoord.png" /></p>
+
+  <p>As you can see in the preview, the <strong>TextureCoordinate</strong> holds a <strong>2Vector</strong> (similar to <strong>ScreenPosition</strong>) which displays the pixel’s coordinate relative to the mesh. For our plane, a pixel in the upper-left corner is at <strong>[0, 0]</strong>, a pixel in the center is at <strong>[0.5, 0.5]</strong>, and a pixel in the lower right is at <strong>[1, 1]</strong>.</p>
+
+  <blockquote class="optional">
+    <p>A pixel’s <strong>Texture Coordinate</strong> is defined by the UV map of a mesh in a 3D modeling program. Essentially, a UV map is all the faces of a mesh laid flat on an coordinate system that spans from 0 to 1 in two dimensions. This is how we map flat textures to complex 3D shapes.</p>
+  </blockquote>
+
+  <p>Textures use <strong>Texture Coordinates</strong> in order to output a different color per pixel. If the pixel is at texture coordinate <strong>[0.1, 0.4]</strong>, the <strong>TextureSample</strong> grabs the color of the texture at location <strong>[0.1, 0.4]</strong> (relative to the texture’s size).</p>
+
+  <blockquote class="important">
+    <p>This is why it is important that all textures you use are square. Additionally, your texture size should be a power of two: 256, 512, 1024, 2048 etc…</p>
+  </blockquote>
+
+  <ul>
+    <li>Plug <strong>TexCoord</strong> into the <strong>UVs</strong> input of our <strong>TextureSample</strong></li>
+    <li>Then plug <strong>TextureSample</strong> back into the Material’s <strong>BaseColor</strong></li>
+  </ul>
+
+  <p><img alt="TexCoord+TextureSample+BaseColor" class="zoomable" src="../assets/learn_resources/core_materials/material_texture_coord_with_texture.png" /></p>
+
+  <p>We’re back to normal. Using the <strong>TexCoord</strong> input didn’t change anything because a <strong>TextureSample</strong> uses a hidden <strong>TexCoord</strong> by default. Let’s change our <strong>TexCoord</strong> to tile our texture:</p>
+
+  <ul>
+    <li>Select the <strong>TexCoord</strong> node</li>
+    <li>In the details panel, change <strong>UTiling</strong> and <strong>VTiling</strong> to <strong>2.0</strong></li>
+  </ul>
+
+  <p><img alt="tile texcoord" class="zoomable" src="../assets/learn_resources/core_materials/material_tile_texcoord.png" /></p>
+
+  <p>Nicely done! Multiplying a default texture by a <strong>[2, 2]</strong> <strong>2Vector</strong> has the same effect:</p>
+
+  <p><img alt="tile texcoord" class="zoomable" src="../assets/learn_resources/core_materials/material_tile_texcoord_multiply.png" /></p>
+
+  <p>The reason multiplying the <strong>TextureCoordinate</strong> also tiled our texture is because our <strong>TextureSample</strong> is set to wrap. This means that an input of <strong>[1.1, 1.4]</strong> is the same as an input of <strong>[0.1, 0.4]</strong>. We could set our <strong>TextureSample</strong> to not wrap by changing its <strong>Sampler Source</strong> in the details panel.</p>
+
+  <p>Great stuff! Let’s use this texture as a mask to take more control of our material.</p>
+  <hr>
+
+</div>
+<div id="1-progress6" class="scrollspy-section">
+  <h2 id="progress6">Masking with Textures</h2>
+
+  <p>Masking allows us to change colors and effects on only part of a material. Textures allow us to target specific parts of a mesh we want to change. The texture we’re using right now is actually meant to be used as a mask. Each color channel represents a different black/white mask. Let’s demo this to learn more:</p>
+
+  <ul>
+    <li>Unplug <strong>TextureSample</strong> from the Material’s <strong>BaseColor</strong></li>
+    <li>Connect the <strong>Green</strong> <strong>TextureSample</strong> output to the Material’s <strong>BaseColor</strong></li>
+  </ul>
+
+  <p><img alt="texture green output" class="zoomable" src="../assets/learn_resources/core_materials/material_green_texture_output.png" /></p>
+
+  <p>By isolating the <strong>Green</strong> channel of our <strong>Texture</strong>, we have a black and white mask for all the green sections of our texture. Now we can customize that to be any color we want:</p>
+
+  <ul>
+    <li>Place a <strong>Multiply</strong> node</li>
+    <li>Place a <strong>3Vector</strong> node
+      <ul>
+        <li>Set it to any color you like</li>
+      </ul>
+    </li>
+    <li>Connect your color to the one of the <strong>Multiply</strong> pins</li>
+    <li>Connect the <strong>Green</strong> channel of our <strong>Texture</strong> to the other <strong>Multiply</strong> pin</li>
+    <li>Connect the output to the Material’s <strong>BaseColor</strong> input</li>
+  </ul>
+
+  <p><img alt="masking the green output" class="zoomable" src="../assets/learn_resources/core_materials/material_mask_green.png" /></p>
+
+  <p>Woah, cool! Now we have complete control of the checker boxes that are white on the <strong>Green</strong> channel. This works because we are either multiplying our color by <strong>1</strong> (white) or <strong>0</strong> (black). This is the power of masking.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge">Challenge:</h4>
+    <p>Let’s take control of the other set of checker boxes. The mask you need is in the <strong>Blue</strong> channel of the <strong>TextureSample</strong>. Do the same thing you did for the <strong>Green</strong> channel with a new color.</p>
+
+    <p>Combine the two checker sets together by adding them together using an <strong>Add</strong> node before inputing into <strong>BaseColor</strong>.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_materials/material_checker_challenge.png" /></p>
+  </blockquote>
+
+  <blockquote class="important">
+    <p>The <strong>Material Editor</strong> has some great tools to help you as you develop complex materials. Namely, you can preview each node individually, allowing you to see what your material would look like if you plugged that node right into <strong>Base Color</strong>. There are two ways to do this:</p>
+
+    <h4 id="preview-node-in-graph">Preview Node In Graph</h4>
+
+    <p>To preview a node in the graph, click the small triangle in the upper right corner of any material node:</p>
+
+    <video controls="" loop="" class="not-zoomable">
+ <source src="../assets/learn_resources/core_materials/material_preview_in_graph.mp4" type="video/mp4" />
+ Your browser does not support HTML5 video.
+</video>
+
+    <h4 id="preview-node-in-preview-window">Preview Node In Preview Window</h4>
+
+    <p>To preview a node in the preview window, right click on the node and select <strong>Start Previewing Node</strong></p>
+
+    <video controls="" loop="" class="not-zoomable">
+ <source src="../assets/learn_resources/core_materials/material_preview_in_window.mp4" type="video/mp4" />
+ Your browser does not support HTML5 video.
+</video>
+
+    <p>These methods of previewing allow us to visualize and understand what is happening with each math node.</p>
+  </blockquote>
+
+  <p>Coolio! Let’s use the final <strong>Red</strong> channel to mask out an emissive color.</p>
+
+  <hr>
+
+</div>
+
+<div id="1-progress7" class="scrollspy-section">
+  <h2 id="progress7">Emissve Colors</h2>
+
+  <p>So far we’ve only worked with the <strong>BaseColor</strong> input of our material. Now we’re going to use the <strong>EmissiveColor</strong> input.</p>
+
+  <p><strong>Emissive Colors</strong> supply their own light. This means that light has no effect on their appearance and they’ll still be visible in a completely unlit room. <strong>Emissive Colors</strong> are also a great way to take advantage of UE4’s bloom effect. Let’s get cracking!</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-1">Challenge:</h4>
+    <p>Use the <strong>Red</strong> channel of our <strong>TextureSample</strong> to make a mask for the material’s <strong>EmissiveColor</strong> input.</p>
+
+    <p>Make sure to multiply the mask by a color before inputing it to <strong>EmissiveColor</strong></p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_materials/material_emissive_color_challenge.png" /></p>
+  </blockquote>
+
+  <p>In order to make our emissive lines glow using UE4’s bloom, we need to push the color values beyond 1.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-2">Challenge:</h4>
+    <p>Multiply the emissive color by <strong>20</strong> before inputing it into <strong>EmissiveColor</strong>.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_materials/material_bloom_challenge.png" /></p>
+  </blockquote>
+
+  <p>Nice, now that line is really glowing! <strong>20</strong> might be a little high in practice, but it demonstrates how to utilize UE4’s bloom effect.</p>
+  </hr>
+</div>
+
+<div id="1-progress8" class="scrollspy-section">
+  <h2 id="progress8">Normal Maps</h2>
+
+  <p>The final thing we’re going to do is add a normal map to our material.</p>
+
+  <p>Normal maps are a type of texture that define a pixel’s normal at a specified location. A “normal” is a vector that points in a direction perpendicular to the face. Engines like UE4 use the normal data to affect lighting and shadowing, giving flat objects the appearance of depth.</p>
+
+  <blockquote class="important">
+    <p>One thing to note, <strong>normal maps</strong> are not as effective in VR as they are in monoscopic experiences. The reason is that in VR, we can truly see 3D depth. In this way, even if the lighting suggests that a flat plane is actually a jagged stone wall, when we get close we’ll see that there is no depth at all.</p>
+  </blockquote>
+
+  <p>We have a normal map texture that is made for this material:</p>
+
+  <ul>
+    <li>Right click and place a new <strong>TextureSample</strong></li>
+    <li>Change its texture to <strong>T_Lesson5RGB_N</strong></li>
+    <li>Plug our existing <strong>TexCoord</strong> into the normal texture’s <strong>UVs</strong> input
+      <ul>
+        <li>We have to do this to keep our two textures aligned</li>
+      </ul>
+    </li>
+    <li>Connect the Normal texture’s top output into the Material’s <strong>Normal</strong> input</li>
+  </ul>
+
+  <p><img alt="material with normal map" class="zoomable" src="../assets/learn_resources/core_materials/material_normal_map.png" /></p>
+
+  <p>You can see that there is now the appearance of a slight bevel from the checkerboard pattern into the emissive line. You may have to turn down the bloom to see it clearly.</p>
+
+  <p>Great stuff! We’re done with our material. Now we’re going to talk about using material parameters.</p>
+
+  <hr>
+
+</div>
+
+<div id="1-progress9" class="scrollspy-section">
+  <h2 id="progress9">Paramters and Material Instances</h2>
+
+  <p>Right now, our material is completely set in stone. There is no way for us to easily change the color of our checkerboard or glowing line without editing the material itself. This is because all of the values in the material (like color and brightness) are set with <strong>constants</strong> rather than <strong>parameters</strong>. Let’s change that.</p>
+
+  <p>First, let’s change the colors of the checkerboard to parameters:</p>
+
+  <ul>
+    <li>Right click on one of the checkerboard colors and select <strong>Convert to Parameter</strong>
+      <ul>
+        <li>Name it <strong>CheckerColor1</strong></li>
+      </ul>
+    </li>
+    <li>Do the same for the other checkerboard color
+      <ul>
+        <li>Name it <strong>CheckerColor2</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_checker_color_parameters.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Excellent! Let’s convert two more constants:</p>
+
+  <ul>
+    <li>Convert the emissive line color to a parameter named <strong>LineColor</strong></li>
+    <li>Convert the emissive line glow strength to a parameter named <strong>LineGlowStrength</strong></li>
+    <li>Save the material</li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_line_parameters.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Wonderful! Now we can use these parameters to easily make new, unique versions of this material. We do that with <strong>Material Instances</strong>.</p>
+
+  <p>We discussed <strong>Material Instances</strong> in Lesson 1, but now we have a new understanding of what is going on. Let’s make some new materials!</p>
+
+  <ul>
+    <li>Close the <strong>M_MyMaterial</strong></li>
+    <li>In the <strong>Content Browser</strong>, right click on <strong>M_MyMaterial</strong> and select <strong>Create Material Instance</strong>
+      <ul>
+        <li>Name the new asset <strong>MI_CheckerBoard_1</strong></li>
+        <li>Open the <strong>Material Instance</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_create_mi.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Now that you’re in the <strong>Material Instance Editor</strong>, you can see all the parameters we created! From here, we can easily change our parameters to create unique versions of the material.</p>
+
+  <p>To change a parameter:</p>
+
+  <ul>
+    <li>Check the box next to the parameter</li>
+    <li><strong>Tweak away!</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_tweak_mi.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Yay! Now that you know all about materials and what a material instance really is, you can start to dig into <strong>Layout’s Base Materials</strong>. They provide a ton of parameters that allow you to make almost anything you want!</p>
+
+
+  <hr>
+
+</div>
+
+<div id="1-progress10" class="scrollspy-section">
+  <h2 id="progress10">Dynamic Materials</h2>
+
+  <p>Parameters in our materials are extremely powerful. Not only do they allow us to make many unique versions of the same material, they can also be changed in real time using code!</p>
+
+  <p>Let’s create a cube that uses a dynamic version of our texture to cycle the <strong>LineColor</strong> parameter through a series of colors.</p>
+
+  <p>Here’s what a final version looks like:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_color_cycle_finished.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <ul>
+    <li>Create an actor blueprint called <strong>BP_ColorChangingCube</strong></li>
+    <li>Add a <strong>Cube</strong> component</li>
+    <li>Set its material to <strong>M_MyMaterial</strong> or one of your <strong>Material Instances</strong></li>
+  </ul>
+
+  <p>In order to dynamically change the cube’s color, we must first create a dynamic version of its material and save it as a variable:</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar object"></i>Material Instance Dynamic &gt; Reference</b> variable named <strong>DMI</strong></li>
+  </ul>
+
+  <p>We’ll store our dynamic material in this variable. Let’s set it in the construction script:</p>
+
+  <ul>
+    <li>Open the <strong>Construction Script</strong></li>
+    <li>Drag in a reference to the <strong>Cube</strong> component</li>
+    <li>Pull out a wire and place a <b class="node ">Create Dynamic Material Instance</b> node</li>
+    <li>Set the <b class="variable"><i class="pin object bar"></i>DMI</b> variable with the output of <b class="node ">Create Dynamic Material Instance <i class="pin out object"></i></b></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_create_dmi.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>The <b class="node ">Create Dynamic Material Instance</b> node takes a static mesh as input, creates a dynamic version of its current material, then sets the mesh’s material to the new dynamic version. We have to store the output so we can update the dynamic material at some point in the future.</p>
+
+  <p>Let’s update the <strong>LineColor</strong> parameter using a timeline in the <strong>Event Graph</strong></p>
+
+  <ul>
+    <li>Open the <strong>Event Graph</strong></li>
+    <li>Right click and <strong>Add Timeline</strong>
+      <ul>
+        <li>Name it <strong>ColorCycle</strong></li>
+        <li>Make it <strong>4 seconds</strong> in length</li>
+        <li>Check <strong>AutoPlay</strong></li>
+        <li>Check <strong>Loop</strong></li>
+        <li>Add a new <strong>Color</strong> track (click the button that looks like <strong>C+</strong>)
+          <ul>
+            <li>Name it <strong>Color</strong></li>
+            <li>Click in the area that says “Click in this area to add color stops”</li>
+            <li>Add as many colors as you like</li>
+            <li>Make sure the first and last color are the same</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><img alt="color cycle timeline" class="zoomable" src="../assets/learn_resources/core_materials/material_color_cycle_timeline.png" /></p>
+
+  <p>We now have a timeline that automatically starts and loops through a series of colors indefinitely. Let’s use it to update our material:</p>
+
+  <ul>
+    <li>Drag in a reference to the <b class="variable"><i class="pin object"></i>DMI</b> variable</li>
+    <li>Pull out a wire and place a <b class="node ">Set Vector Parameter Value</b> node
+      <ul>
+        <li>Set <b class="variable"><i class="pin string"></i>Parameter Name</b> to <strong>LineColor</strong> (the name of our parameter)</li>
+      </ul>
+    </li>
+    <li><b class="node "><i class="detail">ColorCycle &gt; </i>Update<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Set Vector Parameter Value</b></li>
+    <li><b class="variable"><i class="detail">ColorCycle &gt; </i>Color<i class="pin out connected struct"></i></b><span class="connector struct"></span><b class="variable"><i class="pin in connected struct"></i><i class="detail">Set Vector Parameter Value &gt; </i>Value</b></li>
+  </ul>
+
+  <p>Go ahead and test it out! Ooohh</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_materials/material_color_cycle_finished.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Well done! You’re on your way to becoming a material master!</p>
+
+  <hr>
+
+</div>
+
+<div id="1-conclusion" class="scrollspy-section">
+  <h2 id="conclusion">Extended Learning</h2>
+
+  <p>What you just learned about materials is extremely powerful. You can now isolate parts of meshes using masks, make your material glow, and add detail with normal maps. You may be happy to find out that we’ve truly just scratched the surface of what can be done with materials.</p>
+
+  <p>If you’re interested in learning more, a great place to start is <a href="https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/index.html#rendering" target="_blank">UE4’s Content Examples</a>. Go to the <strong>Learn</strong> tab of your <strong>Epic Games Launcher</strong>. There you should be able to download the <strong>Content Examples</strong> project. This project is a huge resource of examples, and is supported by the corresponding <a href="https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/index.html">documentation</a>.</p>
+
+
+  <hr>
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+  
+
+</body></html>
