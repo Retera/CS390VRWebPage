@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+	
+	<!-- Syntax highlighting by HighlightJs.org -->
+	<link rel="stylesheet" href="./highlightJS/styles/foundation.css">
+<script src="./highlightJS/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 2: Physics in Unity
+    <a href="./home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#3-overview">An Overview of Physics in Unity</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+    <a href="#3-rigidbodies">Rigidbodies</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-colliders">Colliders</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+    <a href="#3-physics-materials">Physics Materials</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-physics-function-calling">Physics Function Calling</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-raycasting">Raycasting</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-physics-in-vr">Physics in VR</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-conclusion">Conclusion</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+
+   <div class="header shadow-down more-padding">
+      <h4>Lab 2 (Part 2): Physics in Unity</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+      <div id="1-unity-in-cs390vr" class="scrollspy-section">
+  <h1 class="hide" id="intro-to-ue4">Unity in CS390VR</h1>
+
+  <blockquote class="important">
+    <h3 id="getting-started">Getting Started</h3>
+    <p>Feel free to use the same package you got from Part 1.</p>
+  </blockquote>
+
+  <p>In Part 1, we talked about locomotion and perspective in VR and their implementation in Unity. Here, in Part 2, we want to introduce to you one of the most powerful aspects of the Unity engine, physics,  and how  it can affect our perception in virtual world and hence bring the experience to a whole new level.</p>
+
+  <p>This tutorial will start with a runthrough of the physics component in Unity, including a lot of useful functions and classes. Then we will lead you through some key design concepts that tend to incorporate physics with VR.</p>
+  <p>Note: There are two kinds of physics in Unity: 2D physics and 3D physics. Here, we are focusing on the latter.</p>
+
+  <!--<pre><code class="csharp">
+  using System.Collections;
+  using System;
+  
+  public static void Main(String[] args) {
+	//Prints 'Hello World' to the Console
+	Console.WriteLine("Hello World!");
+  }
+  </code></pre>-->
+
+  <hr>
+
+</div>
+<div id="3-overview-of-physics" class="scrollspy-section">
+  <h2 id="progress1">An Overview of Physics in Unity</h2>
+
+  <p>In order to have a precise idea of how physics works in the engine, let’s break down its parts from top to bottom.</p>
+
+  <hr>
+  
+</div>
+<div id="3-rigidbodies" class="scrollspy-section">
+  <h2 id="rididbodies">Rigidbodies</h2>
+
+  <p>Rigidbody is the entity of physics in Unity. It is a class, a component, that can be attached to a GameObject that enables a variety of physics properties such as gravity, mass, and angular drag. </p>
+  <p>Manual</p>
+  <ul>
+      <li><a href="https://docs.unity3d.com/Manual/class-Rigidbody.html" target="_blank">Rigidbody</a></li>
+      <li><a href="https://docs.unity3d.com/ScriptReference/Physics.html" target="_blank">Physics</a></li>
+  </ul>
+    <p>Rigidbodies must be explicitly added to your GameObject before they will be affected by the physics engine. You can add a Rigidbody to your selected object from <b>Components</b>→<b>Physics</b>→<b>Rigidbody</b> in the menu. Now your object is physics-ready; it will fall under gravity and can receive forces via scripting, but you may need to add a Collider or a Joint to get it to behave exactly how you want.</p>
+  <hr>
+
+</div>
+<div id="3-colliders" class="scrollspy-section">
+  <h2 id="colliders">Colliders</h2>
+
+  <p>This is what enables physics interactions between game objects. Colliders are another kind of component that must be added alongside the Rigidbody in order to allow collisions to occur. If two Rigidbodies bump into each other, the physics engine will not calculate a collision unless both objects also have a Collider attached. Collider-less Rigidbodies will simply pass through each other during physics simulation.</p>
+    <div class="text-center image-container"><img alt="Car With Colliders" class="zoomable zoomed" src="core_3_files/coll1.png" data-zoom-image="core_3_files/coll1.png"></div>
+    <p class="text-center image-caption">Colliders define the physical boundaries of a Rigidbody</p>
+    <div class="text-center image-container"><img alt="Car With Colliders" class="zoomable zoomed" src="core_3_files/coll2.png" data-zoom-image="core_3_files/coll2.png"></div>
+    <p class="text-center image-caption">Different types of colliders with different shapes.</p>
+  <hr>
+    <h3 id="colliders-as-triggers">Colliders as Triggers</h3>
+    <p>You can turn your collider into a trigger simply by checking the “is Trigger” checkbox on your collider GameObject component. Doing this turns your actual physical object into a virtual area where it can be used to detect anything in and out, if that thing also has a collider component.
+You can use triggers on a variety of things like a light switch, trap area, jump scares, etc. It does what it sounds like. It acts as a trigger to the interactions.</p>
+</div>
+<div id="3-physics-materials" class="scrollspy-section">
+  <h2 id="physics-materials">Physics Materials</h2>
+
+  <p>Physics Material defines the surface properties of your physics game object, and thus further affects the collision result.
+To create a Physic Material select <b>Assets</b> → <b>Create</b> → <b>Physics Material</b> from the menu bar. Then drag the Physic Material from the Project View onto a Collider component of a gameobject in your scene.</p>
+    <div class="text-center image-container"><img style="max-height:150px;max-width:275px;" alt="Example Physics Material" class="zoomable zoomed" src="core_3_files/physicsMat.png" data-zoom-image="core_3_files/physicsMat.png"></div>
+    <p class="text-center image-caption">Different types of colliders with different shapes.</p>
+    <p>Further details on physics material: <a href="https://docs.unity3d.com/Manual/class-PhysicMaterial.html" target="_blank">link</a></p>
+  <hr>
+
+</div>
+<div id="3-physics-function-calling" class="scrollspy-section">
+  <h2 id="physics-function-calling">Calling Functions</h2>
+
+  <p>You can communicate with the Rigidbody, colliders and triggers that are on your game objects via scripts. For Rigidbody, you can things like <i>AddForce()</i> or <i>AddTorque()</i>:</p>
+<pre style="line-height:18px">
+<code class="csharp">
+using UnityEngine;
+public class ExampleClass : MonoBehaviour
+{
+    public float thrust = 1f;
+    public <span class="hljs-keyword">Rigidbody</span> rb;
+    void Start()
+    {
+        rb = GetComponent&lt;<span class="hljs-keyword">Ridigbody</span>&gt;();
+    }
+    void FixedUpdate()
+    {
+        rb.AddForce(transform.forward * thrust);
+    }
+}
+</code>
+</pre>
+    <p>This will add a constant forward moving force to your game object.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+using UnityEngine;
+public class ExampleClass : MonoBehaviour
+{
+    public float torque;
+    public <span class="hljs-keyword">Rigidbody</span> rb;
+    void Start()
+    {
+        rb = GetComponent&lt;<span class="hljs-keyword">Ridigbody</span>&gt;();
+    }
+    void FixedUpdate()
+    {
+        float turn = <span class="hljs-keyword">Input</span>.GetAxis("Horizontal");
+        rb.AddTorque(transform.up * torque * turn);
+    }
+}
+</code>
+</pre>
+    <p>This will add a constant horizontal rotation force to your GameObject.</p>
+    <p>Notice that in both of the above scripts, we are calling these Rigidbody functions from <i>FixedUpdate()</i> instead of the regular <i>Update()</i>. <i>FixedUpdate()</i> is another cousin function like <i>Update()</i>. It is called every fixed framerate frame. And because of this consistency, <i>FixedUpdate()</i> should be used instead of Update when dealing with Physics. For example when adding a force to a Rigidbody, you have to apply the force every fixed frame inside <i>FixedUpdate()</i> instead of every frame within <i>Update()</i>. That way your physics interactions will still be reliable and realistic even when you game encounter frame lags, which will affect your <i>Update()</i>.</p>
+    <p>Next, for colliders and triggers, you can call functions like <i>OnCollisionEnter()</i>
+ <i>OnTriggerEnter()</i> on your collider GameObject.</p>
+<pre style="line-height:18px">
+<code class="csharp">
+using UnityEngine;
+public class DestroyCubes : MonoBehaviour
+{
+    void OnCollisionEnter(<span class="hljs-keyword">Collision</span> col)
+    {
+        if (col.gameobject.name == "player")
+        {
+            Destroy(col.gameobject);
+        }
+    }
+}
+</code>
+</pre>
+    <p>The above script will destroy whatever it’s attached to, when the other GameObject, named “player”, collides with it. There are a bunch of functions like these that can be invoked in some slightly different ways. You are basically doing overrides in the Monobehaviour to define these functions.</p>
+    <p>These functions are a practical and simple approach to deal with VR interaction. It’s recommended for you to master the understanding of these functions, please refer to this <a href="https://docs.unity3d.com/ScriptReference/Collider.html" target="_blank">link</a> to learn more about the Collider class.</p>
+
+  <hr>
+
+</div>
+<div id="3-raycasting" class="scrollspy-section">
+    <h2 id="raycasting">Raycasting</h2>
+    <p>We covered a little bit of raycasting when we introduced the implementation of gaze input and teleportation in Part 1 of this lab. <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html" target="_blank">Physics.Raycast()</a>, a function in the big Physics class, when called, will cast a ray from the origin to the specified direction. It can store the information of the objects that are hit by this ray into a variable and be used later.
+In order to be hit by this ray, these game objects must have collider component attached.</p>
+    <p>Some <b>optional</b> tutorials to guide you through:</p>
+    <div class="text-center image-caption">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AGd16aspnPA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="text-center image-caption">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1z7y72DWlNU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="text-center image-caption">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6agwCUaMNWI" frameborder="0" allowfullscreen></iframe>
+    </div>
+        <hr>
+    </div>
+<div id="3-physics-in-vr" class="scrollspy-section">
+    <h2 id="physics-in-vr">Physics in VR</h2>
+    <p>Physics is what enhances our sense of presence in the virtual world. Without physics, the reliability of interactions is undermined. This is specifically true for VR products like games. Take the example of Nvidia’s VR Funhouse.  It is a true testament of what Physics could contribute to vr experience.</p>
+    <div class="text-center image-caption">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Ao_uAb6Jkw" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>Here is a quote from Nvidia:</p>
+    <blockquote class="important">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“For nearly a decade, NVIDIA has been developing PhysX, an SDK that allows physically accurate simulation of a 3D environment. It’s provided advanced visual effects for more than 500 PC and console games.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we first saw some of the early VR games and experiences, we quickly realized that something was missing: there was little to no physics simulation. Because VR places you inside of the experience with the ability to touch and interact with virtual objects, it is critical that those objects behave and react in realistic ways.  Unlike traditional PC games, physics in VR games is not just visual effects. It’s fundamental to immersion.”</p>
+    </blockquote>
+    <p>Although games like this are built for VR machines that render your hand presence like the HTC Vive, you can still simulate the same kind of physical interactions with the help of Unity engine and different types of input methods (like gaze input or head motion). Making the environment physics-based will add more fun and more reliability to your application even when there is no hand controller.</p>
+    <p>A great great inspirational example would be Smash Hit VR by <a href="http://www.mediocre.se/" target="_blank">Mediocre Game Studio:</a></p>
+    <div class="text-center image-caption">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5t2L4-d2rF4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <hr>
+</div>
+
+<div id="3-conclusion" class="scrollspy-section">
+  <h2 id="conclusion">Conclusion</h2>
+
+  <p>You learned the basic components of Unity physics.</p>
+
+  <ul>
+    <li>Ridigbody, Collider, and Trigger Components.</li>
+    <li>Calling and overriding the Collider class functions.</li>
+    <li>Raycasting.</li>
+  </ul>
+
+  <hr>
+
+</div>
+<div id="3-complementary-materials" class="scrollspy-section">
+    <h4 id="complementary-materials">Complementary Materials: Official Unity Physics Tutorial (Playlist)</h4>
+    <h5>&nbsp;</h5>
+    <div class="text-center image-caption">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bh9ArKrPY8w?list=PLX2vGYjWbI0RCmCHa3dDKblhJPpW9ZXnu" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+  
+
+</body></html>
