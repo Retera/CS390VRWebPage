@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 3.2: Unreal Tutorial
+    <a href="./home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#1-progress1">VR Selection</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress2">Review</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress3">Hover On/Off</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress4">Progress</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-progress5">Selection</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-conclusion">Conclusion</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+	<div id="1-progress1" class="scrollspy-section">
+    </div>
+   <div class="header shadow-down more-padding">
+      <h4>Lab 3.2: Gaze Based Selection</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+      <div id="1-unity-in-cs390vr" class="scrollspy-section">
+  <h1 class="hide" id="intro-to-ue4">Unity in CS390VR</h1>
+
+   <p>It’s common in VR to be able to interact with the world simply by looking at it. This is called <strong>gaze based interaction</strong>. From menus to game mechanics, gaze based interaction is a powerful VR tool.</p>
+
+  <p>In this quick tutorial, we’re going to cover an implementation of gaze based selection. Here’s what a selection will look like:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/finished_gaze_selection.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>We’ll be creating the interface that allows us to:</p>
+
+  <ul>
+    <li>“Hover” on and off an actor</li>
+    <li>Show progress as we select it by continually staring</li>
+    <li>Actually select it</li>
+  </ul>
+
+  <blockquote class="important">
+    <p>This lesson assumes you’ve gone through the <a href="core_materials.html" class="blue" target="_blank">Materials</a> lesson and are comfortable with updating materials dynamically.</p>
+  </blockquote>
+  <hr>
+
+</div>
+<div id="1-progress2" class="scrollspy-section">
+  <h2 id="progress2">Review</h2>
+
+  <p>Before we jump right into it, let’s review what we’re starting with.</p>
+
+  <ul>
+    <li>Open the <strong>Lessons &gt; Gaze</strong> folder</li>
+    <li>Open the <strong>Selection</strong> level</li>
+    <li>Open <b class="blueprint">BP_GazePlayer</b></li>
+  </ul>
+
+  <p><b class="blueprint">BP_GazePlayer</b> is the character pawn we’re going to be adding our selection logic to. It’s already set up with a reticle and a Dynamic Material Instance variable for the reticle called <b class="variable"><i class="pin object"></i>ReticleDMI</b>!</p>
+
+  <p>We should point out a few things that are different about this setup:</p>
+
+</div>
+<div id="select-spring-arm-reticle" class="scrollspy-section sub-section">
+  <h3 id="spring-arm-reticle">Spring Arm Reticle</h3>
+
+  <p>You may notice that the reticle is not implemented with a trace. Instead, it uses a <strong>Spring Arm</strong> component.</p>
+
+  <p>We used the <strong>Spring Arm</strong> component in Lesson 4 to add a smooth lerp effect to the 2.5D camera. We use the <strong>Spring Arm</strong> here for the same reason.</p>
+
+  <ul>
+    <li>Press <strong>Play</strong> in editor to test out the smooth lerping reticle</li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/demo_lerp_reticle.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>The <strong>Spring Arm</strong> also works exactly as your trace reticle works: the reticle is attached to the end and extends as far as it can until it hits something. <em>This is in fact the core purpose the <strong>SpringArm</strong>.</em> Here are all the details we’ve modified (marked by the yellow arrows):</p>
+
+  <p><img alt="spring arm settings" class="zoomable" src="../assets/learn_resources/core_selection/spring_arm_reticle_details.png" /></p>
+
+  <p>Hover over any of the details in the editor to get a description of what they do.</p>
+
+  <p>Finally, in the <strong>Event Graph</strong> we call a function called <strong>Update Spring Arm</strong> on <b class="node event">Tick</b>. Open the function and you’ll see that it ensures the <strong>SpringArm</strong> is rooted at the exact position of the player’s head.</p>
+
+  <p><img alt="update spring arm" class="not-zoomable small" src="../assets/learn_resources/core_selection/update_spring_arm.png" /></p>
+
+  <p>This solves a problem where the HMD and spring arm are not in sync due to translational movement, causing the reticle to be a bit off center.</p>
+
+</div>
+<div id="select-progress-reticle" class="scrollspy-section sub-section">
+  <h3 id="progress-reticle">Progress Reticle</h3>
+
+  <p>Attached to our <strong>SpringArm</strong> is a reticle made with a <strong>MaterialBillboard</strong>. This reticle uses the <strong>M_ProgressReticle</strong> material which is set up to show progress with a radial selection bar. It utilizes a <strong>Progress</strong> scalar variable that goes from <strong>0</strong> to <strong>1</strong>. Since we need to dynamically update this material, the <b class="blueprint">BP_GazePlayer</b> has a <b class="variable"><i class="pin object"></i>ReticleDMI</b> variable that is set in the <strong>ConstructionScript</strong>.</p>
+
+  <p><img alt="reticle dmi" class="zoomable" src="../assets/learn_resources/core_selection/reticle_dmi.png" /></p>
+
+  <p>Notice the new <b class="node ">Create Dynamic Billboard Material</b> which is a Layout utility node meant to take a <strong>MaterialBillboard</strong> and return a dynamic version of its material.</p>
+
+  <p>That’s it!</p>
+
+  <blockquote class="important">
+    <p>Many people prefer the smooth lerp of this reticle. Consider using this setup moving forward. Of course, you can change the amount of lag by updating the <strong>SpringArm</strong>’s <strong>Camera Rotation Lag Speed</strong> setting.</p>
+  </blockquote>
+  <hr>
+  
+</div>
+<div id="1-progress3" class="scrollspy-section">
+  <h2 id="progress3">Hover On/Off</h2>
+
+  <p>It’s time to set up the foundation of our selection interaction. We’ll do this with the goal of creating our hover on/off script. By the end of this section, we’ll have something that looks like:</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/demo_hover.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>This type of interaction, one that we expect to happen all over the place, is perfect for a <strong>Blueprint Interface</strong> (<strong>BPI</strong>).</p>
+
+  <ul>
+    <li>Create a <strong>Blueprint Interface</strong> called <strong>BPI_GazeInteraction</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/create_bpi.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <ul>
+    <li>Open the new <strong>BPI</strong></li>
+  </ul>
+
+  <p>Let’s start by adding messages for <strong>Hover On</strong> and <strong>Hover Off</strong>. We’ll use these to try and communicate with actors in the world from our <b class="blueprint">BP_GazePlayer</b>.</p>
+
+  <ul>
+    <li>Add two functions: <strong>Hover On</strong> and <strong>Hover Off</strong></li>
+  </ul>
+
+  <p><img alt="bpi hover functions" class="zoomable" src="../assets/learn_resources/core_selection/bpi_hover_functions.png" /></p>
+
+  <p>Before we jump into the <b class="blueprint">BP_GazePlayer</b> interaction, let’s set up a button that implements our new <strong>Hover On</strong> and <strong>Hover Off</strong> events.</p>
+
+  <ul>
+    <li>Open the <b class="blueprint">BP_Button</b> blueprint</li>
+  </ul>
+
+  <p>Currently, the <b class="blueprint">BP_Button</b> is a static mesh and a Dynamic Material Instance variable named <strong>DMI</strong>. Let’s add our BPI and its hover events:</p>
+
+  <ul>
+    <li>Click <strong>Class Settings</strong> in the toolbar</li>
+    <li>Add our <strong>BPI_GazeInteraction</strong> interface in the details panel</li>
+    <li><strong>Compile</strong></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/button_add_bpi.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Now we can add the interface events in the <strong>Event Graph</strong>:</p>
+
+  <ul>
+    <li>Open the button’s <strong>Event Graph</strong></li>
+    <li>Right click and place a <b class="node event">Event Hover On</b> and <b class="node event">Event Hover Off</b></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/button_hover_events.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <ul>
+    <li>Make each event print a unique string using <b class="node ">Print String</b></li>
+  </ul>
+
+  <p><img alt="hover on string" class="zoomable" src="../assets/learn_resources/core_selection/button_hover_print.png" /></p>
+
+  <p>Great! Now we can start scripting our player to fire these events when appropriate:</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_GazePlayer</b></li>
+  </ul>
+
+  <p>In order to communicate with actors in front of our player on gaze, we need to send out a trace every <b class="node event">Tick</b>.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge">Challenge:</h4>
+    <p>Back to basics: set up a <b class="node ">Line Trace By Channel</b> that traces from the player’s eyes to 10000cm out in front the of the player every frame.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/trace_tick_challenge.png" /></p>
+  </blockquote>
+
+  <p>Great! To send the <strong>Hover On</strong> and <strong>Hover Off</strong> messages, we need to know when we’ve hovered over a new actor. To do that, we have to store the actor we traced last tick, then check if it is the same actor we just traced.</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar object"></i> Actor</b> variable named <strong>LastTraceActor</strong></li>
+    <li>Place a <b class="node gray">Sequence</b> node</li>
+    <li><b class="node ">Line Trace By Channel<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node gray"><i class="pin execution in"></i>Sequence</b></li>
+    <li>Place a <b class="node gray">Branch</b> node</li>
+    <li><b class="node gray"><i class="detail">Sequence &gt; </i>Then 0<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node gray"><i class="pin execution in"></i>Branch</b></li>
+    <li>Pull a wire out of <b class="variable"><i class="detail">Line Trace By Channel &gt; </i>Out Hit<i class="pin out struct"></i></b> and place a <b class="node green">Break Hit Result</b> node</li>
+    <li>Pull a wire out of <b class="variable"><i class="detail">Break Hit Result &gt; </i>Hit Actor <i class="pin out object"></i></b> and place a <b class="node ">==</b> node</li>
+    <li>Connect our new <b class="variable">Last Trace Actor<i class="pin out object"></i></b> variable to the other <b class="node ">==</b> input.</li>
+    <li>Connect the <b class="node ">==</b> output to the <b class="variable"><i class="pin in bool"></i><i class="detail">Branch &gt; </i> Condition</b></li>
+    <li>Pull a wire out of <b class="variable"><i class="detail">Break Hit Result &gt; </i>Hit Actor <i class="pin out object"></i></b> and place a <b class="node ">Set Last Trace Actor</b> node</li>
+    <li><b class="node gray"><i class="detail">Sequence &gt; </i>Then 1<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node"><i class="pin execution in"></i>Set Last Trace Actor</b></li>
+  </ul>
+
+  <p><img alt="Set up Last Trace Actor" class="zoomable" src="../assets/learn_resources/core_selection/last_trace_actor.png" /></p>
+
+  <p>We just set up a <b class="node gray">Branch</b> that tells us whether or not we are tracing the same actor as we did the previous frame. The <b class="node gray">Sequence</b> is used to set our <b class="variable">Last Trace Actor<i class="pin out object"></i></b> variable at the very end of the tick. All of this will help us hover on and off other actors.</p>
+
+  <blockquote class="important">
+    <p>In this case, we’re not using the <b class="variable"><i class="detail">LineTraceByChannel &gt; </i>Return Value<i class="pin out bool"></i></b> with a <b class="node gray">Branch</b> because it is unnecessary. If our trace doesn’t hit anything, the hit’s <b class="variable">Hit Actor<i class="pin out object"></i></b> will return <strong>NULL</strong>.</p>
+  </blockquote>
+
+  <p>Make sure you understand what’s going on with our <b class="variable">Last Trace Actor<i class="pin out object"></i></b> variable and the <b class="node gray">Branch</b>. Take your time to trace the execution path if it’s confusing you.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-1">Challenge:</h4>
+    <p>Send the <b class="node ">Hover On</b> and <b class="node ">Hover Off</b> messages to <b class="variable">Hit Actor<i class="pin out object"></i></b> and <b class="variable">Last Trace Actor<i class="pin out object"></i></b> at the correct time.</p>
+
+    <p>Hint: Find the execution path that defines when we have hovered over a new actor. At that point, send the on/off messages to the proper actors.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/hover_messages_challenge.png" /></p>
+  </blockquote>
+
+  <p>Awesome! Go ahead and test it out. When you look at the button in the world, your strings should print “hover on” and “hover off” appropriately.</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/hover_print_strings_demo.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Rather than print strings, let’s use our <b class="variable"><i class="pin object"></i>DMI</b> to change the color of our button.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-2">Challenge:</h4>
+    <p>Use the <b class="variable"><i class="pin object"></i>DMI</b> variable to change the color of the button when it is hovered on and off. You’ll want to change the “<strong>color</strong>” parameter of the material which can be done with a <b class="node ">Set Vector Parameter Value</b> node.</p>
+
+    <p>To get access to the <b class="node ">Set Vector Parameter Value</b> node, you must first drag in a reference to the <b class="variable"><i class="pin object"></i>DMI</b> variable, then pull a wire out of it to access its context sensitive menu.</p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/button_color_challenge.png" /></p>
+  </blockquote>
+
+  <p>Tada!</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/demo_hover.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <hr>
+
+</div>
+<div id="1-progress4" class="scrollspy-section">
+  <h2 id="progress4">Progress</h2>
+
+  <p>Let’s get our reticle to show the progress of our selection! To do that, we’ll need a new variable:</p>
+
+  <ul>
+    <li>Create a new <b class="variable"><i class="pin bar float"></i>Float</b> variable named <strong>HoverProgress</strong></li>
+  </ul>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-3">Challenge:</h4>
+    <p>Add <strong>0.01</strong> to the <b class="variable"><i class="pin bar float"></i>HoverProgress</b> variable if we’re hovering over the same actor as last tick. If we’re not, set <b class="variable"><i class="pin bar float"></i>HoverProgress</b> back to <strong>0</strong>.</p>
+
+    <p>To test that this is working, use a <b class="node ">Print String</b> node at the end of the tick to print the value of <b class="variable"><i class="pin bar float"></i>HoverProgress</b></p>
+
+    <p>When you test it, you’ll see numbers increasing from <strong>0</strong> printed to the screen. Whenever you hover over a new object, the count will restart from <strong>0</strong>:</p>
+
+    <video controls="" loop="" class="not-zoomable">
+ <source src="../assets/learn_resources/core_selection/test_hover_progress.mp4" type="video/mp4" />
+ Your browser does not support HTML5 video.
+</video>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/hover_progress_challenge.png" /></p>
+  </blockquote>
+
+  <p>Great! Rather than print the numbers, let’s use our <strong>M_ProgressReticle</strong>’s scalar “<strong>progress</strong>” variable.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-4">Challenge:</h4>
+    <p>Use the <b class="variable"><i class="pin object"></i>ReticleDMI</b> variable to update the “progress” value of the reticle. You’ll want to change the “<strong>progress</strong>” parameter of the material which can be done with a <b class="node ">Set Scalar Parameter Value</b> node.</p>
+
+    <p>To get access to the <b class="node ">Set Scalar Parameter Value</b> node, you must first drag in a reference to the <b class="variable"><i class="pin object"></i>ReticleDMI</b> variable, then pull a wire out of it to access its context sensitive menu.</p>
+
+    <p>Update the progress in the same place you called <b class="node ">Print String</b></p>
+
+    <p>The reticle should look like this when you’re done:</p>
+
+    <video controls="" loop="" class="not-zoomable">
+ <source src="../assets/learn_resources/core_selection/demo_reticle_progress.mp4" type="video/mp4" />
+ Your browser does not support HTML5 video.
+</video>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/reticle_hover_progress_challenge.png" /></p>
+  </blockquote>
+
+  <p>Very nice!</p>
+
+  <p>Let’s address the issue of our reticle trying to select everything in the world. It only makes sense for our reticle to show progress when it is hovering something that is actually selectable. Let’s implement a BPI message that returns a boolean value to inform the player if they’re hovering a selectable actor:</p>
+
+  <ul>
+    <li>Open <strong>BPI_GazeInteraction</strong></li>
+    <li>Add a function called <strong>Progress</strong>
+      <ul>
+        <li>Give it an output boolean named <strong>Selectable</strong></li>
+      </ul>
+    </li>
+    <li><strong>Compile</strong> the BPI</li>
+  </ul>
+
+  <p><img alt="progress bpi function" class="zoomable" src="../assets/learn_resources/core_selection/bpi_progress_function.png" /></p>
+
+  <p>Now we have to go implement our function in <b class="blueprint">BP_Button</b></p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_Button</b></li>
+    <li>You’ll now see a new <strong>Progress</strong> function in the <strong>Interfaces</strong> section of the <strong>MyBlueprint</strong> panel. This function appears here rather than as an event in the <strong>Event Graph</strong> because it has an output.</li>
+  </ul>
+
+  <blockquote class="important">
+    <p>You won’t see the new function unless you <strong>Compiled</strong> your <strong>BPI_GazeInteraction</strong>.</p>
+  </blockquote>
+
+  <ul>
+    <li>Open the <strong>Progress</strong> interface function up</li>
+    <li>Check the <b class="variable"><i class="pin bool"></i>Selectable</b> box on the <b class="node purple">Return Node</b></li>
+  </ul>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/progress_selectable.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Now our <b class="blueprint">BP_Button</b> class has implemented the <strong>Progress</strong> message/function. With this done, we can go back to our player and send that message to ensure we’re hovering over a selectable button.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_GazePlayer</b></li>
+  </ul>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-5">Challenge:</h4>
+    <p>Use the new <b class="node ">Progress</b> message and a <b class="node gray">Branch</b> to check if you should add <strong>0.01</strong> to <b class="variable"><i class="pin float"></i>HoverProgress</b></p>
+
+    <p>If the hovered actor is not <b class="variable">Selectable<i class="pin out bool"></i></b>, set <b class="variable"><i class="pin float"></i>HoverProgress</b> back to <strong>0</strong></p>
+
+    <p>When finished, your reticle should only show progress when hovering over a <b class="blueprint">BP_Button</b></p>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/selectable_progress_challenge.png" /></p>
+  </blockquote>
+
+  <hr>
+
+</div>
+<div id="1-progress5" class="scrollspy-section">
+  <h2 id="progress5">Selection</h2>
+
+  <p>Excellent! Now all we have to do is select our button when <b class="variable"><i class="pin float"></i>HoverProgress</b> reaches <strong>1</strong>. This calls for another BPI message.</p>
+
+  <ul>
+    <li>Open <strong>BPI_GazeInteraction</strong></li>
+    <li>Add a <strong>Select</strong> function</li>
+    <li><strong>Compile</strong></li>
+  </ul>
+
+  <p><img alt="finished gaze bpi" class="zoomable" src="../assets/learn_resources/core_selection/finished_gaze_bpi.png" /></p>
+
+  <p>Let’s go ahead and implement this message in <b class="blueprint">BP_Button</b></p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_Button</b></li>
+    <li>Add the <b class="node event">Event Select</b> event to the event graph</li>
+    <li><b class="node event">Event Select<i class="pin execution out"></i></b><span class="connector execution"></span><b class="node "><i class="pin execution in"></i>Print String</b></li>
+  </ul>
+
+  <p><img alt="implement select" class="zoomable" src="../assets/learn_resources/core_selection/button_implement_select.png" /></p>
+
+  <p>Great! Let’s fire this event from <b class="blueprint">BP_GazePlayer</b></p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-6">Challenge:</h4>
+    <p>When <b class="variable"><i class="pin float"></i>HoverProgress</b> reaches <strong>1</strong>, send the <b class="node ">Select</b> message to the button.</p>
+
+    <p>Selection will look like this on completion:</p>
+
+    <video controls="" loop="" class="not-zoomable">
+ <source src="../assets/learn_resources/core_selection/print_select_demo.mp4" type="video/mp4" />
+ Your browser does not support HTML5 video.
+</video>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/select_challenge.png" /></p>
+  </blockquote>
+
+  <p>Okay, so you’ve noticed how once <b class="variable"><i class="pin float"></i>HoverProgress</b> reaches <strong>1</strong>, we fire <b class="node ">Select</b> over and over again. Let’s fix this on the <b class="blueprint">BP_Button</b> side by making it unselectable for a short amount of time.</p>
+
+  <ul>
+    <li>Open <b class="blueprint">BP_Button</b></li>
+  </ul>
+
+  <p>First, let’s add a boolean variable <b class="variable"><i class="pin bool bar"></i>Selectable</b> that we can switch from <strong>true</strong> to <strong>false</strong>.</p>
+
+  <ul>
+    <li>Add a new boolean variable named <strong>Selectable</strong>
+      <ul>
+        <li>Set it’s default value to <strong>True</strong>!</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Now we have to return this variable in our <strong>Progress</strong> function rather than always return <strong>true</strong>.</p>
+
+  <ul>
+    <li>Open the <strong>Progress</strong> function</li>
+    <li><b class="variable">Selectable<i class="pin out connected bool"></i></b><span class="connector bool"></span><b class="variable"><i class="pin in connected bool"></i><i class="detail">ReturnNode &gt; </i>Selectable</b></li>
+  </ul>
+
+  <p><img alt="return selectable variable" class="zoomable" src="../assets/learn_resources/core_selection/button_return_selectable.png" /></p>
+
+  <ul>
+    <li>On <b class="node event">Event Select</b>, set <b class="variable"><i class="pin bool bar"></i>Selectable</b> to <strong>false</strong>.</li>
+  </ul>
+
+  <p><img alt="set selectable false" class="zoomable" src="../assets/learn_resources/core_selection/set_selectable_false.png" /></p>
+
+  <p>Try it out! Now you can only select each button once.</p>
+
+  <video controls="" loop="" class="not-zoomable">
+  <source src="../assets/learn_resources/core_selection/select_button_once_demo.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+  <p>Great stuff! To finalize the button, let’s add an animation of it moving up and down, then reset <b class="variable"><i class="pin bool bar"></i>Selectable</b> back to true so we can continue to press it.</p>
+
+  <blockquote class="challenge">
+    <h4 id="challenge-7">Challenge:</h4>
+    <p>Use a <strong>Timeline</strong> to animate the button up and down once <b class="node event">Select</b> is called. Once the animation is over, set <b class="variable"><i class="pin bool bar"></i>Selectable</b> back to <strong>true</strong> so we can continue to press the button.</p>
+
+    <p>Your finished product should look like:</p>
+
+    <video controls="" loop="" class="not-zoomable">
+ <source src="../assets/learn_resources/core_selection/finished_gaze_selection.mp4" type="video/mp4" />
+ Your browser does not support HTML5 video.
+</video>
+
+    <p><img alt="Challenge Answer" class="zoomable" src="../assets/learn_resources/core_selection/button_timeline_challenge.png" /></p>
+  </blockquote>
+
+  <p><strong>WoooOOOOoOooOOOOoOO!!!!</strong></p>
+  <hr>
+
+</div>
+
+<div id="1-conclusion" class="scrollspy-section">
+  <h2 id="conclusion">Conclusion</h2>
+
+   <p>After a bit of set up, you now have a very extendable and reusable gaze based interaction interface. With the same (or slightly altered) <b class="blueprint">BP_GazePlayer</b> you can easily create all types of variants of the <b class="blueprint">BP_Button</b> to make your own unique form of gaze based selection.</p>
+
+  <p>If you want to continue using the <strong>M_ProgressReticle</strong>, make sure to make a <strong>Material Instance</strong> out of it to see all the ways you can customize it.</p>
+
+  <p>Check out the <strong>Lessons &gt; GazeSelection &gt; Examples</strong> folder for more ideas on how to extend this form of interaction and selection.</p>
+
+
+  <hr>
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+  
+
+</body></html>
