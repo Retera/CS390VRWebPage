@@ -1,0 +1,446 @@
+﻿<!--
+   TODO: http://zurb.com/playground/twentytwenty 
+    Edit Screencaptures
+-->
+<!DOCTYPE html>
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="core_1_files/css.css" rel="stylesheet" type="text/css">
+	
+	<!-- Syntax highlighting by HighlightJs.org -->
+	<link rel="stylesheet" href="./highlightJS/styles/foundation.css">
+<script src="./highlightJS/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+    <title>CS390VR</title>
+    <link rel="stylesheet" media="screen" href="core_1_files/application-b003a2aed8000d18718b8545a3dbc91e74d9f512bac311de.css">
+    <script type="text/javascript" async="" src="core_1_files/mixpanel-2-latest.js"></script><script async="" src="core_1_files/analytics_002.js"></script><script type="text/javascript" async="" src="core_1_files/analytics.js"></script><script src="core_1_files/modernizr-8560f87d0bc4f137917740acabfc72f0d469565340a978cb6aa.js"></script>
+    <script src="core_1_files/application-c98d44f2579d90a5543247901b7a56dd26df31b9e3ef0b7b9.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="F2Q9aWjmrZZXU3fGih6OLPjFmbsH/6KM7UDz83ow16QkUF3iNN2VOEEaJgDNeYnXwcReHIjBKbB14pE0TSeAOQ==">
+  <meta class="foundation-mq-topbar"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+    <link href="assets/twentytwenty.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="assets/jquery.event.move.js"></script>
+    <script src="assets/jquery.twentytwenty.js"></script>
+    <script type="text/javascript">
+    $(window).load(function(){
+        $("#rogueOne-twentytenty").twentytwenty();
+    });
+    </script>
+
+</head>
+  <body>
+
+<div id="MathJax_Message" style="display: none;"></div>
+
+      <script src="core_1_files/course_page-28737d57aa1857fe96c212a126d98314b40666074355b149d.js"></script>
+  <script src="core_1_files/offline_tools-cd84d6c5d61ed136223b4a93a34abde5fcbf41d4e79f732.js"></script>
+  <script type="text/javascript" src="core_1_files/MathJax.js"></script>
+
+  <div class="row row-padding-top" data-equalizer="">
+    <div class="medium-3 columns hide-for-small sidebar open" data-equalizer-watch="" style="height: 3069px;">
+      <div class="sidebar-content" style="">
+        <div class="open active">
+          <div class="spacer"></div>
+            <h4>
+    Lab 3: Unity Tutorial
+    <a href="./home.html" class="right hidden-at-top detail">Back to course page</a>
+</h4>
+<hr>
+<ul>
+  <li class="active"><div class="section-progress-container">
+  <div class="section-progress"></div>
+</div>
+<a href="#3-first-material">Your first Material</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-material-properties">Material Properties</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-material-modification">Material Scripting</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#3-scripting-examples">Scripting Examples</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+<a href="#1-conclusion">Conclusion</a></li>
+  <li><div class="section-progress-container">
+  <div class="section-progress" style="height: 0%;"></div>
+</div>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-9 columns" data-equalizer-watch="" style="height: 3069px;">
+      <div class="row collapse">
+        <div class="small-12 small-centered columns">
+  <div class="default-panel margin-bottom shadow">
+
+   <div class="header shadow-down more-padding">
+      <h4>Lab 3: Materials</h4>
+    </div>
+    <div class="content more-padding light-background reader">
+      <div id="blah" class="scrollspy-section">
+  <h1 class="hide" id="intro-to-ue4">Materials Introduction</h1>
+
+  <p>Materials are a way to give your Scene assets a better look. To give them more color rather than that old dimly gray. Unfortunately, Unity’s Material Editor is nowhere near as powerful as Unreal’s node-based editor, but for the purposes of this course you just need some basics.</p>
+    <!--<div class="text-center image-container"><img alt="Star Wars has nothing to do with Unity, I just ILM" class="zoomable zoomed" src="core_4_files/rogueOne_plain.png" data-zoom-image="core_4_files/rogueOne_textured.png"></div>-->
+    <div class="text-center image-container">
+        <!--
+              ()
+              []
+              ||
+              ||
+             .'`.
+             |  |
+             |  |
+ |           |  |           |
+ |           |  |           |
+ |           |  |           |
+ |       _  /    \  _       |
+ |~|____.| |/      \| |.____|~|
+ |                            |
+ `-`-._                  _.-'-'
+       `-.           _.-'
+ LS     ||\________/||
+        `'          `'
+            -->
+        <!--Picture Source: https://www.youtube.com/watch?v=yLoP7moOG-M-->
+        <div id="rogueOne-twentytenty">
+            <img src="core_4_files/rogueOne_textured.png"/>
+            <img src="core_4_files/rogueOne_plain.png" />
+        </div>
+    </div>
+    <p alt="Star Wars has nothing to do with Unity, I just like ILM" class="text-center image-caption">With and without Materials (and a couple million dollars)</p>
+
+  <hr>
+
+</div>
+<div id="3-first-material" class="scrollspy-section">
+  <h2 id="first-material">Your first Material</h2>
+    <div class="text-center image-container"><img style="max-height:633px;max-width:353px;" alt="Level Editor" class="zoomable zoomed" src="core_4_files/Inspector_NewMaterial.JPG" data-zoom-image="core_4_files/Inspector_NewMaterial.JPG"></div>
+  <p class="text-center image-caption">Inspecting a Material</p>
+  <p>In order to create a material, right click in your Assets Explorer > Create >  Material. Clicking on the newly created material will show the material information in the Inspector. By default all new materials are created with Unity 5’s Standard Shader, more on that later. In the Inspector, you can see all the Material properties.</p>
+
+  <hr>
+
+</div>
+<div id="3-material-properties" class="scrollspy-section">
+  <h2 id="material-properties">Material Properties</h2>
+
+  <p>A Material using the Standard Shader has a couple basic properties; Albedo, Metallic, Normal Map, Height Map, Occlusion, Emission, and Detail Map. These properties control various facets of how the material will render. Each property can take a supplied texture as its’ arguments.  Some properties allow for a Color, or value, to be supplied without a texture.</p>
+  <ul style="list-style-type:none">
+      <li>
+          <div class="text-center image-container"><img style="max-height:200px;max-width:600px;" alt="Difference in Albedo Maps" class="zoomable zoomed" src="core_4_files/albedoVar.jpg" data-zoom-image="core_4_files/albedoVar.jpg"></div>
+            <p class="text-center image-caption">Same Material, different Albedo Maps</p>
+          <h4>Albedo</h4>
+          <p>Albedo is the base color of the Material. Assigning a map to this will effectively texture the entire material. When textured, the additional Color slider controls how the texture is perceived. A color value of white leaves the texture unchanged, changing to black darkens the texture to no detail. When supplying no map, the additional Color slider acts as the main Color for the material. Set the Slider to red makes the material red, setting to black makes it black, etc.</p>
+      </li>
+      <li>
+          <div class="text-center image-container"><img style="max-height:197px;max-width:800px;" alt="Smoothness Differences" class="zoomable zoomed" src="core_4_files/smoothVar.jpg" data-zoom-image="core_4_files/smoothVar.jpg"></div>
+            <p class="text-center image-caption">Smoothness: 0, 0.5, 0.75, 1.0</p>
+          <h4>Metallic</h4>
+          <p>The Metallic property defines all the metal-like properties of the Material. This ranges from the roughest metal, with no shine, to the smoothest metal, with a lot of shine. It has two sliders and a Source field. The Metallic slider defines how much metal-like the material is, and likewise how much of the effect should be applied. The smoothness slider defines how smooth the material is. When a material is smooth, it reflects its surroundings. The Source Dropdown has two options; Albedo Alpha and Metallic Alpha. This sets the effect of the smoothness to either the Alpha Channel (how transparent a texture is) of the Albedo Map or the Metallic Map. The Source Dropdown requires that a Map be supplied in order to get the Alpha Channel.</p>
+      </li>
+      <li>
+          <div class="text-center image-container"><img style="max-height:312px;max-width:850px;" alt="Difference between Normal Maps and Height Maps" class="zoomable zoomed" src="core_4_files/StandardShaderParallaxMap.jpg" data-zoom-image="core_4_files/StandardShaderParallaxMap.jpg"></div>
+            <p class="text-center image-caption">Albedo Only, Albedo Only + Normal Map, Albedo Only + Height Map</p>
+          <h4>Normal Map/Height Map</h4>
+          <p>A Normal Map, also referred to as a <a href="https://developer.valvesoftware.com/wiki/Normal_Maps" target="_blank">Bump Map</a>, describes additional bumps on the geometry without creating additional polygons in the model. Both the Normal Map and Height Map properties take only a texture as an argument.</p>
+      </li>
+      <li>
+          <div class="text-center image-container"><img style="max-height:324px;max-width:492px;" alt="Ignore the Walls" class="zoomable zoomed" src="core_4_files/Emissive.JPG" data-zoom-image="core_4_files/Emissive.JPG"></div>
+            <p class="text-center image-caption">Example of an Emissive Material</p>
+          <h4>Emission</h4>
+          <p>The Emission property defines the color and intensity of the light emitted from the surface. Materials that utilize the Emission property can be thought as Self-Illuminated, wherein the object itself can be a light. Apart from a texture, the Emission property has three fields; the Emissive Color, its Intensity, and the Global Illumination source. The Emissive Color is what the material will the emit and its Intensity is how much it will emit. The Global Illumination (GI) source specifies whether the Illumination is Baked into the Scene, or calculated during runtime.</p>
+      </li>
+  </ul>
+ <!--<p><a target="_blank" href='https://docs.unity3d.com/Manual/PositioningGameObjects.html'>Hyperlink example</a></p>-->
+
+  <hr>
+
+</div>
+<div id="3-material-modification" class="scrollspy-section">
+  <h2 id="material-modification">Modifying Materials from Script</h2>
+
+  <p>Accessing a Material from C# requires an additional step compared to getting other components. In order to obtain a Material, you must first get the Renderer component, and then use the material field. If your GameObject has more than one material assigned to it, you must use the materials field as the material field only returns the first material on the GameObject.</p>
+  <p><b>GameObject</b>.<i>GetComponent</i>&lt;Renderer&gt;().<b>material</b></p>
+  <p><b>GameObject</b>.<i>GetComponent</i>&lt;Renderer&gt;().<b>materials</b></p>
+  <p>Now you have full access to the Material. Unfortunately, the naming conventions don’t remain the same. In order to get the Albedo color, you must use the color field. The Methods for setting properties are SetColor(string, Color), SetFloat(string, float), SetInt(string, Int), and SetTexture(string, Int). Getter methods follow the same naming convention but only require a string argument. Check out these examples to see the methods in work.</p>
+  <hr>
+
+</div>
+<div id="3-scripting-examples" class="scrollspy-section">
+  <h2 id="scripting-examples">Scripting Examples</h2>
+    <h4>Random Color Generator</h4>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_4_files/randomColor.mp4" /></div>
+  <p>This script generates and assigns a random color to whatever it’s attached to. It does this by assigning to the Color field.</p>
+<pre style="line-height:18px"><code class="csharp">
+using UnityEngine;
+using System.Collections;
+public class RandomColor : <span class="hljs-keyword">MonoBehaviour</span> {
+    public <span class="hljs-keyword">GameObject</span> ObjectToChange; //Assign a GameObject in the Inspector
+    private <span class="hljs-keyword">Material</span> ObjectMaterial; //Our Material Reference
+	// Use this for initialization
+	void <span class="hljs-keyword">Start</span> () {
+        ObjectMaterial = ObjectToChange.GetComponent&lt;Renderer&gt;().material; //Get the Material to edit
+    }
+	
+	// Update is called once per frame
+	void <span class="hljs-keyword">Update</span> () {
+	    if (<span class="hljs-keyword">Input</span>.GetKeyDown(<span class="hljs-keyword">KeyCode</span>.R)) { //Only fire if the User hits the 'R' key
+            <span class="hljs-keyword">Color</span> newColor = new <span class="hljs-keyword">Color</span>(); //Create a new Color to supply values
+            newColor.r = (float)Random.Range(0f, 1f); //Generate a Random Float from 0 to 1
+            newColor.g = (float)Random.Range(0f, 1f);
+            newColor.b = (float)Random.Range(0f, 1f);
+            ObjectMaterial.color = newColor; //Set the color to new constructed Color
+        }
+	}
+}
+</code></pre>
+    <h4>Metallic Looper</h4>
+    <div class="text-center image-container"><video autoplay muted loop="loop" src="core_4_files/metallicLoop.mp4" /></div>
+    <p>This script loops through from 0 to 1 and then from 1 to 0 by utilizing the SetFloat() method.</p>
+<pre style="line-height:18px"><code class="csharp">
+using UnityEngine;
+using System.Collections;
+public class MetallicLoop : <span class="hljs-keyword">MonoBehaviour</span> {
+    public <span class="hljs-keyword">GameObject</span> ObjectToChange; //Assign a GameObject in the Inspector
+    private <span class="hljs-keyword">Material</span> ObjectMaterial; //Our Material Reference
+    private float glossyValue = 0;
+    bool increase = true;
+    void Start () {
+        ObjectMaterial = ObjectToChange.GetComponent&lt;Renderer&gt;().material; //Get the Material to edit
+        ObjectMaterial.SetFloat("_Metallic", 1f); //Set the Metallic property all the way up
+    }
+	void Update () {
+        ObjectMaterial.SetFloat("_Glossiness", glossyValue); //Set the Value of Glossiness
+        if (increase) { 
+            if (glossyValue >= 1) {
+                increase = false; //Can't increase anymore, start decreasing
+            }
+            else {
+                glossyValue = glossyValue + 0.005f;
+            }
+        }
+        else {
+            if (glossyValue <= 0) {
+                increase = true; //Can't decrease anymore, start increasing
+            }
+            else {
+                glossyValue = glossyValue - 0.005f;
+            }
+        }
+	}
+}
+</code></pre>
+    <hr />
+
+</div>
+    <div id="3-property-reference" class="scrollspy-section">
+        <h2 id="property-reference">Property Reference</h2>
+        <p>Scripting with Shaders is fairly straight-forward if you have access to the Property names, so we've compiled a list of the Property names.</p>
+        <div class="text-center">
+            <table>
+                <tr>
+                    <th>Textures</th>
+                    <th>Floats</th>
+                    <th>Colors</th>
+                </tr>
+                <tr>
+                    <td>_BumpMap</td>
+                    <td>_BumpScale</td>
+                    <td>_Color</td>
+                </tr>
+                <tr>
+                    <td>_DetailAlbedoMap</td>
+                    <td>_Cutoff</td>
+                    <td>_EmissionColor</td>
+                </tr>
+                <tr>
+                    <td>_DetailMask</td>
+                    <td>_DetailNormalMapScale</td>
+                </tr>
+                <tr>
+                    <td>_DetailNormalMap</td>
+                    <td>_DstBlend</td>
+                </tr>
+                <tr>
+                    <td>_EmissionMap</td>
+                    <td>_GlossMapScale</td>
+                </tr>
+                <tr>
+                    <td>_MainTex</td>
+                    <td>_Glossiness</td>
+                </tr>
+                <tr>
+                    <td>_MainTex</td>
+                    <td>_GlossyReflections</td>
+                </tr>
+                <tr>
+                    <td>_MetallicGlossMap</td>
+                    <td>_Metallic</td>
+                </tr>
+                <tr>
+                    <td>_OcclusionMap</td>
+                    <td>_Mode</td>
+                </tr>
+                <tr>
+                    <td>_ParallaxMap</td>
+                    <td>_OcclusionStrength</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>_Parallax</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>_SmoothnessTextureChannel</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>_SpecularHighlights</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>_SrcBlend</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>_UVSec</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>_ZWrite</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+    </div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="bottom-spacer"></div>
+  
+
+</body></html>
